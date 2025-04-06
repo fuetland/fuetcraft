@@ -1,0 +1,63 @@
+{
+  "mod_elements": [
+    {
+      "name": "Chopper",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/block/chopper.json",
+          "src/main/java/fuetcraft/block/ChopperBlock.java",
+          "src/main/resources/data/fuetcraft/loot_tables/blocks/chopper.json",
+          "src/main/java/fuetcraft/block/entity/ChopperBlockEntity.java",
+          "src/main/resources/assets/fuetcraft/models/item/chopper.json",
+          "src/main/resources/assets/fuetcraft/blockstates/chopper.json"
+        ]
+      }
+    },
+    {
+      "name": "ChopperGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/world/inventory/ChopperGuiMenu.java",
+          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.fuetcraft.chopper": "Chopper"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "fuetcraft",
+    "modName": "fuetcraft",
+    "version": "1.0.0",
+    "author": "victo, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "fuetcraft"
+  },
+  "mcreatorVersion": 202500113416
+}
