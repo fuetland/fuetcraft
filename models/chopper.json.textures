@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "chopper-1",
+        "1": "chopper-2",
+        "2": "chopper-3",
+        "3": "chopper-4",
+        "4": "chopper-5",
+        "5": "chopper-6",
+        "6": "chopper-7",
+        "7": "chopper-8",
+        "8": "chopper-9"
+      },
+      "name": "default"
+    }
+  }
+}

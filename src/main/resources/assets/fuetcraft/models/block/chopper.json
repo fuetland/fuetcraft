@@ -1,0 +1,17 @@
+{
+  "parent": "fuetcraft:custom/chopper",
+  "textures": {
+    "all": "fuetcraft:block/chopper-1",
+    "particle": "fuetcraft:block/chopper-1",
+    "0": "fuetcraft:block/chopper-1",
+    "1": "fuetcraft:block/chopper-2",
+    "2": "fuetcraft:block/chopper-3",
+    "3": "fuetcraft:block/chopper-4",
+    "4": "fuetcraft:block/chopper-5",
+    "5": "fuetcraft:block/chopper-6",
+    "6": "fuetcraft:block/chopper-7",
+    "7": "fuetcraft:block/chopper-8",
+    "8": "fuetcraft:block/chopper-9"
+  },
+  "render_type": "solid"
+}
