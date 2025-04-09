@@ -26,6 +26,7 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
+import fuetcraft.init.FuetcraftModTabs;
 import fuetcraft.init.FuetcraftModMenus;
 import fuetcraft.init.FuetcraftModItems;
 import fuetcraft.init.FuetcraftModBlocks;
@@ -45,6 +46,8 @@ public class FuetcraftMod {
 		FuetcraftModBlocks.REGISTRY.register(bus);
 		FuetcraftModBlockEntities.REGISTRY.register(bus);
 		FuetcraftModItems.REGISTRY.register(bus);
+
+		FuetcraftModTabs.REGISTRY.register(bus);
 
 		FuetcraftModMenus.REGISTRY.register(bus);
 

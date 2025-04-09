@@ -1,0 +1,11 @@
+{
+  "_fv": 77,
+  "_type": "tab",
+  "definition": {
+    "name": "Fuetcraft",
+    "icon": {
+      "value": "Items.DEBUG_STICK"
+    },
+    "showSearch": true
+  }
+}

@@ -11,6 +11,8 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import fuetcraft.world.inventory.ChopperGuiMenu;
+
 import fuetcraft.FuetcraftMod;
 
 public class FuetcraftModMenus {

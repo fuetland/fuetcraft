@@ -8,14 +8,15 @@
       "registry_name": "chopper",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fuetcraft/models/block/chopper.json",
+          "src/main/resources/assets/fuetcraft/models/item/chopper.json",
+          "src/main/resources/assets/fuetcraft/blockstates/chopper.json",
+          "src/main/java/fuetcraft/block/entity/ChopperBlockEntity.java",
           "src/main/java/fuetcraft/block/ChopperBlock.java",
           "src/main/resources/data/fuetcraft/loot_tables/blocks/chopper.json",
-          "src/main/java/fuetcraft/block/entity/ChopperBlockEntity.java",
-          "src/main/resources/assets/fuetcraft/models/item/chopper.json",
-          "src/main/resources/assets/fuetcraft/blockstates/chopper.json"
+          "src/main/resources/assets/fuetcraft/models/block/chopper.json"
         ]
-      }
+      },
+      "path": "~/chopper"
     },
     {
       "name": "ChopperGui",
@@ -26,23 +27,144 @@
       "metadata": {
         "files": [
           "src/main/java/fuetcraft/world/inventory/ChopperGuiMenu.java",
-          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java"
+          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java",
+          "src/main/java/fuetcraft/network/ChopperGuiSlotMessage.java"
         ]
+      },
+      "path": "~/chopper"
+    },
+    {
+      "name": "ChopperGetOutputSlotContent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_get_output_slot_content",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperGetOutputSlotContentProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/chopper"
+    },
+    {
+      "name": "ChopperTakeOutputSlotContent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_take_output_slot_content",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperTakeOutputSlotContentProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/chopper"
+    },
+    {
+      "name": "Fuetcraft",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuetcraft",
+      "metadata": {
+        "files": []
       }
+    },
+    {
+      "name": "ChopperShiftTakeOutputSlotContent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_shift_take_output_slot_content",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperShiftTakeOutputSlotContentProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/chopper"
+    },
+    {
+      "name": "ChopperGuiTooltipPorkchop",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_gui_tooltip_porkchop",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperGuiTooltipPorkchopProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/chopper"
+    },
+    {
+      "name": "ChopperGuiTooltipIngredients",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_gui_tooltip_ingredients",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperGuiTooltipIngredientsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/chopper"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Chopper"
+    ],
+    "ITEMS:mod:items_minced_meat_purposes": [
+      "Items.SKULL#0",
+      "Items.SKULL#1",
+      "Items.SKULL#2",
+      "Items.SKULL#3",
+      "Items.SKULL#4",
+      "Items.SKULL#5",
+      "Items.PIGLIN_HEAD"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "block.fuetcraft.chopper": "Chopper"
+      "gui.fuetcraft.chopper_gui.tooltip.porkchop": "Insert pork chop into this slot",
+      "gui.fuetcraft.chopper_gui.label_empty": "+",
+      "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
+      "block.fuetcraft.chopper": "Chopper",
+      "item_group.fuetcraft.fuetcraft": "Fuetcraft"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "chopper",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "fuetcraft",
