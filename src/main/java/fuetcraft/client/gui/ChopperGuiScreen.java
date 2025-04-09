@@ -8,14 +8,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
-import java.util.stream.Collectors;
 import java.util.HashMap;
-import java.util.Arrays;
 
 import fuetcraft.world.inventory.ChopperGuiMenu;
-
-import fuetcraft.procedures.ChopperGuiTooltipPorkchopProcedure;
-import fuetcraft.procedures.ChopperGuiTooltipIngredientsProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -48,18 +43,6 @@ public class ChopperGuiScreen extends AbstractContainerScreen<ChopperGuiMenu> {
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 15 && mouseX < leftPos + 39 && mouseY > topPos + 34 && mouseY < topPos + 58) {
-			String hoverText = ChopperGuiTooltipPorkchopProcedure.execute();
-			if (hoverText != null) {
-				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
-			}
-		}
-		if (mouseX > leftPos + 60 && mouseX < leftPos + 84 && mouseY > topPos + 34 && mouseY < topPos + 58) {
-			String hoverText = ChopperGuiTooltipIngredientsProcedure.execute();
-			if (hoverText != null) {
-				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
-			}
-		}
 	}
 
 	@Override

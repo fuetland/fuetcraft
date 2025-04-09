@@ -78,25 +78,7 @@ public class ChopperGuiSlotMessage {
 
 			ChopperGetOutputSlotContentProcedure.execute(entity);
 		}
-		if (slot == 0 && changeType == 1) {
-
-			ChopperGetOutputSlotContentProcedure.execute(entity);
-		}
-		if (slot == 0 && changeType == 2) {
-			int amount = meta;
-
-			ChopperGetOutputSlotContentProcedure.execute(entity);
-		}
 		if (slot == 1 && changeType == 0) {
-
-			ChopperGetOutputSlotContentProcedure.execute(entity);
-		}
-		if (slot == 1 && changeType == 1) {
-
-			ChopperGetOutputSlotContentProcedure.execute(entity);
-		}
-		if (slot == 1 && changeType == 2) {
-			int amount = meta;
 
 			ChopperGetOutputSlotContentProcedure.execute(entity);
 		}

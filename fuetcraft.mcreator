@@ -8,12 +8,12 @@
       "registry_name": "chopper",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fuetcraft/models/item/chopper.json",
-          "src/main/resources/assets/fuetcraft/blockstates/chopper.json",
-          "src/main/java/fuetcraft/block/entity/ChopperBlockEntity.java",
-          "src/main/java/fuetcraft/block/ChopperBlock.java",
           "src/main/resources/data/fuetcraft/loot_tables/blocks/chopper.json",
-          "src/main/resources/assets/fuetcraft/models/block/chopper.json"
+          "src/main/resources/assets/fuetcraft/blockstates/chopper.json",
+          "src/main/resources/assets/fuetcraft/models/block/chopper.json",
+          "src/main/resources/assets/fuetcraft/models/item/chopper.json",
+          "src/main/java/fuetcraft/block/entity/ChopperBlockEntity.java",
+          "src/main/java/fuetcraft/block/ChopperBlock.java"
         ]
       },
       "path": "~/chopper"
@@ -27,8 +27,8 @@
       "metadata": {
         "files": [
           "src/main/java/fuetcraft/world/inventory/ChopperGuiMenu.java",
-          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java",
-          "src/main/java/fuetcraft/network/ChopperGuiSlotMessage.java"
+          "src/main/java/fuetcraft/network/ChopperGuiSlotMessage.java",
+          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java"
         ]
       },
       "path": "~/chopper"

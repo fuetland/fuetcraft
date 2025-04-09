@@ -2,15 +2,15 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "chopper-1",
-        "1": "chopper-2",
-        "2": "chopper-3",
-        "3": "chopper-4",
-        "4": "chopper-5",
-        "5": "chopper-6",
-        "6": "chopper-7",
-        "7": "chopper-8",
-        "8": "chopper-9"
+        "0": "chopper-2",
+        "1": "chopper-8",
+        "2": "chopper-1",
+        "3": "chopper-9",
+        "4": "chopper-3",
+        "5": "chopper-4",
+        "6": "chopper-5",
+        "7": "chopper-6",
+        "8": "chopper-7"
       },
       "name": "default"
     }

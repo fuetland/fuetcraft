@@ -27,12 +27,6 @@
           "onSlotChanged": {
             "name": "ChopperGetOutputSlotContent"
           },
-          "onTakenFromSlot": {
-            "name": "ChopperGetOutputSlotContent"
-          },
-          "onStackTransfer": {
-            "name": "ChopperGetOutputSlotContent"
-          },
           "x": 141,
           "y": 71,
           "locked": false
@@ -53,12 +47,6 @@
           },
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "ChopperGetOutputSlotContent"
-          },
-          "onTakenFromSlot": {
-            "name": "ChopperGetOutputSlotContent"
-          },
-          "onStackTransfer": {
             "name": "ChopperGetOutputSlotContent"
           },
           "x": 186,
@@ -98,36 +86,6 @@
           },
           "x": 195,
           "y": 44,
-          "locked": false
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_porkchop",
-          "text": {
-            "fixedValue": "",
-            "name": "ChopperGuiTooltipPorkchop"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 141,
-          "y": 71,
-          "locked": false
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_proc_chopper_gui_tooltip_ingredi",
-          "text": {
-            "fixedValue": "",
-            "name": "ChopperGuiTooltipIngredients"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 186,
-          "y": 71,
           "locked": false
         }
       },

@@ -96,18 +96,6 @@ public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 			}
 
 			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(0, 1, 0);
-			}
-
-			@Override
-			public void onQuickCraft(ItemStack a, ItemStack b) {
-				super.onQuickCraft(a, b);
-				slotChanged(0, 2, b.getCount() - a.getCount());
-			}
-
-			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return Items.PORKCHOP == stack.getItem();
 			}
@@ -121,18 +109,6 @@ public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 			public void setChanged() {
 				super.setChanged();
 				slotChanged(1, 0, 0);
-			}
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(1, 1, 0);
-			}
-
-			@Override
-			public void onQuickCraft(ItemStack a, ItemStack b) {
-				super.onQuickCraft(a, b);
-				slotChanged(1, 2, b.getCount() - a.getCount());
 			}
 
 			@Override
