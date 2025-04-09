@@ -16,7 +16,9 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
@@ -24,7 +26,11 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+import fuetcraft.network.ChopperGuiSlotMessage;
+
 import fuetcraft.init.FuetcraftModMenus;
+
+import fuetcraft.FuetcraftMod;
 
 public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
@@ -43,7 +49,7 @@ public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 		super(FuetcraftModMenus.CHOPPER_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(1);
+		this.internal = new ItemStackHandler(3);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -78,14 +84,82 @@ public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 35) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 35) {
 			private final int slot = 0;
 			private int x = ChopperGuiMenu.this.x;
 			private int y = ChopperGuiMenu.this.y;
 
 			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(0, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(0, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(0, 2, b.getCount() - a.getCount());
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return Items.PORKCHOP == stack.getItem();
+			}
+		}));
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 61, 35) {
+			private final int slot = 1;
+			private int x = ChopperGuiMenu.this.x;
+			private int y = ChopperGuiMenu.this.y;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(1, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(1, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(1, 2, b.getCount() - a.getCount());
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return stack.is(ItemTags.create(new ResourceLocation("fuetcraft:items_minced_meat_purposes")));
+			}
+		}));
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 133, 35) {
+			private final int slot = 2;
+			private int x = ChopperGuiMenu.this.x;
+			private int y = ChopperGuiMenu.this.y;
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(2, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(2, 2, b.getCount() - a.getCount());
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
 			}
 		}));
 		for (int si = 0; si < 3; ++si)
@@ -115,16 +189,16 @@ public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 1) {
-				if (!this.moveItemStackTo(itemstack1, 1, this.slots.size(), true))
+			if (index < 3) {
+				if (!this.moveItemStackTo(itemstack1, 3, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 1, false)) {
-				if (index < 1 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 1 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 3, false)) {
+				if (index < 3 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 3 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 1, 1 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 3, 3 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
@@ -222,13 +296,24 @@ public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
+					if (j == 2)
+						continue;
 					playerIn.drop(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
+					if (i == 2)
+						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
+		}
+	}
+
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			FuetcraftMod.PACKET_HANDLER.sendToServer(new ChopperGuiSlotMessage(slotid, x, y, z, ctype, meta));
+			ChopperGuiSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

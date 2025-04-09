@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "chopper:default",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -42,8 +42,12 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [],
-    "destroyTool": "Not specified",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Fuetcraft"
+      }
+    ],
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -80,7 +84,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "ANVIL"
     },
     "breakSound": {
       "value": ""
@@ -102,7 +106,8 @@
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": true,
-    "openGUIOnRightClick": false,
+    "guiBoundTo": "ChopperGui",
+    "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,

@@ -24,7 +24,129 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 150,
+          "onSlotChanged": {
+            "name": "ChopperGetOutputSlotContent"
+          },
+          "onTakenFromSlot": {
+            "name": "ChopperGetOutputSlotContent"
+          },
+          "onStackTransfer": {
+            "name": "ChopperGetOutputSlotContent"
+          },
+          "x": 141,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:mod:items_minced_meat_purposes"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ChopperGetOutputSlotContent"
+          },
+          "onTakenFromSlot": {
+            "name": "ChopperGetOutputSlotContent"
+          },
+          "onStackTransfer": {
+            "name": "ChopperGetOutputSlotContent"
+          },
+          "x": 186,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onTakenFromSlot": {
+            "name": "ChopperTakeOutputSlotContent"
+          },
+          "onStackTransfer": {
+            "name": "ChopperShiftTakeOutputSlotContent"
+          },
+          "x": 258,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_chopper",
+          "text": {
+            "fixedValue": "Chopper"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_porkchop",
+          "text": {
+            "fixedValue": "",
+            "name": "ChopperGuiTooltipPorkchop"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 141,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_chopper_gui_tooltip_ingredi",
+          "text": {
+            "fixedValue": "",
+            "name": "ChopperGuiTooltipIngredients"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 186,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "right-arrow.png",
+          "use1Xscale": true,
+          "x": 222,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "add.png",
+          "use1Xscale": true,
+          "x": 168,
           "y": 71,
           "locked": false
         }

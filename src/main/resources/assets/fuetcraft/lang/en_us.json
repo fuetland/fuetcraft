@@ -1,3 +1,7 @@
 {
-  "block.fuetcraft.chopper": "Chopper"
+  "gui.fuetcraft.chopper_gui.tooltip.porkchop": "Insert pork chop into this slot",
+  "gui.fuetcraft.chopper_gui.label_empty": "+",
+  "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
+  "block.fuetcraft.chopper": "Chopper",
+  "item_group.fuetcraft.fuetcraft": "Fuetcraft"
 }

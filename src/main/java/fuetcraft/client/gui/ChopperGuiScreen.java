@@ -8,9 +8,14 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
+import java.util.stream.Collectors;
 import java.util.HashMap;
+import java.util.Arrays;
 
 import fuetcraft.world.inventory.ChopperGuiMenu;
+
+import fuetcraft.procedures.ChopperGuiTooltipPorkchopProcedure;
+import fuetcraft.procedures.ChopperGuiTooltipIngredientsProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -43,6 +48,18 @@ public class ChopperGuiScreen extends AbstractContainerScreen<ChopperGuiMenu> {
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		if (mouseX > leftPos + 15 && mouseX < leftPos + 39 && mouseY > topPos + 34 && mouseY < topPos + 58) {
+			String hoverText = ChopperGuiTooltipPorkchopProcedure.execute();
+			if (hoverText != null) {
+				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+			}
+		}
+		if (mouseX > leftPos + 60 && mouseX < leftPos + 84 && mouseY > topPos + 34 && mouseY < topPos + 58) {
+			String hoverText = ChopperGuiTooltipIngredientsProcedure.execute();
+			if (hoverText != null) {
+				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+			}
+		}
 	}
 
 	@Override
@@ -51,6 +68,11 @@ public class ChopperGuiScreen extends AbstractContainerScreen<ChopperGuiMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 22, 15, 22, 15);
+
+		guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/add.png"), this.leftPos + 42, this.topPos + 34, 0, 0, 13, 13, 13, 13);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -65,6 +87,7 @@ public class ChopperGuiScreen extends AbstractContainerScreen<ChopperGuiMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.fuetcraft.chopper_gui.label_chopper"), 69, 7, -12829636, false);
 	}
 
 	@Override
