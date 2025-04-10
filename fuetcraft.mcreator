@@ -108,13 +108,12 @@
       "~CUSTOM:Chopper"
     ],
     "ITEMS:mod:items_minced_meat_purposes": [
-      "Items.SKULL#0",
-      "Items.SKULL#1",
-      "Items.SKULL#2",
-      "Items.SKULL#3",
-      "Items.SKULL#4",
-      "Items.SKULL#5",
-      "Items.PIGLIN_HEAD"
+      "Items.GOLDEN_PICKAXE",
+      "Blocks.TORCHFLOWER",
+      "Items.ENDER_PEARL",
+      "Items.FISH#1",
+      "Items.NETHERITE_SCRAP",
+      "Items.POISONOUS_POTATO"
     ]
   },
   "tab_element_order": {},
