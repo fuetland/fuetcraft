@@ -108,7 +108,7 @@
     "hasInventory": true,
     "guiBoundTo": "ChopperGui",
     "openGUIOnRightClick": true,
-    "inventorySize": 9,
+    "inventorySize": 4,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,

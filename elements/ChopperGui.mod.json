@@ -8,7 +8,7 @@
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
-    "doesPauseGame": true,
+    "doesPauseGame": false,
     "components": [
       {
         "type": "inputslot",
@@ -24,9 +24,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "ChopperGetOutputSlotContent"
-          },
           "x": 141,
           "y": 71,
           "locked": false
@@ -46,9 +43,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "ChopperGetOutputSlotContent"
-          },
           "x": 186,
           "y": 71,
           "locked": false
@@ -110,6 +104,9 @@
         }
       }
     ],
+    "onTick": {
+      "name": "ChopperGetOutputSlotContent"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

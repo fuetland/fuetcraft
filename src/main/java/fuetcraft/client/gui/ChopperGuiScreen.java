@@ -31,11 +31,6 @@ public class ChopperGuiScreen extends AbstractContainerScreen<ChopperGuiMenu> {
 		this.imageHeight = 166;
 	}
 
-	@Override
-	public boolean isPauseScreen() {
-		return true;
-	}
-
 	private static final ResourceLocation texture = new ResourceLocation("fuetcraft:textures/screens/chopper_gui.png");
 
 	@Override

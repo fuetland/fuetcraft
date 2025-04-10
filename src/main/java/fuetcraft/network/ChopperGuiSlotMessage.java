@@ -18,7 +18,6 @@ import fuetcraft.world.inventory.ChopperGuiMenu;
 
 import fuetcraft.procedures.ChopperTakeOutputSlotContentProcedure;
 import fuetcraft.procedures.ChopperShiftTakeOutputSlotContentProcedure;
-import fuetcraft.procedures.ChopperGetOutputSlotContentProcedure;
 
 import fuetcraft.FuetcraftMod;
 
@@ -74,14 +73,6 @@ public class ChopperGuiSlotMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (slot == 0 && changeType == 0) {
-
-			ChopperGetOutputSlotContentProcedure.execute(entity);
-		}
-		if (slot == 1 && changeType == 0) {
-
-			ChopperGetOutputSlotContentProcedure.execute(entity);
-		}
 		if (slot == 2 && changeType == 1) {
 
 			ChopperTakeOutputSlotContentProcedure.execute(entity);

@@ -33,7 +33,7 @@ import fuetcraft.world.inventory.ChopperGuiMenu;
 import fuetcraft.init.FuetcraftModBlockEntities;
 
 public class ChopperBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(4, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public ChopperBlockEntity(BlockPos position, BlockState state) {
