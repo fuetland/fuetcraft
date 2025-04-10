@@ -8,12 +8,12 @@
       "registry_name": "chopper",
       "metadata": {
         "files": [
-          "src/main/resources/data/fuetcraft/loot_tables/blocks/chopper.json",
-          "src/main/resources/assets/fuetcraft/blockstates/chopper.json",
-          "src/main/resources/assets/fuetcraft/models/block/chopper.json",
           "src/main/resources/assets/fuetcraft/models/item/chopper.json",
+          "src/main/resources/assets/fuetcraft/blockstates/chopper.json",
           "src/main/java/fuetcraft/block/entity/ChopperBlockEntity.java",
-          "src/main/java/fuetcraft/block/ChopperBlock.java"
+          "src/main/java/fuetcraft/block/ChopperBlock.java",
+          "src/main/resources/data/fuetcraft/loot_tables/blocks/chopper.json",
+          "src/main/resources/assets/fuetcraft/models/block/chopper.json"
         ]
       },
       "path": "~/chopper"
@@ -27,8 +27,8 @@
       "metadata": {
         "files": [
           "src/main/java/fuetcraft/world/inventory/ChopperGuiMenu.java",
-          "src/main/java/fuetcraft/network/ChopperGuiSlotMessage.java",
-          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java"
+          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java",
+          "src/main/java/fuetcraft/network/ChopperGuiSlotMessage.java"
         ]
       },
       "path": "~/chopper"
@@ -99,36 +99,6 @@
         ]
       },
       "path": "~/chopper"
-    },
-    {
-      "name": "ChopperGuiTooltipPorkchop",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chopper_gui_tooltip_porkchop",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/fuetcraft/procedures/ChopperGuiTooltipPorkchopProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/chopper"
-    },
-    {
-      "name": "ChopperGuiTooltipIngredients",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chopper_gui_tooltip_ingredients",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/fuetcraft/procedures/ChopperGuiTooltipIngredientsProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/chopper"
     }
   ],
   "variable_elements": [],
@@ -150,8 +120,6 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "gui.fuetcraft.chopper_gui.tooltip.porkchop": "Insert pork chop into this slot",
-      "gui.fuetcraft.chopper_gui.label_empty": "+",
       "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
       "block.fuetcraft.chopper": "Chopper",
       "item_group.fuetcraft.fuetcraft": "Fuetcraft"
