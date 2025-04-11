@@ -100,7 +100,7 @@ public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 				return Items.PORKCHOP == stack.getItem();
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 61, 35) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 70, 35) {
 			private final int slot = 1;
 			private int x = ChopperGuiMenu.this.x;
 			private int y = ChopperGuiMenu.this.y;
