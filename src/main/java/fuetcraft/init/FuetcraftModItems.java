@@ -12,11 +12,14 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import fuetcraft.item.PorkchopChoppedItem;
+
 import fuetcraft.FuetcraftMod;
 
 public class FuetcraftModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, FuetcraftMod.MODID);
 	public static final RegistryObject<Item> CHOPPER = block(FuetcraftModBlocks.CHOPPER);
+	public static final RegistryObject<Item> PORKCHOP_CHOPPED = REGISTRY.register("porkchop_chopped", () -> new PorkchopChoppedItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

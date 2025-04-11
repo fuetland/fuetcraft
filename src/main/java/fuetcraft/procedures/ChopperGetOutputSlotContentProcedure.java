@@ -1,6 +1,5 @@
 package fuetcraft.procedures;
 
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
@@ -9,6 +8,8 @@ import net.minecraft.world.entity.Entity;
 
 import java.util.function.Supplier;
 import java.util.Map;
+
+import fuetcraft.init.FuetcraftModItems;
 
 public class ChopperGetOutputSlotContentProcedure {
 	public static void execute(Entity entity) {
@@ -23,27 +24,28 @@ public class ChopperGetOutputSlotContentProcedure {
 				}
 				return 0;
 			}
-		}.getAmount(0) > 0 && new Object() {
-			public int getAmount(int sltid) {
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
-					if (stack != null)
-						return stack.getCount();
+		}.getAmount(0) > 0) {
+			if (new Object() {
+				public int getAmount(int sltid) {
+					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+						if (stack != null)
+							return stack.getCount();
+					}
+					return 0;
 				}
-				return 0;
-			}
-		}.getAmount(1) > 0) {
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == Blocks.CREEPER_HEAD.asItem()) {
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(Items.CREEPER_SPAWN_EGG).copy();
-					_setstack.setCount(1);
-					((Slot) _slots.get(2)).set(_setstack);
-					_player.containerMenu.broadcastChanges();
+			}.getAmount(1) > 0) {
+				if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_PICKAXE) {
+					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+						ItemStack _setstack = new ItemStack(Items.ENCHANTED_GOLDEN_APPLE).copy();
+						_setstack.setCount(1);
+						((Slot) _slots.get(2)).set(_setstack);
+						_player.containerMenu.broadcastChanges();
+					}
 				}
-			}
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == Blocks.ZOMBIE_HEAD.asItem()) {
+			} else {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(Items.ZOMBIE_HORSE_SPAWN_EGG).copy();
+					ItemStack _setstack = new ItemStack(FuetcraftModItems.PORKCHOP_CHOPPED.get()).copy();
 					_setstack.setCount(1);
 					((Slot) _slots.get(2)).set(_setstack);
 					_player.containerMenu.broadcastChanges();

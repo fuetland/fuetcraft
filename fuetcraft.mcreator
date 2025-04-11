@@ -99,6 +99,20 @@
         ]
       },
       "path": "~/chopper"
+    },
+    {
+      "name": "PorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/PorkchopChoppedItem.java"
+        ]
+      },
+      "path": "~/porkchop"
     }
   ],
   "variable_elements": [],
@@ -119,6 +133,7 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
       "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
       "block.fuetcraft.chopper": "Chopper",
       "item_group.fuetcraft.fuetcraft": "Fuetcraft"
