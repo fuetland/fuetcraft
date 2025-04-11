@@ -20,5 +20,6 @@ public class FuetcraftModTabs {
 	public static final RegistryObject<CreativeModeTab> FUETCRAFT = REGISTRY.register("fuetcraft",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fuetcraft.fuetcraft")).icon(() -> new ItemStack(Items.DEBUG_STICK)).displayItems((parameters, tabData) -> {
 				tabData.accept(FuetcraftModBlocks.CHOPPER.get().asItem());
+				tabData.accept(FuetcraftModItems.PORKCHOP_CHOPPED.get());
 			}).withSearchBar().build());
 }

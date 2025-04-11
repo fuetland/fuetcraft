@@ -9,10 +9,14 @@
     "states": [],
     "name": "Porkchop Chopped",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Fuetcraft"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 15,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -39,15 +43,15 @@
       "value": "Arrow"
     },
     "projectileDisableAmmoCheck": false,
-    "isFood": false,
-    "nutritionalValue": 4,
+    "isFood": true,
+    "nutritionalValue": 1,
     "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },
-    "isMeat": false,
+    "isMeat": true,
     "isAlwaysEdible": false,
-    "animation": "none",
+    "animation": "eat",
     "isMusicDisc": false,
     "musicDiscMusic": {
       "value": ""
