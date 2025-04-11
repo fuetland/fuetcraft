@@ -8,12 +8,12 @@
       "registry_name": "chopper",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fuetcraft/models/item/chopper.json",
-          "src/main/resources/assets/fuetcraft/blockstates/chopper.json",
-          "src/main/java/fuetcraft/block/entity/ChopperBlockEntity.java",
-          "src/main/java/fuetcraft/block/ChopperBlock.java",
           "src/main/resources/data/fuetcraft/loot_tables/blocks/chopper.json",
-          "src/main/resources/assets/fuetcraft/models/block/chopper.json"
+          "src/main/resources/assets/fuetcraft/blockstates/chopper.json",
+          "src/main/resources/assets/fuetcraft/models/block/chopper.json",
+          "src/main/resources/assets/fuetcraft/models/item/chopper.json",
+          "src/main/java/fuetcraft/block/entity/ChopperBlockEntity.java",
+          "src/main/java/fuetcraft/block/ChopperBlock.java"
         ]
       },
       "path": "~/chopper"
@@ -27,8 +27,8 @@
       "metadata": {
         "files": [
           "src/main/java/fuetcraft/world/inventory/ChopperGuiMenu.java",
-          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java",
-          "src/main/java/fuetcraft/network/ChopperGuiSlotMessage.java"
+          "src/main/java/fuetcraft/network/ChopperGuiSlotMessage.java",
+          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java"
         ]
       },
       "path": "~/chopper"
@@ -66,6 +66,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -113,10 +129,92 @@
         ]
       },
       "path": "~/porkchop"
+    },
+    {
+      "name": "ChopperRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fuetcraft/recipes/chopper_recipe.json"
+        ]
+      },
+      "path": "~/chopper"
+    },
+    {
+      "name": "ChopperRecipeSimetric",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_recipe_simetric",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fuetcraft/recipes/chopper_recipe_simetric.json"
+        ]
+      },
+      "path": "~/chopper"
+    },
+    {
+      "name": "ChopperTakeOutputSlotContentShift",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_take_output_slot_content_shift",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperTakeOutputSlotContentShiftProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/chopper"
+    },
+    {
+      "name": "MiningPorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/mining_porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/MiningPorkchopChoppedItem.java"
+        ]
+      },
+      "path": "~/porkchop"
+    },
+    {
+      "name": "ExplorerPorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explorer_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/explorer_porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/ExplorerPorkchopChoppedItem.java"
+        ]
+      },
+      "path": "~/porkchop"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "chopper_craft",
+      "files": [
+        "chopper"
+      ],
+      "category": "block",
+      "subtitle": ""
+    }
+  ],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Chopper"
@@ -133,10 +231,13 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
       "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
       "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
       "block.fuetcraft.chopper": "Chopper",
-      "item_group.fuetcraft.fuetcraft": "Fuetcraft"
+      "item_group.fuetcraft.fuetcraft": "Fuetcraft",
+      "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
+      "subtitles.chopper_craft": ""
     }
   },
   "foldersRoot": {

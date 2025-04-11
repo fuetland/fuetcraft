@@ -1,0 +1,19 @@
+
+/*
+ *    MCreator note: This file will be REGENERATED on each build.
+ */
+package fuetcraft.init;
+
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
+
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
+
+import fuetcraft.FuetcraftMod;
+
+public class FuetcraftModSounds {
+	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, FuetcraftMod.MODID);
+	public static final RegistryObject<SoundEvent> CHOPPER_CRAFT = REGISTRY.register("chopper_craft", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fuetcraft", "chopper_craft")));
+}

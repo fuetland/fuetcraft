@@ -1,5 +1,6 @@
 package fuetcraft.procedures;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
@@ -37,7 +38,15 @@ public class ChopperGetOutputSlotContentProcedure {
 			}.getAmount(1) > 0) {
 				if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_PICKAXE) {
 					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(Items.ENCHANTED_GOLDEN_APPLE).copy();
+						ItemStack _setstack = new ItemStack(FuetcraftModItems.MINING_PORKCHOP_CHOPPED.get()).copy();
+						_setstack.setCount(1);
+						((Slot) _slots.get(2)).set(_setstack);
+						_player.containerMenu.broadcastChanges();
+					}
+				}
+				if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == Blocks.TORCHFLOWER.asItem()) {
+					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+						ItemStack _setstack = new ItemStack(FuetcraftModItems.EXPLORER_PORKCHOP_CHOPPED.get()).copy();
 						_setstack.setCount(1);
 						((Slot) _slots.get(2)).set(_setstack);
 						_player.containerMenu.broadcastChanges();

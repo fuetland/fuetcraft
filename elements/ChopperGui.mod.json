@@ -60,7 +60,7 @@
             "name": "ChopperTakeOutputSlotContent"
           },
           "onStackTransfer": {
-            "name": "ChopperShiftTakeOutputSlotContent"
+            "name": "ChopperTakeOutputSlotContentShift"
           },
           "x": 258,
           "y": 71,

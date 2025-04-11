@@ -1,6 +1,9 @@
 {
+  "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
   "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
   "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
   "block.fuetcraft.chopper": "Chopper",
-  "item_group.fuetcraft.fuetcraft": "Fuetcraft"
+  "item_group.fuetcraft.fuetcraft": "Fuetcraft",
+  "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
+  "subtitles.chopper_craft": ""
 }

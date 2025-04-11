@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "cde",
+    " bb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:hopper"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:dispenser"
+    },
+    "d": {
+      "item": "minecraft:iron_sword"
+    },
+    "e": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "fuetcraft:chopper",
+    "count": 1
+  }
+}

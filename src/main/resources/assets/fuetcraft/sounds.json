@@ -1,0 +1,10 @@
+{
+  "chopper_craft": {
+    "sounds": [
+      {
+        "name": "fuetcraft:chopper",
+        "stream": false
+      }
+    ]
+  }
+}

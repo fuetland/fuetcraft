@@ -1,8 +1,8 @@
 {
   "parent": "fuetcraft:custom/chopper",
   "textures": {
-    "all": "fuetcraft:block/chopper-1",
-    "particle": "fuetcraft:block/chopper-1",
+    "all": "fuetcraft:block/choppericon",
+    "particle": "fuetcraft:block/choppericon",
     "0": "fuetcraft:block/chopper-2",
     "1": "fuetcraft:block/chopper-8",
     "2": "fuetcraft:block/chopper-1",

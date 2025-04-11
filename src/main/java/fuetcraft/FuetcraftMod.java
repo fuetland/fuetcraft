@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.AbstractMap;
 
 import fuetcraft.init.FuetcraftModTabs;
+import fuetcraft.init.FuetcraftModSounds;
 import fuetcraft.init.FuetcraftModMenus;
 import fuetcraft.init.FuetcraftModItems;
 import fuetcraft.init.FuetcraftModBlocks;
@@ -42,7 +43,7 @@ public class FuetcraftMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		FuetcraftModSounds.REGISTRY.register(bus);
 		FuetcraftModBlocks.REGISTRY.register(bus);
 		FuetcraftModBlockEntities.REGISTRY.register(bus);
 		FuetcraftModItems.REGISTRY.register(bus);

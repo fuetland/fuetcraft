@@ -16,8 +16,8 @@ import java.util.HashMap;
 
 import fuetcraft.world.inventory.ChopperGuiMenu;
 
+import fuetcraft.procedures.ChopperTakeOutputSlotContentShiftProcedure;
 import fuetcraft.procedures.ChopperTakeOutputSlotContentProcedure;
-import fuetcraft.procedures.ChopperShiftTakeOutputSlotContentProcedure;
 
 import fuetcraft.FuetcraftMod;
 
@@ -75,12 +75,12 @@ public class ChopperGuiSlotMessage {
 			return;
 		if (slot == 2 && changeType == 1) {
 
-			ChopperTakeOutputSlotContentProcedure.execute(entity);
+			ChopperTakeOutputSlotContentProcedure.execute(world, x, y, z, entity);
 		}
 		if (slot == 2 && changeType == 2) {
 			int amount = meta;
 
-			ChopperShiftTakeOutputSlotContentProcedure.execute(entity);
+			ChopperTakeOutputSlotContentShiftProcedure.execute(entity);
 		}
 	}
 
