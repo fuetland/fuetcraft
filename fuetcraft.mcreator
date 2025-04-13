@@ -27,7 +27,8 @@
       "metadata": {
         "files": [
           "src/main/java/fuetcraft/world/inventory/ChopperGuiMenu.java",
-          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java"
+          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java",
+          "src/main/java/fuetcraft/network/ChopperGuiSlotMessage.java"
         ]
       },
       "path": "~/chopper"
@@ -235,6 +236,38 @@
       "path": "~/chopper/triggers"
     },
     {
+      "name": "ChopperGetChoppedChopFromNBT",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_get_chopped_chop_from_nbt",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperGetChoppedChopFromNBTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/chopper/triggers"
+    },
+    {
       "name": "ChopperValidateOutputSlot",
       "type": "procedure",
       "compiles": true,
@@ -268,10 +301,46 @@
   ],
   "variable_elements": [
     {
-      "name": "chopperOutputItem",
-      "type": "itemstack",
+      "name": "fuetMining",
+      "type": "string",
       "scope": "map",
-      "value": "ItemStack.EMPTY"
+      "value": "\"mining-fuet\""
+    },
+    {
+      "name": "fuetExploration",
+      "type": "string",
+      "scope": "map",
+      "value": "\"exploration-fuet\""
+    },
+    {
+      "name": "fuetCombat",
+      "type": "string",
+      "scope": "map",
+      "value": "\"combat-fuet\""
+    },
+    {
+      "name": "fuetSwimming",
+      "type": "string",
+      "scope": "map",
+      "value": "\"swimming-fuet\""
+    },
+    {
+      "name": "fuetEspetec",
+      "type": "string",
+      "scope": "map",
+      "value": "\"espetec-fuet\""
+    },
+    {
+      "name": "fuetExpired",
+      "type": "string",
+      "scope": "map",
+      "value": "\"expired-fuet\""
+    },
+    {
+      "name": "fuetNormal",
+      "type": "string",
+      "scope": "map",
+      "value": "\"normal-fuet\""
     }
   ],
   "sound_elements": [

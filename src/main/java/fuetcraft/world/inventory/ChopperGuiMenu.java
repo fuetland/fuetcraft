@@ -26,7 +26,11 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+import fuetcraft.network.ChopperGuiSlotMessage;
+
 import fuetcraft.init.FuetcraftModMenus;
+
+import fuetcraft.FuetcraftMod;
 
 public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
@@ -86,6 +90,12 @@ public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 			private int y = ChopperGuiMenu.this.y;
 
 			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(0, 0, 0);
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return Items.PORKCHOP == stack.getItem();
 			}
@@ -96,6 +106,12 @@ public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 			private int y = ChopperGuiMenu.this.y;
 
 			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(1, 0, 0);
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(new ResourceLocation("fuetcraft:items_minced_meat_purposes")));
 			}
@@ -104,6 +120,12 @@ public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 			private final int slot = 2;
 			private int x = ChopperGuiMenu.this.x;
 			private int y = ChopperGuiMenu.this.y;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(2, 0, 0);
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -255,6 +277,13 @@ public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
+		}
+	}
+
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			FuetcraftMod.PACKET_HANDLER.sendToServer(new ChopperGuiSlotMessage(slotid, x, y, z, ctype, meta));
+			ChopperGuiSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

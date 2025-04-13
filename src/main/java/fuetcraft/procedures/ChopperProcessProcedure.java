@@ -17,8 +17,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import fuetcraft.network.FuetcraftModVariables;
 
-import fuetcraft.init.FuetcraftModItems;
-
 public class ChopperProcessProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		ChopperCheckSlotContentsChangeProcedure.execute(world, x, y, z);
@@ -30,15 +28,7 @@ public class ChopperProcessProcedure {
 					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "isChopping")) && new Object() {
-			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
-				return _retval.get();
-			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 0) > 0) {
+		}.getValue(world, BlockPos.containing(x, y, z), "isChopping"))) {
 			if (new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -57,8 +47,15 @@ public class ChopperProcessProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.GOLDEN_PICKAXE) {
-					FuetcraftModVariables.MapVariables.get(world).chopperOutputItem = new ItemStack(FuetcraftModItems.MINING_PORKCHOP_CHOPPED.get()).copy();
-					FuetcraftModVariables.MapVariables.get(world).syncData(world);
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetMining);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
 					ChopperValidateOutputSlotProcedure.execute(world, x, y, z);
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -69,8 +66,15 @@ public class ChopperProcessProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Blocks.TORCHFLOWER.asItem()) {
-					FuetcraftModVariables.MapVariables.get(world).chopperOutputItem = new ItemStack(FuetcraftModItems.EXPLORER_PORKCHOP_CHOPPED.get()).copy();
-					FuetcraftModVariables.MapVariables.get(world).syncData(world);
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetExploration);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
 					ChopperValidateOutputSlotProcedure.execute(world, x, y, z);
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -81,8 +85,15 @@ public class ChopperProcessProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.ENDER_PEARL) {
-					FuetcraftModVariables.MapVariables.get(world).chopperOutputItem = new ItemStack(FuetcraftModItems.EXPLORER_PORKCHOP_CHOPPED.get()).copy();
-					FuetcraftModVariables.MapVariables.get(world).syncData(world);
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetCombat);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
 					ChopperValidateOutputSlotProcedure.execute(world, x, y, z);
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -93,8 +104,15 @@ public class ChopperProcessProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.SALMON) {
-					FuetcraftModVariables.MapVariables.get(world).chopperOutputItem = new ItemStack(Blocks.AIR).copy();
-					FuetcraftModVariables.MapVariables.get(world).syncData(world);
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetSwimming);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
 					ChopperValidateOutputSlotProcedure.execute(world, x, y, z);
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -105,8 +123,15 @@ public class ChopperProcessProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.NETHERITE_SCRAP) {
-					FuetcraftModVariables.MapVariables.get(world).chopperOutputItem = new ItemStack(Blocks.AIR).copy();
-					FuetcraftModVariables.MapVariables.get(world).syncData(world);
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetEspetec);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
 					ChopperValidateOutputSlotProcedure.execute(world, x, y, z);
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -117,13 +142,27 @@ public class ChopperProcessProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.POISONOUS_POTATO) {
-					FuetcraftModVariables.MapVariables.get(world).chopperOutputItem = new ItemStack(Blocks.AIR).copy();
-					FuetcraftModVariables.MapVariables.get(world).syncData(world);
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetExpired);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
 					ChopperValidateOutputSlotProcedure.execute(world, x, y, z);
 				}
 			} else {
-				FuetcraftModVariables.MapVariables.get(world).chopperOutputItem = new ItemStack(FuetcraftModItems.PORKCHOP_CHOPPED.get()).copy();
-				FuetcraftModVariables.MapVariables.get(world).syncData(world);
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetNormal);
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
 				ChopperValidateOutputSlotProcedure.execute(world, x, y, z);
 			}
 		} else if (new Object() {
@@ -193,7 +232,7 @@ public class ChopperProcessProcedure {
 				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				if (_ent != null) {
 					final int _slotid = 2;
-					final ItemStack _setstack = FuetcraftModVariables.MapVariables.get(world).chopperOutputItem.copy();
+					final ItemStack _setstack = ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).copy();
 					_setstack.setCount((int) (new Object() {
 						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicInteger _retval = new AtomicInteger(0);

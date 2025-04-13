@@ -22,6 +22,13 @@ public class ChopperExecutionSummaryProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "tickNumberUntilFinishingChopping"))));
+		}.getValue(world, BlockPos.containing(x, y, z), "tickNumberUntilFinishingChopping")) + "\n" + " - currentTypeOfFuet: " + (new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getString(tag);
+				return "";
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "currentTypeOfFuet"))));
 	}
 }

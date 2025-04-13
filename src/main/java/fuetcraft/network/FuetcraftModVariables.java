@@ -11,7 +11,6 @@ import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.FriendlyByteBuf;
@@ -88,7 +87,13 @@ public class FuetcraftModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "fuetcraft_mapvars";
-		public ItemStack chopperOutputItem = ItemStack.EMPTY;
+		public String fuetMining = "\"mining-fuet\"";
+		public String fuetExploration = "\"exploration-fuet\"";
+		public String fuetCombat = "\"combat-fuet\"";
+		public String fuetSwimming = "\"swimming-fuet\"";
+		public String fuetEspetec = "\"espetec-fuet\"";
+		public String fuetExpired = "\"expired-fuet\"";
+		public String fuetNormal = "\"normal-fuet\"";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -97,12 +102,24 @@ public class FuetcraftModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
-			chopperOutputItem = ItemStack.of(nbt.getCompound("chopperOutputItem"));
+			fuetMining = nbt.getString("fuetMining");
+			fuetExploration = nbt.getString("fuetExploration");
+			fuetCombat = nbt.getString("fuetCombat");
+			fuetSwimming = nbt.getString("fuetSwimming");
+			fuetEspetec = nbt.getString("fuetEspetec");
+			fuetExpired = nbt.getString("fuetExpired");
+			fuetNormal = nbt.getString("fuetNormal");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
-			nbt.put("chopperOutputItem", chopperOutputItem.save(new CompoundTag()));
+			nbt.putString("fuetMining", fuetMining);
+			nbt.putString("fuetExploration", fuetExploration);
+			nbt.putString("fuetCombat", fuetCombat);
+			nbt.putString("fuetSwimming", fuetSwimming);
+			nbt.putString("fuetEspetec", fuetEspetec);
+			nbt.putString("fuetExpired", fuetExpired);
+			nbt.putString("fuetNormal", fuetNormal);
 			return nbt;
 		}
 
