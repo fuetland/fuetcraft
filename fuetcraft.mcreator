@@ -8,12 +8,12 @@
       "registry_name": "chopper",
       "metadata": {
         "files": [
-          "src/main/resources/data/fuetcraft/loot_tables/blocks/chopper.json",
-          "src/main/resources/assets/fuetcraft/blockstates/chopper.json",
-          "src/main/resources/assets/fuetcraft/models/block/chopper.json",
           "src/main/resources/assets/fuetcraft/models/item/chopper.json",
+          "src/main/resources/assets/fuetcraft/blockstates/chopper.json",
           "src/main/java/fuetcraft/block/entity/ChopperBlockEntity.java",
-          "src/main/java/fuetcraft/block/ChopperBlock.java"
+          "src/main/java/fuetcraft/block/ChopperBlock.java",
+          "src/main/resources/data/fuetcraft/loot_tables/blocks/chopper.json",
+          "src/main/resources/assets/fuetcraft/models/block/chopper.json"
         ]
       },
       "path": "~/chopper"
@@ -27,62 +27,7 @@
       "metadata": {
         "files": [
           "src/main/java/fuetcraft/world/inventory/ChopperGuiMenu.java",
-          "src/main/java/fuetcraft/network/ChopperGuiSlotMessage.java",
           "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java"
-        ]
-      },
-      "path": "~/chopper"
-    },
-    {
-      "name": "ChopperGetOutputSlotContent",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chopper_get_output_slot_content",
-      "metadata": {
-        "files": [
-          "src/main/java/fuetcraft/procedures/ChopperGetOutputSlotContentProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/chopper"
-    },
-    {
-      "name": "ChopperTakeOutputSlotContent",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chopper_take_output_slot_content",
-      "metadata": {
-        "files": [
-          "src/main/java/fuetcraft/procedures/ChopperTakeOutputSlotContentProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/chopper"
@@ -96,25 +41,6 @@
       "metadata": {
         "files": []
       }
-    },
-    {
-      "name": "ChopperShiftTakeOutputSlotContent",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chopper_shift_take_output_slot_content",
-      "metadata": {
-        "files": [
-          "src/main/java/fuetcraft/procedures/ChopperShiftTakeOutputSlotContentProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/chopper"
     },
     {
       "name": "PorkchopChopped",
@@ -141,7 +67,7 @@
           "src/main/resources/data/fuetcraft/recipes/chopper_recipe.json"
         ]
       },
-      "path": "~/chopper"
+      "path": "~/chopper/recipes"
     },
     {
       "name": "ChopperRecipeSimetric",
@@ -154,26 +80,7 @@
           "src/main/resources/data/fuetcraft/recipes/chopper_recipe_simetric.json"
         ]
       },
-      "path": "~/chopper"
-    },
-    {
-      "name": "ChopperTakeOutputSlotContentShift",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chopper_take_output_slot_content_shift",
-      "metadata": {
-        "files": [
-          "src/main/java/fuetcraft/procedures/ChopperTakeOutputSlotContentShiftProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/chopper"
+      "path": "~/chopper/recipes"
     },
     {
       "name": "MiningPorkchopChopped",
@@ -202,9 +109,171 @@
         ]
       },
       "path": "~/porkchop"
+    },
+    {
+      "name": "ChopperCheckSlotContentsChange",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_check_slot_contents_change",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperCheckSlotContentsChangeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/chopper/triggers"
+    },
+    {
+      "name": "ChopperExecutionSummary",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_execution_summary",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperExecutionSummaryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/chopper/triggers"
+    },
+    {
+      "name": "ChopperResetVariables",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_reset_variables",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperResetVariablesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/chopper/triggers"
+    },
+    {
+      "name": "ChopperProcess",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_process",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperProcessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/chopper/triggers"
+    },
+    {
+      "name": "ChopperValidateOutputSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_validate_output_slot",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperValidateOutputSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/chopper/triggers"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "chopperOutputItem",
+      "type": "itemstack",
+      "scope": "map",
+      "value": "ItemStack.EMPTY"
+    }
+  ],
   "sound_elements": [
     {
       "name": "chopper_craft",
@@ -245,7 +314,16 @@
     "children": [
       {
         "name": "chopper",
-        "children": []
+        "children": [
+          {
+            "name": "triggers",
+            "children": []
+          },
+          {
+            "name": "recipes",
+            "children": []
+          }
+        ]
       },
       {
         "name": "porkchop",

@@ -4,9 +4,6 @@ package fuetcraft.world.inventory;
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -29,15 +26,8 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-import fuetcraft.procedures.ChopperGetOutputSlotContentProcedure;
-
-import fuetcraft.network.ChopperGuiSlotMessage;
-
 import fuetcraft.init.FuetcraftModMenus;
 
-import fuetcraft.FuetcraftMod;
-
-@Mod.EventBusSubscriber
 public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -114,18 +104,6 @@ public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 			private final int slot = 2;
 			private int x = ChopperGuiMenu.this.x;
 			private int y = ChopperGuiMenu.this.y;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(2, 1, 0);
-			}
-
-			@Override
-			public void onQuickCraft(ItemStack a, ItemStack b) {
-				super.onQuickCraft(a, b);
-				slotChanged(2, 2, b.getCount() - a.getCount());
-			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -280,26 +258,7 @@ public class ChopperGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 		}
 	}
 
-	private void slotChanged(int slotid, int ctype, int meta) {
-		if (this.world != null && this.world.isClientSide()) {
-			FuetcraftMod.PACKET_HANDLER.sendToServer(new ChopperGuiSlotMessage(slotid, x, y, z, ctype, meta));
-			ChopperGuiSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
-		}
-	}
-
 	public Map<Integer, Slot> get() {
 		return customSlots;
-	}
-
-	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		Player entity = event.player;
-		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof ChopperGuiMenu) {
-			Level world = entity.level();
-			double x = entity.getX();
-			double y = entity.getY();
-			double z = entity.getZ();
-			ChopperGetOutputSlotContentProcedure.execute(entity);
-		}
 	}
 }

@@ -38,8 +38,8 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 2.5,
+    "resistance": 25.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
@@ -61,7 +61,7 @@
     "material": {
       "value": "NONE"
     },
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -103,7 +103,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "vanillaToolTier": "NONE",
+    "vanillaToolTier": "IRON",
     "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "ChopperGui",
@@ -122,6 +122,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "ChopperProcess"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

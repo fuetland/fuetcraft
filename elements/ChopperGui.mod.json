@@ -56,12 +56,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "onTakenFromSlot": {
-            "name": "ChopperTakeOutputSlotContent"
-          },
-          "onStackTransfer": {
-            "name": "ChopperTakeOutputSlotContentShift"
-          },
           "x": 258,
           "y": 71,
           "locked": false
@@ -104,9 +98,6 @@
         }
       }
     ],
-    "onTick": {
-      "name": "ChopperGetOutputSlotContent"
-    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,
