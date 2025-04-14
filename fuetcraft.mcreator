@@ -140,7 +140,7 @@
           }
         ]
       },
-      "path": "~/chopper/triggers"
+      "path": "~/chopper/procedures"
     },
     {
       "name": "ChopperExecutionSummary",
@@ -171,7 +171,7 @@
           }
         ]
       },
-      "path": "~/chopper/triggers"
+      "path": "~/chopper/procedures"
     },
     {
       "name": "ChopperResetVariables",
@@ -202,7 +202,7 @@
           }
         ]
       },
-      "path": "~/chopper/triggers"
+      "path": "~/chopper/procedures"
     },
     {
       "name": "ChopperProcess",
@@ -233,7 +233,7 @@
           }
         ]
       },
-      "path": "~/chopper/triggers"
+      "path": "~/chopper/procedures"
     },
     {
       "name": "ChopperGetChoppedChopFromNBT",
@@ -265,7 +265,7 @@
           }
         ]
       },
-      "path": "~/chopper/triggers"
+      "path": "~/chopper/procedures"
     },
     {
       "name": "ChopperValidateOutputSlot",
@@ -296,7 +296,25 @@
           }
         ]
       },
-      "path": "~/chopper/triggers"
+      "path": "~/chopper/procedures"
+    },
+    {
+      "name": "SetValuteToGlobalVariables",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_valute_to_global_variables",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/SetValuteToGlobalVariablesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -304,43 +322,43 @@
       "name": "fuetMining",
       "type": "string",
       "scope": "map",
-      "value": "\"mining-fuet\""
+      "value": ""
     },
     {
       "name": "fuetExploration",
       "type": "string",
       "scope": "map",
-      "value": "\"exploration-fuet\""
+      "value": ""
     },
     {
       "name": "fuetCombat",
       "type": "string",
       "scope": "map",
-      "value": "\"combat-fuet\""
+      "value": ""
     },
     {
       "name": "fuetSwimming",
       "type": "string",
       "scope": "map",
-      "value": "\"swimming-fuet\""
+      "value": ""
     },
     {
       "name": "fuetEspetec",
       "type": "string",
       "scope": "map",
-      "value": "\"espetec-fuet\""
+      "value": ""
     },
     {
       "name": "fuetExpired",
       "type": "string",
       "scope": "map",
-      "value": "\"expired-fuet\""
+      "value": ""
     },
     {
       "name": "fuetNormal",
       "type": "string",
       "scope": "map",
-      "value": "\"normal-fuet\""
+      "value": ""
     }
   ],
   "sound_elements": [
@@ -385,7 +403,7 @@
         "name": "chopper",
         "children": [
           {
-            "name": "triggers",
+            "name": "procedures",
             "children": []
           },
           {

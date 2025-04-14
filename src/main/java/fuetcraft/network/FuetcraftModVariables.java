@@ -87,13 +87,13 @@ public class FuetcraftModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "fuetcraft_mapvars";
-		public String fuetMining = "\"mining-fuet\"";
-		public String fuetExploration = "\"exploration-fuet\"";
-		public String fuetCombat = "\"combat-fuet\"";
-		public String fuetSwimming = "\"swimming-fuet\"";
-		public String fuetEspetec = "\"espetec-fuet\"";
-		public String fuetExpired = "\"expired-fuet\"";
-		public String fuetNormal = "\"normal-fuet\"";
+		public String fuetMining = "";
+		public String fuetExploration = "";
+		public String fuetCombat = "";
+		public String fuetSwimming = "";
+		public String fuetEspetec = "";
+		public String fuetExpired = "";
+		public String fuetNormal = "";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
