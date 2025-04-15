@@ -27,8 +27,8 @@
       "metadata": {
         "files": [
           "src/main/java/fuetcraft/world/inventory/ChopperGuiMenu.java",
-          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java",
-          "src/main/java/fuetcraft/network/ChopperGuiSlotMessage.java"
+          "src/main/java/fuetcraft/network/ChopperGuiSlotMessage.java",
+          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java"
         ]
       },
       "path": "~/chopper"
@@ -315,6 +315,198 @@
           }
         ]
       }
+    },
+    {
+      "name": "DefaultRigthArrowVisibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "default_rigth_arrow_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/DefaultRigthArrowVisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/chopper/procedures/right-arrow-procedures"
+    },
+    {
+      "name": "RigthArrow20Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigth_arrow_20_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/RigthArrow20VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/chopper/procedures/right-arrow-procedures"
+    },
+    {
+      "name": "RigthArrow40Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigth_arrow_40_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/RigthArrow40VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/chopper/procedures/right-arrow-procedures"
+    },
+    {
+      "name": "RigthArrow60Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigth_arrow_60_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/RigthArrow60VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/chopper/procedures/right-arrow-procedures"
+    },
+    {
+      "name": "RigthArrow80Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigth_arrow_80_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/RigthArrow80VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/chopper/procedures/right-arrow-procedures"
+    },
+    {
+      "name": "RigthArrow100Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigth_arrow_100_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/RigthArrow100VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/chopper/procedures/right-arrow-procedures"
     }
   ],
   "variable_elements": [
@@ -404,7 +596,12 @@
         "children": [
           {
             "name": "procedures",
-            "children": []
+            "children": [
+              {
+                "name": "right-arrow-procedures",
+                "children": []
+              }
+            ]
           },
           {
             "name": "recipes",

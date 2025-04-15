@@ -91,6 +91,9 @@
         "data": {
           "image": "right-arrow.png",
           "use1Xscale": true,
+          "displayCondition": {
+            "name": "DefaultRigthArrowVisibility"
+          },
           "x": 222,
           "y": 71,
           "locked": false
@@ -102,6 +105,71 @@
           "image": "add.png",
           "use1Xscale": true,
           "x": 168,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "right-arrow-20.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RigthArrow20Visibility"
+          },
+          "x": 222,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "right-arrow-40.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RigthArrow40Visibility"
+          },
+          "x": 222,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "right-arrow-60.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RigthArrow60Visibility"
+          },
+          "x": 222,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "right-arrow-80.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RigthArrow80Visibility"
+          },
+          "x": 222,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "right-arrow-100.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RigthArrow100Visibility"
+          },
+          "x": 222,
           "y": 71,
           "locked": false
         }

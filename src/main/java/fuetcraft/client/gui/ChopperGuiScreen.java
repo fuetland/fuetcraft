@@ -12,6 +12,13 @@ import java.util.HashMap;
 
 import fuetcraft.world.inventory.ChopperGuiMenu;
 
+import fuetcraft.procedures.RigthArrow80VisibilityProcedure;
+import fuetcraft.procedures.RigthArrow60VisibilityProcedure;
+import fuetcraft.procedures.RigthArrow40VisibilityProcedure;
+import fuetcraft.procedures.RigthArrow20VisibilityProcedure;
+import fuetcraft.procedures.RigthArrow100VisibilityProcedure;
+import fuetcraft.procedures.DefaultRigthArrowVisibilityProcedure;
+
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class ChopperGuiScreen extends AbstractContainerScreen<ChopperGuiMenu> {
@@ -46,11 +53,27 @@ public class ChopperGuiScreen extends AbstractContainerScreen<ChopperGuiMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
-		guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
+		if (DefaultRigthArrowVisibilityProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
+		}
 
 		guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/add.png"), this.leftPos + 42, this.topPos + 34, 0, 0, 17, 17, 17, 17);
 
+		if (RigthArrow20VisibilityProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow-20.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
+		}
+		if (RigthArrow40VisibilityProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow-40.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
+		}
+		if (RigthArrow60VisibilityProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow-60.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
+		}
+		if (RigthArrow80VisibilityProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow-80.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
+		}
+		if (RigthArrow100VisibilityProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow-100.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
+		}
 		RenderSystem.disableBlend();
 	}
 
