@@ -24,9 +24,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "ChopperValidateOutputSlot"
-          },
           "x": 141,
           "y": 71,
           "locked": false
@@ -46,9 +43,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "ChopperValidateOutputSlot"
-          },
           "x": 195,
           "y": 71,
           "locked": false
@@ -62,9 +56,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "ChopperValidateOutputSlot"
-          },
           "x": 258,
           "y": 71,
           "locked": false

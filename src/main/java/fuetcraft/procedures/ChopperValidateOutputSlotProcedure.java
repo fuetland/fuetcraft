@@ -1,5 +1,6 @@
 package fuetcraft.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.state.BlockState;
@@ -8,10 +9,14 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import fuetcraft.FuetcraftMod;
 
 public class ChopperValidateOutputSlotProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -57,6 +62,14 @@ public class ChopperValidateOutputSlotProcedure {
 					_blockEntity.getPersistentData().putDouble("tickNumberUntilFinishingChopping", 100);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			FuetcraftMod.LOGGER.info("Esta entrado al if de validaci\u00F3n");
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:chopper_craft")), SoundSource.BLOCKS, (float) 0.3, 1);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:chopper_craft")), SoundSource.BLOCKS, (float) 0.3, 1, false);
+				}
 			}
 		}
 	}
