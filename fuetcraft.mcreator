@@ -27,8 +27,8 @@
       "metadata": {
         "files": [
           "src/main/java/fuetcraft/world/inventory/ChopperGuiMenu.java",
-          "src/main/java/fuetcraft/network/ChopperGuiSlotMessage.java",
-          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java"
+          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java",
+          "src/main/java/fuetcraft/network/ChopperGuiSlotMessage.java"
         ]
       },
       "path": "~/chopper"
@@ -317,38 +317,6 @@
       }
     },
     {
-      "name": "DefaultRigthArrowVisibility",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "default_rigth_arrow_visibility",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/fuetcraft/procedures/DefaultRigthArrowVisibilityProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/chopper/procedures/right-arrow-procedures"
-    },
-    {
       "name": "RigthArrow20Visibility",
       "type": "procedure",
       "compiles": true,
@@ -378,7 +346,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures/right-arrow-procedures"
+      "path": "~/chopper/procedures/right-arrow"
     },
     {
       "name": "RigthArrow40Visibility",
@@ -410,7 +378,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures/right-arrow-procedures"
+      "path": "~/chopper/procedures/right-arrow"
     },
     {
       "name": "RigthArrow60Visibility",
@@ -442,7 +410,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures/right-arrow-procedures"
+      "path": "~/chopper/procedures/right-arrow"
     },
     {
       "name": "RigthArrow80Visibility",
@@ -474,7 +442,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures/right-arrow-procedures"
+      "path": "~/chopper/procedures/right-arrow"
     },
     {
       "name": "RigthArrow100Visibility",
@@ -506,7 +474,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures/right-arrow-procedures"
+      "path": "~/chopper/procedures/right-arrow"
     }
   ],
   "variable_elements": [
@@ -598,7 +566,7 @@
             "name": "procedures",
             "children": [
               {
-                "name": "right-arrow-procedures",
+                "name": "right-arrow",
                 "children": []
               }
             ]

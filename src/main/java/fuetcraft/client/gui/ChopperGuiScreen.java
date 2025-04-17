@@ -17,7 +17,6 @@ import fuetcraft.procedures.RigthArrow60VisibilityProcedure;
 import fuetcraft.procedures.RigthArrow40VisibilityProcedure;
 import fuetcraft.procedures.RigthArrow20VisibilityProcedure;
 import fuetcraft.procedures.RigthArrow100VisibilityProcedure;
-import fuetcraft.procedures.DefaultRigthArrowVisibilityProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -53,11 +52,10 @@ public class ChopperGuiScreen extends AbstractContainerScreen<ChopperGuiMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		if (DefaultRigthArrowVisibilityProcedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
-		}
 
 		guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/add.png"), this.leftPos + 42, this.topPos + 34, 0, 0, 17, 17, 17, 17);
+
+		guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
 
 		if (RigthArrow20VisibilityProcedure.execute(world, x, y, z)) {
 			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow-20.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);

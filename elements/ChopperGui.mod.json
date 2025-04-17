@@ -89,12 +89,9 @@
       {
         "type": "image",
         "data": {
-          "image": "right-arrow.png",
+          "image": "add.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "DefaultRigthArrowVisibility"
-          },
-          "x": 222,
+          "x": 168,
           "y": 71,
           "locked": false
         }
@@ -102,9 +99,9 @@
       {
         "type": "image",
         "data": {
-          "image": "add.png",
+          "image": "right-arrow.png",
           "use1Xscale": true,
-          "x": 168,
+          "x": 222,
           "y": 71,
           "locked": false
         }
