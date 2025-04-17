@@ -47,7 +47,7 @@ public class ChopperGetChoppedChopFromNBTProcedure {
 				return "";
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "currentTypeOfFuet")).equals(FuetcraftModVariables.MapVariables.get(world).fuetCombat)) {
-			return new ItemStack(Blocks.AIR);
+			return new ItemStack(FuetcraftModItems.COMBAT_PORKCHOP_CHOPPED.get());
 		} else if ((new Object() {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -56,7 +56,7 @@ public class ChopperGetChoppedChopFromNBTProcedure {
 				return "";
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "currentTypeOfFuet")).equals(FuetcraftModVariables.MapVariables.get(world).fuetSwimming)) {
-			return new ItemStack(Blocks.AIR);
+			return new ItemStack(FuetcraftModItems.SWIMMING_PORKCHOP_CHOPPED.get());
 		} else if ((new Object() {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -65,7 +65,7 @@ public class ChopperGetChoppedChopFromNBTProcedure {
 				return "";
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "currentTypeOfFuet")).equals(FuetcraftModVariables.MapVariables.get(world).fuetEspetec)) {
-			return new ItemStack(Blocks.AIR);
+			return new ItemStack(FuetcraftModItems.TARRADELLAS_PORKCHOP_CHOPPED.get());
 		} else if ((new Object() {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -74,7 +74,7 @@ public class ChopperGetChoppedChopFromNBTProcedure {
 				return "";
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "currentTypeOfFuet")).equals(FuetcraftModVariables.MapVariables.get(world).fuetExpired)) {
-			return new ItemStack(Blocks.AIR);
+			return new ItemStack(FuetcraftModItems.EXPIRED_PORKCHOP_CHOPPED.get());
 		}
 		return new ItemStack(Blocks.AIR);
 	}

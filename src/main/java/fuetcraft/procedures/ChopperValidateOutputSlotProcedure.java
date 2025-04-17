@@ -16,8 +16,6 @@ import net.minecraft.core.BlockPos;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import fuetcraft.FuetcraftMod;
-
 public class ChopperValidateOutputSlotProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (new Object() {
@@ -63,7 +61,6 @@ public class ChopperValidateOutputSlotProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			FuetcraftMod.LOGGER.info("Esta entrado al if de validaci\u00F3n");
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:chopper_craft")), SoundSource.BLOCKS, (float) 0.3, 1);

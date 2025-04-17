@@ -151,7 +151,24 @@
         "files": [
           "src/main/java/fuetcraft/procedures/ChopperExecutionSummaryProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/chopper/procedures"
     },
@@ -457,6 +474,62 @@
         ]
       },
       "path": "~/chopper/procedures/right-arrow"
+    },
+    {
+      "name": "ExpiredPorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "expired_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/expired_porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/ExpiredPorkchopChoppedItem.java"
+        ]
+      },
+      "path": "~/porkchop"
+    },
+    {
+      "name": "SwimmingPorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swimming_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/swimming_porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/SwimmingPorkchopChoppedItem.java"
+        ]
+      },
+      "path": "~/porkchop"
+    },
+    {
+      "name": "CombatPorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combat_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/combat_porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/CombatPorkchopChoppedItem.java"
+        ]
+      },
+      "path": "~/porkchop"
+    },
+    {
+      "name": "TarradellasPorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tarradellas_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/tarradellas_porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/TarradellasPorkchopChoppedItem.java"
+        ]
+      },
+      "path": "~/porkchop"
     }
   ],
   "variable_elements": [
@@ -530,8 +603,12 @@
   "language_map": {
     "en_us": {
       "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
+      "item.fuetcraft.expired_porkchop_chopped": "Expired Porkchop Chopped",
       "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
+      "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped",
+      "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
       "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
+      "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "block.fuetcraft.chopper": "Chopper",
       "item_group.fuetcraft.fuetcraft": "Fuetcraft",
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",

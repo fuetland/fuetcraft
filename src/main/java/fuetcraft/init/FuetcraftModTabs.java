@@ -23,5 +23,9 @@ public class FuetcraftModTabs {
 				tabData.accept(FuetcraftModItems.PORKCHOP_CHOPPED.get());
 				tabData.accept(FuetcraftModItems.MINING_PORKCHOP_CHOPPED.get());
 				tabData.accept(FuetcraftModItems.EXPLORER_PORKCHOP_CHOPPED.get());
+				tabData.accept(FuetcraftModItems.EXPIRED_PORKCHOP_CHOPPED.get());
+				tabData.accept(FuetcraftModItems.SWIMMING_PORKCHOP_CHOPPED.get());
+				tabData.accept(FuetcraftModItems.COMBAT_PORKCHOP_CHOPPED.get());
+				tabData.accept(FuetcraftModItems.TARRADELLAS_PORKCHOP_CHOPPED.get());
 			}).withSearchBar().build());
 }

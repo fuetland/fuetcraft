@@ -1,7 +1,11 @@
 {
   "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
+  "item.fuetcraft.expired_porkchop_chopped": "Expired Porkchop Chopped",
   "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
+  "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped",
+  "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
   "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
+  "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
   "block.fuetcraft.chopper": "Chopper",
   "item_group.fuetcraft.fuetcraft": "Fuetcraft",
   "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",

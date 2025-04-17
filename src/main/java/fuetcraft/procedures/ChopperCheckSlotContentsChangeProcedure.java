@@ -62,7 +62,7 @@ public class ChopperCheckSlotContentsChangeProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.ENDER_PEARL && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == Blocks.AIR.asItem())) {
+				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.ENDER_PEARL && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.COMBAT_PORKCHOP_CHOPPED.get())) {
 					ChopperResetVariablesProcedure.execute(world, x, y, z);
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -72,7 +72,7 @@ public class ChopperCheckSlotContentsChangeProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.SALMON && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == Blocks.AIR.asItem())) {
+				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.SALMON && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.SWIMMING_PORKCHOP_CHOPPED.get())) {
 					ChopperResetVariablesProcedure.execute(world, x, y, z);
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -82,7 +82,7 @@ public class ChopperCheckSlotContentsChangeProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.NETHERITE_SCRAP && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == Blocks.AIR.asItem())) {
+				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.NETHERITE_SCRAP && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.TARRADELLAS_PORKCHOP_CHOPPED.get())) {
 					ChopperResetVariablesProcedure.execute(world, x, y, z);
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -92,7 +92,7 @@ public class ChopperCheckSlotContentsChangeProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.POISONOUS_POTATO && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == Blocks.AIR.asItem())) {
+				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.POISONOUS_POTATO && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.EXPIRED_PORKCHOP_CHOPPED.get())) {
 					ChopperResetVariablesProcedure.execute(world, x, y, z);
 				}
 			} else {
