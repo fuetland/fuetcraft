@@ -655,6 +655,20 @@
         "files": []
       },
       "path": "~/blocks/chopper"
+    },
+    {
+      "name": "Fuet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/fuet.json",
+          "src/main/java/fuetcraft/item/FuetItem.java"
+        ]
+      },
+      "path": "~/items/fuets"
     }
   ],
   "variable_elements": [
@@ -757,6 +771,7 @@
       "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
+      "item.fuetcraft.fuet": "Fuet",
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
       "subtitles.chopper_craft": ""
     }
@@ -782,6 +797,10 @@
         "children": [
           {
             "name": "porkchop-chopped",
+            "children": []
+          },
+          {
+            "name": "fuets",
             "children": []
           }
         ]

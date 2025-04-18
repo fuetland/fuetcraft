@@ -4,7 +4,7 @@
   "definition": {
     "name": "Fuetcraft",
     "icon": {
-      "value": "Items.DEBUG_STICK"
+      "value": "CUSTOM:Fuet"
     },
     "showSearch": true
   }
