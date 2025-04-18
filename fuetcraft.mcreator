@@ -587,6 +587,12 @@
       "type": "string",
       "scope": "map",
       "value": ""
+    },
+    {
+      "name": "processTimer",
+      "type": "string",
+      "scope": "map",
+      "value": ""
     }
   ],
   "sound_elements": [

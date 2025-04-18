@@ -59,7 +59,7 @@ public class ChopperValidateOutputSlotProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble("tickNumberUntilFinishingChopping", 100);
+					_blockEntity.getPersistentData().putDouble(FuetcraftModVariables.MapVariables.get(world).processTimer, 100);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

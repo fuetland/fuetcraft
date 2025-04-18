@@ -23,14 +23,14 @@ public class RigthArrow80VisibilityProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, BlockPos.containing(x, y, z), "tickNumberUntilFinishingChopping") < 20 && new Object() {
+			}.getValue(world, BlockPos.containing(x, y, z), FuetcraftModVariables.MapVariables.get(world).processTimer) < 20 && new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, BlockPos.containing(x, y, z), "tickNumberUntilFinishingChopping") >= 2) {
+			}.getValue(world, BlockPos.containing(x, y, z), FuetcraftModVariables.MapVariables.get(world).processTimer) >= 2) {
 				return true;
 			}
 		}
