@@ -537,6 +537,100 @@
         ]
       },
       "path": "~/chopper/procedures"
+    },
+    {
+      "name": "ChopperGuiTooltipSlot0Text",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_gui_tooltip_slot_0_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperGuiTooltipSlot0TextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/chopper/procedures/tooltips"
+    },
+    {
+      "name": "GuiTooltipSlot0Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_tooltip_slot_0_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuiTooltipSlot0VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures/tooltips-visibility"
+    },
+    {
+      "name": "GuiTooltipSlot1Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_tooltip_slot_1_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuiTooltipSlot1VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures/tooltips-visibility"
+    },
+    {
+      "name": "ChopperGuiTooltipSlot1Text",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_gui_tooltip_slot_1_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperGuiTooltipSlot1TextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/chopper/procedures/tooltips"
     }
   ],
   "variable_elements": [
@@ -628,14 +722,16 @@
   "language_map": {
     "en_us": {
       "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
-      "item.fuetcraft.expired_porkchop_chopped": "Expired Porkchop Chopped",
-      "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
-      "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped",
       "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
-      "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
-      "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "block.fuetcraft.chopper": "Chopper",
       "item_group.fuetcraft.fuetcraft": "Fuetcraft",
+      "item.fuetcraft.expired_porkchop_chopped": "Expired Porkchop Chopped",
+      "gui.fuetcraft.chopper_gui.tooltip_slot1": "Valid items:",
+      "gui.fuetcraft.chopper_gui.tooltip_slot0": "Only raw pork chop are allowed.",
+      "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
+      "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped",
+      "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
+      "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
       "subtitles.chopper_craft": ""
     }
@@ -648,7 +744,12 @@
         "children": [
           {
             "name": "procedures",
-            "children": []
+            "children": [
+              {
+                "name": "tooltips",
+                "children": []
+              }
+            ]
           },
           {
             "name": "recipes",
@@ -665,6 +766,10 @@
         "children": [
           {
             "name": "right-arrow-animation",
+            "children": []
+          },
+          {
+            "name": "tooltips-visibility",
             "children": []
           }
         ]

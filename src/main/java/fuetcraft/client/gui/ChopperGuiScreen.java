@@ -8,7 +8,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
+import java.util.stream.Collectors;
 import java.util.HashMap;
+import java.util.Arrays;
 
 import fuetcraft.world.inventory.ChopperGuiMenu;
 
@@ -17,6 +19,10 @@ import fuetcraft.procedures.RigthArrow60VisibilityProcedure;
 import fuetcraft.procedures.RigthArrow40VisibilityProcedure;
 import fuetcraft.procedures.RigthArrow20VisibilityProcedure;
 import fuetcraft.procedures.RigthArrow100VisibilityProcedure;
+import fuetcraft.procedures.GuiTooltipSlot1VisibilityProcedure;
+import fuetcraft.procedures.GuiTooltipSlot0VisibilityProcedure;
+import fuetcraft.procedures.ChopperGuiTooltipSlot1TextProcedure;
+import fuetcraft.procedures.ChopperGuiTooltipSlot0TextProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -44,6 +50,20 @@ public class ChopperGuiScreen extends AbstractContainerScreen<ChopperGuiMenu> {
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		if (GuiTooltipSlot0VisibilityProcedure.execute(world, x, y, z))
+			if (mouseX > leftPos + 15 && mouseX < leftPos + 39 && mouseY > topPos + 34 && mouseY < topPos + 58) {
+				String hoverText = ChopperGuiTooltipSlot0TextProcedure.execute();
+				if (hoverText != null) {
+					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+				}
+			}
+		if (GuiTooltipSlot1VisibilityProcedure.execute(world, x, y, z))
+			if (mouseX > leftPos + 69 && mouseX < leftPos + 93 && mouseY > topPos + 34 && mouseY < topPos + 58) {
+				String hoverText = ChopperGuiTooltipSlot1TextProcedure.execute();
+				if (hoverText != null) {
+					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+				}
+			}
 	}
 
 	@Override

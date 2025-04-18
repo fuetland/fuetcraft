@@ -161,6 +161,42 @@
           "y": 71,
           "locked": false
         }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_slot0",
+          "text": {
+            "fixedValue": "",
+            "name": "ChopperGuiTooltipSlot0Text"
+          },
+          "displayCondition": {
+            "name": "GuiTooltipSlot0Visibility"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 141,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_slot1",
+          "text": {
+            "fixedValue": "",
+            "name": "ChopperGuiTooltipSlot1Text"
+          },
+          "displayCondition": {
+            "name": "GuiTooltipSlot1Visibility"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 195,
+          "y": 71,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {
