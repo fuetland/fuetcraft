@@ -815,15 +815,17 @@
     "modid": "fuetcraft",
     "modName": "fuetcraft",
     "version": "1.0.0",
-    "author": "victo, MCreator",
+    "author": "Fuetland",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
     "serverSideOnly": false,
+    "modPicture": "logo-fuetcraft-landscape",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "fuetcraft"
   },
   "mcreatorVersion": 202500113416
