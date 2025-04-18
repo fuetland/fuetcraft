@@ -16,7 +16,7 @@
           "src/main/resources/assets/fuetcraft/models/block/chopper.json"
         ]
       },
-      "path": "~/chopper"
+      "path": "~/blocks/chopper"
     },
     {
       "name": "ChopperGui",
@@ -30,7 +30,7 @@
           "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java"
         ]
       },
-      "path": "~/chopper"
+      "path": "~/blocks/chopper"
     },
     {
       "name": "Fuetcraft",
@@ -54,7 +54,7 @@
           "src/main/java/fuetcraft/item/PorkchopChoppedItem.java"
         ]
       },
-      "path": "~/porkchop"
+      "path": "~/items/porkchop-chopped"
     },
     {
       "name": "ChopperRecipe",
@@ -67,7 +67,7 @@
           "src/main/resources/data/fuetcraft/recipes/chopper_recipe.json"
         ]
       },
-      "path": "~/chopper/recipes"
+      "path": "~/blocks/chopper/recipes"
     },
     {
       "name": "ChopperRecipeSimetric",
@@ -80,7 +80,7 @@
           "src/main/resources/data/fuetcraft/recipes/chopper_recipe_simetric.json"
         ]
       },
-      "path": "~/chopper/recipes"
+      "path": "~/blocks/chopper/recipes"
     },
     {
       "name": "MiningPorkchopChopped",
@@ -94,7 +94,7 @@
           "src/main/java/fuetcraft/item/MiningPorkchopChoppedItem.java"
         ]
       },
-      "path": "~/porkchop"
+      "path": "~/items/porkchop-chopped"
     },
     {
       "name": "ExplorerPorkchopChopped",
@@ -108,7 +108,7 @@
           "src/main/java/fuetcraft/item/ExplorerPorkchopChoppedItem.java"
         ]
       },
-      "path": "~/porkchop"
+      "path": "~/items/porkchop-chopped"
     },
     {
       "name": "ChopperCheckSlotContentsChange",
@@ -139,7 +139,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures"
+      "path": "~/blocks/chopper/procedures"
     },
     {
       "name": "ChopperExecutionSummary",
@@ -184,7 +184,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures"
+      "path": "~/blocks/chopper/procedures"
     },
     {
       "name": "ChopperProcess",
@@ -215,7 +215,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures"
+      "path": "~/blocks/chopper/procedures"
     },
     {
       "name": "ChopperGetChoppedChopFromNBT",
@@ -247,7 +247,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures"
+      "path": "~/blocks/chopper/procedures"
     },
     {
       "name": "ChopperValidateOutputSlot",
@@ -278,7 +278,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures"
+      "path": "~/blocks/chopper/procedures"
     },
     {
       "name": "SetValuteToGlobalVariables",
@@ -470,7 +470,7 @@
           "src/main/java/fuetcraft/item/ExpiredPorkchopChoppedItem.java"
         ]
       },
-      "path": "~/porkchop"
+      "path": "~/items/porkchop-chopped"
     },
     {
       "name": "SwimmingPorkchopChopped",
@@ -484,7 +484,7 @@
           "src/main/java/fuetcraft/item/SwimmingPorkchopChoppedItem.java"
         ]
       },
-      "path": "~/porkchop"
+      "path": "~/items/porkchop-chopped"
     },
     {
       "name": "CombatPorkchopChopped",
@@ -498,7 +498,7 @@
           "src/main/java/fuetcraft/item/CombatPorkchopChoppedItem.java"
         ]
       },
-      "path": "~/porkchop"
+      "path": "~/items/porkchop-chopped"
     },
     {
       "name": "TarradellasPorkchopChopped",
@@ -512,7 +512,7 @@
           "src/main/java/fuetcraft/item/TarradellasPorkchopChoppedItem.java"
         ]
       },
-      "path": "~/porkchop"
+      "path": "~/items/porkchop-chopped"
     },
     {
       "name": "ChopperInventorySlotAutomationPlaceCondition",
@@ -536,7 +536,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures"
+      "path": "~/blocks/chopper/procedures"
     },
     {
       "name": "ChopperGuiTooltipSlot0Text",
@@ -551,7 +551,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/chopper/procedures/tooltips"
+      "path": "~/blocks/chopper/procedures/tooltips"
     },
     {
       "name": "GuiTooltipSlot0Visibility",
@@ -630,7 +630,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/chopper/procedures/tooltips"
+      "path": "~/blocks/chopper/procedures/tooltips"
     }
   ],
   "variable_elements": [
@@ -740,28 +740,6 @@
     "name": "~",
     "children": [
       {
-        "name": "chopper",
-        "children": [
-          {
-            "name": "procedures",
-            "children": [
-              {
-                "name": "tooltips",
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "recipes",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "porkchop",
-        "children": []
-      },
-      {
         "name": "procedures",
         "children": [
           {
@@ -771,6 +749,38 @@
           {
             "name": "tooltips-visibility",
             "children": []
+          }
+        ]
+      },
+      {
+        "name": "items",
+        "children": [
+          {
+            "name": "porkchop-chopped",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "blocks",
+        "children": [
+          {
+            "name": "chopper",
+            "children": [
+              {
+                "name": "procedures",
+                "children": [
+                  {
+                    "name": "tooltips",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "recipes",
+                "children": []
+              }
+            ]
           }
         ]
       }
