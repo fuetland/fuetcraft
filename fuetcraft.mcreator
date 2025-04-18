@@ -631,6 +631,30 @@
         "dependencies": []
       },
       "path": "~/blocks/chopper/procedures/tooltips"
+    },
+    {
+      "name": "ChopperProfession",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_profession",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/textures/entity/villager/profession/chopper_profession.png.mcmeta"
+        ]
+      },
+      "path": "~/blocks/chopper"
+    },
+    {
+      "name": "ChopperVillagerTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_villager_trade",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/blocks/chopper"
     }
   ],
   "variable_elements": [
@@ -732,6 +756,7 @@
       "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped",
       "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
+      "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
       "subtitles.chopper_craft": ""
     }

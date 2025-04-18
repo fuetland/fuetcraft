@@ -1,0 +1,16 @@
+{
+  "_fv": 77,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Chopper Profession",
+    "pointOfInterest": {
+      "value": "CUSTOM:Chopper"
+    },
+    "actionSound": {
+      "value": "CUSTOM:chopper_craft"
+    },
+    "hat": "Partial",
+    "professionTextureFile": "butcher.png",
+    "zombifiedProfessionTextureFile": "zombified-butcher.png"
+  }
+}

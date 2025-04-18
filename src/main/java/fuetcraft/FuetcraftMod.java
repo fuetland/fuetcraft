@@ -26,6 +26,7 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
+import fuetcraft.init.FuetcraftModVillagerProfessions;
 import fuetcraft.init.FuetcraftModTabs;
 import fuetcraft.init.FuetcraftModSounds;
 import fuetcraft.init.FuetcraftModMenus;
@@ -50,6 +51,7 @@ public class FuetcraftMod {
 
 		FuetcraftModTabs.REGISTRY.register(bus);
 
+		FuetcraftModVillagerProfessions.PROFESSIONS.register(bus);
 		FuetcraftModMenus.REGISTRY.register(bus);
 
 		// Start of user code block mod init

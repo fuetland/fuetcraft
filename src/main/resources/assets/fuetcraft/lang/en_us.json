@@ -10,6 +10,7 @@
   "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped",
   "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
   "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
+  "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
   "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
   "subtitles.chopper_craft": ""
 }
