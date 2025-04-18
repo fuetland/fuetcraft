@@ -581,6 +581,12 @@
       "type": "string",
       "scope": "map",
       "value": ""
+    },
+    {
+      "name": "processIsActive",
+      "type": "string",
+      "scope": "map",
+      "value": ""
     }
   ],
   "sound_elements": [
@@ -646,6 +652,15 @@
       {
         "name": "porkchop",
         "children": []
+      },
+      {
+        "name": "procedures",
+        "children": [
+          {
+            "name": "right-arrow-animation",
+            "children": []
+          }
+        ]
       }
     ]
   },

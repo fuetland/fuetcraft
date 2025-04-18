@@ -28,7 +28,7 @@ public class ChopperProcessProcedure {
 					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "isChopping"))) {
+		}.getValue(world, BlockPos.containing(x, y, z), FuetcraftModVariables.MapVariables.get(world).processIsActive))) {
 			if (new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);

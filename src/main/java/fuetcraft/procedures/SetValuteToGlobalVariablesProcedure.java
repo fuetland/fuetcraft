@@ -22,21 +22,21 @@ public class SetValuteToGlobalVariablesProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world) {
-		if ((FuetcraftModVariables.MapVariables.get(world).fuetNormal).equals("")) {
-			FuetcraftModVariables.MapVariables.get(world).fuetMining = "mining-fuet";
-			FuetcraftModVariables.MapVariables.get(world).syncData(world);
-			FuetcraftModVariables.MapVariables.get(world).fuetExploration = "exploration-fuet";
-			FuetcraftModVariables.MapVariables.get(world).syncData(world);
-			FuetcraftModVariables.MapVariables.get(world).fuetCombat = "combat-fuet";
-			FuetcraftModVariables.MapVariables.get(world).syncData(world);
-			FuetcraftModVariables.MapVariables.get(world).fuetSwimming = "swimming-fuet";
-			FuetcraftModVariables.MapVariables.get(world).syncData(world);
-			FuetcraftModVariables.MapVariables.get(world).fuetEspetec = "espetec-fuet";
-			FuetcraftModVariables.MapVariables.get(world).syncData(world);
-			FuetcraftModVariables.MapVariables.get(world).fuetExpired = "expired-fuet";
-			FuetcraftModVariables.MapVariables.get(world).syncData(world);
-			FuetcraftModVariables.MapVariables.get(world).fuetNormal = "normal-fuet";
-			FuetcraftModVariables.MapVariables.get(world).syncData(world);
-		}
+		FuetcraftModVariables.MapVariables.get(world).fuetMining = "mining-fuet";
+		FuetcraftModVariables.MapVariables.get(world).syncData(world);
+		FuetcraftModVariables.MapVariables.get(world).fuetExploration = "exploration-fuet";
+		FuetcraftModVariables.MapVariables.get(world).syncData(world);
+		FuetcraftModVariables.MapVariables.get(world).fuetCombat = "combat-fuet";
+		FuetcraftModVariables.MapVariables.get(world).syncData(world);
+		FuetcraftModVariables.MapVariables.get(world).fuetSwimming = "swimming-fuet";
+		FuetcraftModVariables.MapVariables.get(world).syncData(world);
+		FuetcraftModVariables.MapVariables.get(world).fuetEspetec = "espetec-fuet";
+		FuetcraftModVariables.MapVariables.get(world).syncData(world);
+		FuetcraftModVariables.MapVariables.get(world).fuetExpired = "expired-fuet";
+		FuetcraftModVariables.MapVariables.get(world).syncData(world);
+		FuetcraftModVariables.MapVariables.get(world).fuetNormal = "normal-fuet";
+		FuetcraftModVariables.MapVariables.get(world).syncData(world);
+		FuetcraftModVariables.MapVariables.get(world).processIsActive = "process-is-active";
+		FuetcraftModVariables.MapVariables.get(world).syncData(world);
 	}
 }

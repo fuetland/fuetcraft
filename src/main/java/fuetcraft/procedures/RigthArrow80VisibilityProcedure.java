@@ -4,6 +4,8 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.BlockPos;
 
+import fuetcraft.network.FuetcraftModVariables;
+
 public class RigthArrow80VisibilityProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
 		if (new Object() {
@@ -13,7 +15,7 @@ public class RigthArrow80VisibilityProcedure {
 					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "isChopping")) {
+		}.getValue(world, BlockPos.containing(x, y, z), FuetcraftModVariables.MapVariables.get(world).processIsActive)) {
 			if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);

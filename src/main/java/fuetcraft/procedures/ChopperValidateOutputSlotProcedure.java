@@ -16,6 +16,8 @@ import net.minecraft.core.BlockPos;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import fuetcraft.network.FuetcraftModVariables;
+
 public class ChopperValidateOutputSlotProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (new Object() {
@@ -48,7 +50,7 @@ public class ChopperValidateOutputSlotProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putBoolean("isChopping", true);
+					_blockEntity.getPersistentData().putBoolean(FuetcraftModVariables.MapVariables.get(world).processIsActive, true);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

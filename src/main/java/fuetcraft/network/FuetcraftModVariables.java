@@ -94,6 +94,7 @@ public class FuetcraftModVariables {
 		public String fuetEspetec = "";
 		public String fuetExpired = "";
 		public String fuetNormal = "";
+		public String processIsActive = "";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -109,6 +110,7 @@ public class FuetcraftModVariables {
 			fuetEspetec = nbt.getString("fuetEspetec");
 			fuetExpired = nbt.getString("fuetExpired");
 			fuetNormal = nbt.getString("fuetNormal");
+			processIsActive = nbt.getString("processIsActive");
 		}
 
 		@Override
@@ -120,6 +122,7 @@ public class FuetcraftModVariables {
 			nbt.putString("fuetEspetec", fuetEspetec);
 			nbt.putString("fuetExpired", fuetExpired);
 			nbt.putString("fuetNormal", fuetNormal);
+			nbt.putString("processIsActive", processIsActive);
 			return nbt;
 		}
 
