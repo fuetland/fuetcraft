@@ -96,6 +96,7 @@ public class FuetcraftModVariables {
 		public String fuetNormal = "";
 		public String processIsActive = "";
 		public String processTimer = "";
+		public String currentTypeOfFuet = "";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -113,6 +114,7 @@ public class FuetcraftModVariables {
 			fuetNormal = nbt.getString("fuetNormal");
 			processIsActive = nbt.getString("processIsActive");
 			processTimer = nbt.getString("processTimer");
+			currentTypeOfFuet = nbt.getString("currentTypeOfFuet");
 		}
 
 		@Override
@@ -126,6 +128,7 @@ public class FuetcraftModVariables {
 			nbt.putString("fuetNormal", fuetNormal);
 			nbt.putString("processIsActive", processIsActive);
 			nbt.putString("processTimer", processTimer);
+			nbt.putString("currentTypeOfFuet", currentTypeOfFuet);
 			return nbt;
 		}
 

@@ -153,7 +153,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/chopper/procedures"
+      "path": "~/procedures"
     },
     {
       "name": "ChopperResetVariables",
@@ -590,6 +590,12 @@
     },
     {
       "name": "processTimer",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "currentTypeOfFuet",
       "type": "string",
       "scope": "map",
       "value": ""

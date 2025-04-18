@@ -40,5 +40,7 @@ public class SetValuteToGlobalVariablesProcedure {
 		FuetcraftModVariables.MapVariables.get(world).syncData(world);
 		FuetcraftModVariables.MapVariables.get(world).processTimer = "process-timer";
 		FuetcraftModVariables.MapVariables.get(world).syncData(world);
+		FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet = "current-type-of-fuet";
+		FuetcraftModVariables.MapVariables.get(world).syncData(world);
 	}
 }

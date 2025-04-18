@@ -69,7 +69,7 @@ public class ChopperProcessProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetMining);
+								_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetMining);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -88,7 +88,7 @@ public class ChopperProcessProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetExploration);
+								_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetExploration);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -107,7 +107,7 @@ public class ChopperProcessProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetCombat);
+								_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetCombat);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -126,7 +126,7 @@ public class ChopperProcessProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetSwimming);
+								_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetSwimming);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -145,7 +145,7 @@ public class ChopperProcessProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetEspetec);
+								_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetEspetec);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -164,7 +164,7 @@ public class ChopperProcessProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetExpired);
+								_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetExpired);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -176,7 +176,7 @@ public class ChopperProcessProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putString("currentTypeOfFuet", FuetcraftModVariables.MapVariables.get(world).fuetNormal);
+							_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetNormal);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
