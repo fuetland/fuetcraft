@@ -151,24 +151,7 @@
         "files": [
           "src/main/java/fuetcraft/procedures/ChopperExecutionSummaryProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/chopper/procedures"
     },
@@ -530,6 +513,30 @@
         ]
       },
       "path": "~/porkchop"
+    },
+    {
+      "name": "ChopperInventorySlotAutomationPlaceCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_inventory_slot_automation_place_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperInventorySlotAutomationPlaceConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "index",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/chopper/procedures"
     }
   ],
   "variable_elements": [

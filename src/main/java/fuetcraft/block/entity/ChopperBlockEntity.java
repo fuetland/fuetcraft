@@ -30,6 +30,8 @@ import io.netty.buffer.Unpooled;
 
 import fuetcraft.world.inventory.ChopperGuiMenu;
 
+import fuetcraft.procedures.ChopperInventorySlotAutomationPlaceConditionProcedure;
+
 import fuetcraft.init.FuetcraftModBlockEntities;
 
 public class ChopperBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
@@ -111,6 +113,8 @@ public class ChopperBlockEntity extends RandomizableContainerBlockEntity impleme
 
 	@Override
 	public boolean canPlaceItem(int index, ItemStack stack) {
+		if (index == 2)
+			return false;
 		return true;
 	}
 
@@ -121,11 +125,15 @@ public class ChopperBlockEntity extends RandomizableContainerBlockEntity impleme
 
 	@Override
 	public boolean canPlaceItemThroughFace(int index, ItemStack itemstack, @Nullable Direction direction) {
-		return this.canPlaceItem(index, itemstack);
+		return this.canPlaceItem(index, itemstack) && ChopperInventorySlotAutomationPlaceConditionProcedure.execute(itemstack, index);
 	}
 
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
+		if (index == 0)
+			return false;
+		if (index == 1)
+			return false;
 		return true;
 	}
 

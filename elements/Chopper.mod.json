@@ -112,8 +112,16 @@
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
-    "inventoryInSlotIDs": [],
+    "inventoryOutSlotIDs": [
+      2
+    ],
+    "inventoryInSlotIDs": [
+      0,
+      1
+    ],
+    "inventoryAutomationPlaceCondition": {
+      "name": "ChopperInventorySlotAutomationPlaceCondition"
+    },
     "hasEnergyStorage": false,
     "energyInitial": 0,
     "energyCapacity": 400000,
