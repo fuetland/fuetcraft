@@ -328,7 +328,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures/right-arrow"
+      "path": "~/procedures/right-arrow-animation"
     },
     {
       "name": "RigthArrow40Visibility",
@@ -360,7 +360,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures/right-arrow"
+      "path": "~/procedures/right-arrow-animation"
     },
     {
       "name": "RigthArrow60Visibility",
@@ -392,7 +392,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures/right-arrow"
+      "path": "~/procedures/right-arrow-animation"
     },
     {
       "name": "RigthArrow80Visibility",
@@ -424,7 +424,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures/right-arrow"
+      "path": "~/procedures/right-arrow-animation"
     },
     {
       "name": "RigthArrow100Visibility",
@@ -456,7 +456,7 @@
           }
         ]
       },
-      "path": "~/chopper/procedures/right-arrow"
+      "path": "~/procedures/right-arrow-animation"
     },
     {
       "name": "ExpiredPorkchopChopped",
@@ -642,12 +642,7 @@
         "children": [
           {
             "name": "procedures",
-            "children": [
-              {
-                "name": "right-arrow",
-                "children": []
-              }
-            ]
+            "children": []
           },
           {
             "name": "recipes",
