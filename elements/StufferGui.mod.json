@@ -1,0 +1,210 @@
+{
+  "_fv": 77,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.PORKCHOP"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 141,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:mod:items_minced_meat_purposes"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 195,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 258,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_chopper",
+          "text": {
+            "fixedValue": "Stuffer"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "add.png",
+          "use1Xscale": true,
+          "x": 168,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "right-arrow.png",
+          "use1Xscale": true,
+          "x": 222,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "right-arrow-20.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RigthArrow20Visibility"
+          },
+          "x": 222,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "right-arrow-40.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RigthArrow40Visibility"
+          },
+          "x": 222,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "right-arrow-60.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RigthArrow60Visibility"
+          },
+          "x": 222,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "right-arrow-80.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RigthArrow80Visibility"
+          },
+          "x": 222,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "right-arrow-100.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RigthArrow100Visibility"
+          },
+          "x": 222,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_slot0",
+          "text": {
+            "fixedValue": "",
+            "name": "ChopperGuiTooltipSlot0Text"
+          },
+          "displayCondition": {
+            "name": "GuiTooltipSlot0Visibility"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 141,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_slot1",
+          "text": {
+            "fixedValue": "",
+            "name": "ChopperGuiTooltipSlot1Text"
+          },
+          "displayCondition": {
+            "name": "GuiTooltipSlot1Visibility"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 195,
+          "y": 71,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

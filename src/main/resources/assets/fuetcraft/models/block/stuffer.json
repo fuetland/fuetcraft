@@ -1,0 +1,20 @@
+{
+  "parent": "fuetcraft:custom/stuffer",
+  "textures": {
+    "all": "fuetcraft:block/stuffericon",
+    "particle": "fuetcraft:block/stuffericon",
+    "11": "fuetcraft:block/stuffer-05",
+    "0": "fuetcraft:block/stuffer-12",
+    "1": "fuetcraft:block/stuffer-09",
+    "2": "fuetcraft:block/stuffer-10",
+    "3": "fuetcraft:block/stuffer-11",
+    "4": "fuetcraft:block/stuffer-08",
+    "5": "fuetcraft:block/stuffer-01",
+    "6": "fuetcraft:block/stuffer-07",
+    "7": "fuetcraft:block/stuffer-02",
+    "8": "fuetcraft:block/stuffer-03",
+    "9": "fuetcraft:block/stuffer-06",
+    "10": "fuetcraft:block/stuffer-04"
+  },
+  "render_type": "solid"
+}

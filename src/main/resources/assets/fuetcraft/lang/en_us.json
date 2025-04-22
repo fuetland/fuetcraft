@@ -1,8 +1,10 @@
 {
   "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
+  "block.fuetcraft.stuffer": "Chopper",
   "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
   "block.fuetcraft.chopper": "Chopper",
   "item_group.fuetcraft.fuetcraft": "Fuetcraft",
+  "gui.fuetcraft.stuffer_gui.label_chopper": "Stuffer",
   "item.fuetcraft.expired_porkchop_chopped": "Expired Porkchop Chopped",
   "gui.fuetcraft.chopper_gui.tooltip_slot1": "Valid items:",
   "gui.fuetcraft.chopper_gui.tooltip_slot0": "Only raw pork chop are allowed.",

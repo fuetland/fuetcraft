@@ -11,6 +11,7 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import fuetcraft.world.inventory.StufferGuiMenu;
 import fuetcraft.world.inventory.ChopperGuiMenu;
 
 import fuetcraft.FuetcraftMod;
@@ -18,4 +19,5 @@ import fuetcraft.FuetcraftMod;
 public class FuetcraftModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, FuetcraftMod.MODID);
 	public static final RegistryObject<MenuType<ChopperGuiMenu>> CHOPPER_GUI = REGISTRY.register("chopper_gui", () -> IForgeMenuType.create(ChopperGuiMenu::new));
+	public static final RegistryObject<MenuType<StufferGuiMenu>> STUFFER_GUI = REGISTRY.register("stuffer_gui", () -> IForgeMenuType.create(StufferGuiMenu::new));
 }

@@ -34,6 +34,7 @@ public class FuetcraftModItems {
 	public static final RegistryObject<Item> COMBAT_PORKCHOP_CHOPPED = REGISTRY.register("combat_porkchop_chopped", () -> new CombatPorkchopChoppedItem());
 	public static final RegistryObject<Item> TARRADELLAS_PORKCHOP_CHOPPED = REGISTRY.register("tarradellas_porkchop_chopped", () -> new TarradellasPorkchopChoppedItem());
 	public static final RegistryObject<Item> FUET = REGISTRY.register("fuet", () -> new FuetItem());
+	public static final RegistryObject<Item> STUFFER = block(FuetcraftModBlocks.STUFFER);
 
 	// Start of user code block custom items
 	// End of user code block custom items

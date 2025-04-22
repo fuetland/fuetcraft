@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import fuetcraft.client.gui.StufferGuiScreen;
 import fuetcraft.client.gui.ChopperGuiScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -19,6 +20,7 @@ public class FuetcraftModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(FuetcraftModMenus.CHOPPER_GUI.get(), ChopperGuiScreen::new);
+			MenuScreens.register(FuetcraftModMenus.STUFFER_GUI.get(), StufferGuiScreen::new);
 		});
 	}
 }

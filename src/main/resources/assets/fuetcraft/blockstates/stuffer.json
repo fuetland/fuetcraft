@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "fuetcraft:block/stuffer"
+    },
+    "facing=east": {
+      "model": "fuetcraft:block/stuffer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "fuetcraft:block/stuffer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fuetcraft:block/stuffer",
+      "y": 270
+    }
+  }
+}

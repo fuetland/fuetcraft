@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import fuetcraft.block.entity.StufferBlockEntity;
 import fuetcraft.block.entity.ChopperBlockEntity;
 
 import fuetcraft.FuetcraftMod;
@@ -18,6 +19,7 @@ import fuetcraft.FuetcraftMod;
 public class FuetcraftModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, FuetcraftMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> CHOPPER = register("chopper", FuetcraftModBlocks.CHOPPER, ChopperBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> STUFFER = register("stuffer", FuetcraftModBlocks.STUFFER, StufferBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

@@ -669,6 +669,64 @@
         ]
       },
       "path": "~/items/fuets"
+    },
+    {
+      "name": "Stuffer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/blockstates/stuffer.json",
+          "src/main/resources/data/fuetcraft/loot_tables/blocks/stuffer.json",
+          "src/main/java/fuetcraft/block/StufferBlock.java",
+          "src/main/resources/assets/fuetcraft/models/item/stuffer.json",
+          "src/main/java/fuetcraft/block/entity/StufferBlockEntity.java",
+          "src/main/resources/assets/fuetcraft/models/block/stuffer.json"
+        ]
+      },
+      "path": "~/blocks/stuffer"
+    },
+    {
+      "name": "StufferGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/world/inventory/StufferGuiMenu.java",
+          "src/main/java/fuetcraft/client/gui/StufferGuiScreen.java"
+        ]
+      },
+      "path": "~/blocks/stuffer"
+    },
+    {
+      "name": "StufferRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fuetcraft/recipes/stuffer_recipe.json"
+        ]
+      },
+      "path": "~/blocks/stuffer/recipes"
+    },
+    {
+      "name": "StufferRecipeSimetric",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_recipe_simetric",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fuetcraft/recipes/stuffer_recipe_simetric.json"
+        ]
+      },
+      "path": "~/blocks/stuffer/recipes"
     }
   ],
   "variable_elements": [
@@ -745,6 +803,7 @@
   ],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Stuffer",
       "~CUSTOM:Chopper"
     ],
     "ITEMS:mod:items_minced_meat_purposes": [
@@ -760,9 +819,11 @@
   "language_map": {
     "en_us": {
       "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
+      "block.fuetcraft.stuffer": "Chopper",
       "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
       "block.fuetcraft.chopper": "Chopper",
       "item_group.fuetcraft.fuetcraft": "Fuetcraft",
+      "gui.fuetcraft.stuffer_gui.label_chopper": "Stuffer",
       "item.fuetcraft.expired_porkchop_chopped": "Expired Porkchop Chopped",
       "gui.fuetcraft.chopper_gui.tooltip_slot1": "Valid items:",
       "gui.fuetcraft.chopper_gui.tooltip_slot0": "Only raw pork chop are allowed.",
@@ -820,6 +881,15 @@
                   }
                 ]
               },
+              {
+                "name": "recipes",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "stuffer",
+            "children": [
               {
                 "name": "recipes",
                 "children": []

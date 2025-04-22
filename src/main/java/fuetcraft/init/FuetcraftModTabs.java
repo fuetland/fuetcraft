@@ -27,5 +27,6 @@ public class FuetcraftModTabs {
 				tabData.accept(FuetcraftModItems.COMBAT_PORKCHOP_CHOPPED.get());
 				tabData.accept(FuetcraftModItems.TARRADELLAS_PORKCHOP_CHOPPED.get());
 				tabData.accept(FuetcraftModItems.FUET.get());
+				tabData.accept(FuetcraftModBlocks.STUFFER.get().asItem());
 			}).withSearchBar().build());
 }
