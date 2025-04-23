@@ -16,7 +16,7 @@
     ],
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 15,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -26,8 +26,8 @@
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "enableMeleeDamage": false,
-    "damageVsEntity": 0.0,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 6.0,
     "specialInformation": {
       "fixedValue": []
     },
@@ -36,6 +36,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "FuetPlayerFinishesUsingItem"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
@@ -43,15 +46,15 @@
       "value": "Arrow"
     },
     "projectileDisableAmmoCheck": false,
-    "isFood": false,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
+    "isFood": true,
+    "nutritionalValue": 3,
+    "saturation": 1.0,
     "eatResultItem": {
       "value": ""
     },
-    "isMeat": false,
+    "isMeat": true,
     "isAlwaysEdible": false,
-    "animation": "none",
+    "animation": "eat",
     "isMusicDisc": false,
     "musicDiscMusic": {
       "value": ""

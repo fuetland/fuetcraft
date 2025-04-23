@@ -50,8 +50,8 @@
       "registry_name": "porkchop_chopped",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fuetcraft/models/item/porkchop_chopped.json",
-          "src/main/java/fuetcraft/item/PorkchopChoppedItem.java"
+          "src/main/java/fuetcraft/item/PorkchopChoppedItem.java",
+          "src/main/resources/assets/fuetcraft/models/item/porkchop_chopped.json"
         ]
       },
       "path": "~/items/porkchop-chopped"
@@ -727,6 +727,25 @@
         ]
       },
       "path": "~/blocks/stuffer/recipes"
+    },
+    {
+      "name": "FuetPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/fuets"
     }
   ],
   "variable_elements": [
