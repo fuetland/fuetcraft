@@ -16,7 +16,13 @@ import fuetcraft.item.TarradellasPorkchopChoppedItem;
 import fuetcraft.item.SwimmingPorkchopChoppedItem;
 import fuetcraft.item.PorkchopChoppedItem;
 import fuetcraft.item.MiningPorkchopChoppedItem;
+import fuetcraft.item.FuetTarradellasItem;
+import fuetcraft.item.FuetSwimmingItem;
+import fuetcraft.item.FuetMiningItem;
 import fuetcraft.item.FuetItem;
+import fuetcraft.item.FuetExploringItem;
+import fuetcraft.item.FuetExpiredItem;
+import fuetcraft.item.FuetCombatItem;
 import fuetcraft.item.ExplorerPorkchopChoppedItem;
 import fuetcraft.item.ExpiredPorkchopChoppedItem;
 import fuetcraft.item.CombatPorkchopChoppedItem;
@@ -35,6 +41,12 @@ public class FuetcraftModItems {
 	public static final RegistryObject<Item> TARRADELLAS_PORKCHOP_CHOPPED = REGISTRY.register("tarradellas_porkchop_chopped", () -> new TarradellasPorkchopChoppedItem());
 	public static final RegistryObject<Item> FUET = REGISTRY.register("fuet", () -> new FuetItem());
 	public static final RegistryObject<Item> STUFFER = block(FuetcraftModBlocks.STUFFER);
+	public static final RegistryObject<Item> FUET_COMBAT = REGISTRY.register("fuet_combat", () -> new FuetCombatItem());
+	public static final RegistryObject<Item> FUET_EXPIRED = REGISTRY.register("fuet_expired", () -> new FuetExpiredItem());
+	public static final RegistryObject<Item> FUET_EXPLORING = REGISTRY.register("fuet_exploring", () -> new FuetExploringItem());
+	public static final RegistryObject<Item> FUET_MINING = REGISTRY.register("fuet_mining", () -> new FuetMiningItem());
+	public static final RegistryObject<Item> FUET_SWIMMING = REGISTRY.register("fuet_swimming", () -> new FuetSwimmingItem());
+	public static final RegistryObject<Item> FUET_TARRADELLAS = REGISTRY.register("fuet_tarradellas", () -> new FuetTarradellasItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

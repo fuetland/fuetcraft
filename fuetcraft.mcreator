@@ -806,6 +806,204 @@
         "dependencies": []
       },
       "path": "~/blocks/chopper/procedures"
+    },
+    {
+      "name": "FuetCombat",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_combat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/fuet_combat.json",
+          "src/main/java/fuetcraft/item/FuetCombatItem.java"
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetExpired",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_expired",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/fuet_expired.json",
+          "src/main/java/fuetcraft/item/FuetExpiredItem.java"
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetExploring",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_exploring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/fuet_exploring.json",
+          "src/main/java/fuetcraft/item/FuetExploringItem.java"
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetMining",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_mining",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/item/FuetMiningItem.java",
+          "src/main/resources/assets/fuetcraft/models/item/fuet_mining.json"
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetSwimming",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_swimming",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/fuet_swimming.json",
+          "src/main/java/fuetcraft/item/FuetSwimmingItem.java"
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetTarradellas",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_tarradellas",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/fuet_tarradellas.json",
+          "src/main/java/fuetcraft/item/FuetTarradellasItem.java"
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetCombatPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_combat_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetCombatPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetExpiredPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_expired_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetExpiredPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetExploringPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_exploring_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetExploringPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetMiningPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_mining_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetMiningPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetSwimmingPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_swimming_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetSwimmingPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetTarradellasPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_tarradellas_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetTarradellasPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/fuets"
     }
   ],
   "variable_elements": [
@@ -898,13 +1096,18 @@
   "language_map": {
     "en_us": {
       "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
+      "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "block.fuetcraft.stuffer": "Stuffer",
+      "item.fuetcraft.fuet_swimming": "Swimming Fuet",
       "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
       "block.fuetcraft.chopper": "Chopper",
       "item_group.fuetcraft.fuetcraft": "Fuetcraft",
+      "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
+      "item.fuetcraft.fuet_mining": "Mining Fuet",
       "item.fuetcraft.expired_porkchop_chopped": "Expired Porkchop Chopped",
       "gui.fuetcraft.chopper_gui.tooltip_slot1": "Valid items:",
       "gui.fuetcraft.chopper_gui.tooltip_slot0": "Only raw pork chop are allowed.",
+      "item.fuetcraft.fuet_combat": "Combat Fuet",
       "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
       "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
@@ -913,7 +1116,7 @@
       "gui.fuetcraft.stuffer_gui.tooltip_slot0": "Any type of chopped pork chop is allowed.",
       "item.fuetcraft.fuet": "Fuet",
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
-      "subtitles.chopper_craft": ""
+      "item.fuetcraft.fuet_expired": "Expired Fuet"
     }
   },
   "foldersRoot": {
