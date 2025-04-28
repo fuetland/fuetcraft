@@ -173,37 +173,6 @@
       "path": "~/blocks/chopper/procedures"
     },
     {
-      "name": "ChopperValidateOutputSlot",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chopper_validate_output_slot",
-      "metadata": {
-        "files": [
-          "src/main/java/fuetcraft/procedures/ChopperValidateOutputSlotProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/blocks/chopper/procedures"
-    },
-    {
       "name": "SetValuteToGlobalVariables",
       "type": "procedure",
       "compiles": true,
@@ -943,37 +912,6 @@
       "path": "~/procedures"
     },
     {
-      "name": "StufferProcess",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stuffer_process",
-      "metadata": {
-        "files": [
-          "src/main/java/fuetcraft/procedures/StufferProcessProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/blocks/stuffer/procedures"
-    },
-    {
       "name": "StufferInventorySlotAutomationPlaceCondition",
       "type": "procedure",
       "compiles": true,
@@ -1069,6 +1007,68 @@
         "return_type": "itemstack",
         "files": [
           "src/main/java/fuetcraft/procedures/GetProcessOutputItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "StufferProcess",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_process",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/StufferProcessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/stuffer/procedures"
+    },
+    {
+      "name": "ValidateOutputItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "validate_output_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ValidateOutputItemProcedure.java"
         ],
         "dependencies": [
           {

@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import fuetcraft.network.FuetcraftModVariables;
 
-public class ChopperValidateOutputSlotProcedure {
+public class ValidateOutputItemProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
