@@ -73,7 +73,6 @@ public class ChopperProcessProcedure {
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
-						ValidateOutputItemProcedure.execute(world, x, y, z);
 					} else if ((new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -92,7 +91,6 @@ public class ChopperProcessProcedure {
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
-						ValidateOutputItemProcedure.execute(world, x, y, z);
 					} else if ((new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -111,7 +109,6 @@ public class ChopperProcessProcedure {
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
-						ValidateOutputItemProcedure.execute(world, x, y, z);
 					} else if ((new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -130,7 +127,6 @@ public class ChopperProcessProcedure {
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
-						ValidateOutputItemProcedure.execute(world, x, y, z);
 					} else if ((new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -149,7 +145,6 @@ public class ChopperProcessProcedure {
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
-						ValidateOutputItemProcedure.execute(world, x, y, z);
 					} else if ((new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -168,7 +163,6 @@ public class ChopperProcessProcedure {
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
-						ValidateOutputItemProcedure.execute(world, x, y, z);
 					}
 				} else {
 					if (!world.isClientSide()) {
@@ -180,8 +174,8 @@ public class ChopperProcessProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-					ValidateOutputItemProcedure.execute(world, x, y, z);
 				}
+				ValidateOutputItemProcedure.execute(world, x, y, z);
 			}
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {

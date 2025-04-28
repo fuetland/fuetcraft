@@ -18,6 +18,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import fuetcraft.network.FuetcraftModVariables;
 
+import fuetcraft.init.FuetcraftModBlocks;
+
 public class ValidateOutputItemProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (new Object() {
@@ -63,11 +65,21 @@ public class ValidateOutputItemProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:chopper_craft")), SoundSource.BLOCKS, (float) 0.3, 1);
-				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:chopper_craft")), SoundSource.BLOCKS, (float) 0.3, 1, false);
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FuetcraftModBlocks.CHOPPER.get()) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:chopper_craft")), SoundSource.BLOCKS, (float) 0.3, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:chopper_craft")), SoundSource.BLOCKS, (float) 0.3, 1, false);
+					}
+				}
+			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FuetcraftModBlocks.STUFFER.get()) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:chopper_craft")), SoundSource.BLOCKS, (float) 0.3, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:chopper_craft")), SoundSource.BLOCKS, (float) 0.3, 1, false);
+					}
 				}
 			}
 		}

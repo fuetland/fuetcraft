@@ -5,7 +5,6 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
@@ -16,6 +15,8 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import fuetcraft.network.FuetcraftModVariables;
+
+import fuetcraft.init.FuetcraftModItems;
 
 public class StufferProcessProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -37,7 +38,15 @@ public class StufferProcessProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, BlockPos.containing(x, y, z), 0) > 0 && (new Object() {
+			}.getAmount(world, BlockPos.containing(x, y, z), 0) > 0 && new Object() {
+				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+					AtomicInteger _retval = new AtomicInteger(0);
+					BlockEntity _ent = world.getBlockEntity(pos);
+					if (_ent != null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					return _retval.get();
+				}
+			}.getAmount(world, BlockPos.containing(x, y, z), 1) > 0 && (new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
@@ -45,132 +54,124 @@ public class StufferProcessProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Items.PORKCHOP) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						AtomicInteger _retval = new AtomicInteger(0);
+			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.LEATHER) {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 1) > 0) {
-					if ((new Object() {
-						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							BlockEntity _ent = world.getBlockEntity(pos);
-							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-							return _retval.get();
-						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.GOLDEN_PICKAXE) {
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(x, y, z);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetMining);
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						ValidateOutputItemProcedure.execute(world, x, y, z);
-					} else if ((new Object() {
-						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							BlockEntity _ent = world.getBlockEntity(pos);
-							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-							return _retval.get();
-						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Blocks.TORCHFLOWER.asItem()) {
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(x, y, z);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetExploration);
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						ValidateOutputItemProcedure.execute(world, x, y, z);
-					} else if ((new Object() {
-						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							BlockEntity _ent = world.getBlockEntity(pos);
-							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-							return _retval.get();
-						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.ENDER_PEARL) {
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(x, y, z);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetCombat);
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						ValidateOutputItemProcedure.execute(world, x, y, z);
-					} else if ((new Object() {
-						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							BlockEntity _ent = world.getBlockEntity(pos);
-							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-							return _retval.get();
-						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.SALMON) {
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(x, y, z);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetSwimming);
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						ValidateOutputItemProcedure.execute(world, x, y, z);
-					} else if ((new Object() {
-						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							BlockEntity _ent = world.getBlockEntity(pos);
-							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-							return _retval.get();
-						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.NETHERITE_SCRAP) {
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(x, y, z);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetEspetec);
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						ValidateOutputItemProcedure.execute(world, x, y, z);
-					} else if ((new Object() {
-						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							BlockEntity _ent = world.getBlockEntity(pos);
-							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-							return _retval.get();
-						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.POISONOUS_POTATO) {
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(x, y, z);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetExpired);
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						ValidateOutputItemProcedure.execute(world, x, y, z);
+				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == FuetcraftModItems.MINING_PORKCHOP_CHOPPED.get()) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetMining);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-				} else {
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+						BlockEntity _ent = world.getBlockEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						return _retval.get();
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == FuetcraftModItems.EXPLORER_PORKCHOP_CHOPPED.get()) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetExploration);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+						BlockEntity _ent = world.getBlockEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						return _retval.get();
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == FuetcraftModItems.COMBAT_PORKCHOP_CHOPPED.get()) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetCombat);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+						BlockEntity _ent = world.getBlockEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						return _retval.get();
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == FuetcraftModItems.SWIMMING_PORKCHOP_CHOPPED.get()) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetSwimming);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+						BlockEntity _ent = world.getBlockEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						return _retval.get();
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == FuetcraftModItems.TARRADELLAS_PORKCHOP_CHOPPED.get()) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetEspetec);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+						BlockEntity _ent = world.getBlockEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						return _retval.get();
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == FuetcraftModItems.EXPIRED_PORKCHOP_CHOPPED.get()) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString(FuetcraftModVariables.MapVariables.get(world).currentTypeOfFuet, FuetcraftModVariables.MapVariables.get(world).fuetExpired);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+						BlockEntity _ent = world.getBlockEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						return _retval.get();
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == FuetcraftModItems.PORKCHOP_CHOPPED.get()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -180,8 +181,8 @@ public class StufferProcessProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-					ValidateOutputItemProcedure.execute(world, x, y, z);
 				}
+				ValidateOutputItemProcedure.execute(world, x, y, z);
 			}
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -222,28 +223,18 @@ public class StufferProcessProcedure {
 					});
 				}
 			}
-			if (new Object() {
-				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicInteger _retval = new AtomicInteger(0);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
-					return _retval.get();
-				}
-			}.getAmount(world, BlockPos.containing(x, y, z), 1) > 0) {
-				{
-					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-					if (_ent != null) {
-						final int _slotid = 1;
-						final int _amount = 1;
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								ItemStack _stk = capability.getStackInSlot(_slotid).copy();
-								_stk.shrink(_amount);
-								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
-							}
-						});
-					}
+			{
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+				if (_ent != null) {
+					final int _slotid = 1;
+					final int _amount = 1;
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable) {
+							ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+							_stk.shrink(_amount);
+							((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+						}
+					});
 				}
 			}
 			{

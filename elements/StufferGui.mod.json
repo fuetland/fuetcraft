@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "Items.PORKCHOP"
+            "value": "TAG:mod:items_valid_for_slot_0_of_the_stuffer"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -33,7 +33,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "TAG:mod:items_minced_meat_purposes"
+            "value": "Items.LEATHER"
           },
           "disablePlacement": {
             "fixedValue": false

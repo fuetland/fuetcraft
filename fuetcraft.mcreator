@@ -1176,6 +1176,15 @@
       "Items.FISH#1",
       "Items.NETHERITE_SCRAP",
       "Items.POISONOUS_POTATO"
+    ],
+    "ITEMS:mod:items_valid_for_slot_0_of_the_stuffer": [
+      "CUSTOM:PorkchopChopped",
+      "CUSTOM:MiningPorkchopChopped",
+      "CUSTOM:ExplorerPorkchopChopped",
+      "CUSTOM:ExpiredPorkchopChopped",
+      "CUSTOM:SwimmingPorkchopChopped",
+      "CUSTOM:CombatPorkchopChopped",
+      "CUSTOM:TarradellasPorkchopChopped"
     ]
   },
   "tab_element_order": {},

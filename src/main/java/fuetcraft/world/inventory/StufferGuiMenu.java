@@ -87,7 +87,7 @@ public class StufferGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Items.PORKCHOP == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("fuetcraft:items_valid_for_slot_0_of_the_stuffer")));
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 70, 35) {
@@ -97,7 +97,7 @@ public class StufferGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(new ResourceLocation("fuetcraft:items_minced_meat_purposes")));
+				return Items.LEATHER == stack.getItem();
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 133, 35) {
