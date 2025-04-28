@@ -250,7 +250,7 @@ public class ChopperProcessProcedure {
 				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				if (_ent != null) {
 					final int _slotid = 2;
-					final ItemStack _setstack = ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).copy();
+					final ItemStack _setstack = GetProcessOutputItemProcedure.execute(world, x, y, z).copy();
 					_setstack.setCount((int) (new Object() {
 						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicInteger _retval = new AtomicInteger(0);

@@ -98,7 +98,7 @@ public class StufferBlock extends Block implements EntityBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		StufferProcessProcedure.execute();
+		StufferProcessProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}
 

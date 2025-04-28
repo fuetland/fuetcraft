@@ -44,7 +44,7 @@ public class ChopperValidateOutputSlotProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem())) {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == GetProcessOutputItemProcedure.execute(world, x, y, z).getItem())) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);

@@ -173,38 +173,6 @@
       "path": "~/blocks/chopper/procedures"
     },
     {
-      "name": "ChopperGetChoppedChopFromNBT",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chopper_get_chopped_chop_from_nbt",
-      "metadata": {
-        "return_type": "itemstack",
-        "files": [
-          "src/main/java/fuetcraft/procedures/ChopperGetChoppedChopFromNBTProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/blocks/chopper/procedures"
-    },
-    {
       "name": "ChopperValidateOutputSlot",
       "type": "procedure",
       "compiles": true,
@@ -984,7 +952,24 @@
         "files": [
           "src/main/java/fuetcraft/procedures/StufferProcessProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/blocks/stuffer/procedures"
     },
@@ -1021,6 +1006,69 @@
       "metadata": {
         "files": [
           "src/main/java/fuetcraft/procedures/ResetVariablesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "StufferCheckSlotContentsChange",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_check_slot_contents_change",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/StufferCheckSlotContentsChangeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/stuffer/procedures"
+    },
+    {
+      "name": "GetProcessOutputItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_process_output_item",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetProcessOutputItemProcedure.java"
         ],
         "dependencies": [
           {
@@ -1133,8 +1181,8 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
+      "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "block.fuetcraft.stuffer": "Stuffer",
       "item.fuetcraft.fuet_swimming": "Swimming Fuet",
       "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
