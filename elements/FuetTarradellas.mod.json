@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "fuet-combat",
+    "texture": "fuet-tarradellas",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
@@ -27,7 +27,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": true,
-    "damageVsEntity": 6.0,
+    "damageVsEntity": 8.0,
     "specialInformation": {
       "fixedValue": []
     },

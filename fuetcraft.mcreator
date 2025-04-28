@@ -1095,8 +1095,8 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
       "item.fuetcraft.fuet_exploring": "Exploring Fuet",
+      "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
       "block.fuetcraft.stuffer": "Stuffer",
       "item.fuetcraft.fuet_swimming": "Swimming Fuet",
       "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",

@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "fuet-combat",
+    "texture": "fuet-expired",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
