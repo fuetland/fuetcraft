@@ -14,6 +14,8 @@ import java.util.Arrays;
 
 import fuetcraft.world.inventory.StufferGuiMenu;
 
+import fuetcraft.procedures.StufferGuiTooltipSlot1TextProcedure;
+import fuetcraft.procedures.StufferGuiTooltipSlot0TextProcedure;
 import fuetcraft.procedures.RigthArrow80VisibilityProcedure;
 import fuetcraft.procedures.RigthArrow60VisibilityProcedure;
 import fuetcraft.procedures.RigthArrow40VisibilityProcedure;
@@ -21,8 +23,6 @@ import fuetcraft.procedures.RigthArrow20VisibilityProcedure;
 import fuetcraft.procedures.RigthArrow100VisibilityProcedure;
 import fuetcraft.procedures.GuiTooltipSlot1VisibilityProcedure;
 import fuetcraft.procedures.GuiTooltipSlot0VisibilityProcedure;
-import fuetcraft.procedures.ChopperGuiTooltipSlot1TextProcedure;
-import fuetcraft.procedures.ChopperGuiTooltipSlot0TextProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -52,14 +52,14 @@ public class StufferGuiScreen extends AbstractContainerScreen<StufferGuiMenu> {
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 		if (GuiTooltipSlot0VisibilityProcedure.execute(world, x, y, z))
 			if (mouseX > leftPos + 15 && mouseX < leftPos + 39 && mouseY > topPos + 34 && mouseY < topPos + 58) {
-				String hoverText = ChopperGuiTooltipSlot0TextProcedure.execute();
+				String hoverText = StufferGuiTooltipSlot0TextProcedure.execute();
 				if (hoverText != null) {
 					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
 				}
 			}
 		if (GuiTooltipSlot1VisibilityProcedure.execute(world, x, y, z))
 			if (mouseX > leftPos + 69 && mouseX < leftPos + 93 && mouseY > topPos + 34 && mouseY < topPos + 58) {
-				String hoverText = ChopperGuiTooltipSlot1TextProcedure.execute();
+				String hoverText = StufferGuiTooltipSlot1TextProcedure.execute();
 				if (hoverText != null) {
 					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
 				}

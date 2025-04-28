@@ -28,7 +28,7 @@ import java.util.stream.IntStream;
 
 import io.netty.buffer.Unpooled;
 
-import fuetcraft.world.inventory.ChopperGuiMenu;
+import fuetcraft.world.inventory.StufferGuiMenu;
 
 import fuetcraft.procedures.ChopperInventorySlotAutomationPlaceConditionProcedure;
 
@@ -93,12 +93,12 @@ public class StufferBlockEntity extends RandomizableContainerBlockEntity impleme
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new ChopperGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new StufferGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Chopper");
+		return Component.literal("Stuffer");
 	}
 
 	@Override

@@ -678,12 +678,12 @@
       "registry_name": "stuffer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fuetcraft/blockstates/stuffer.json",
-          "src/main/resources/data/fuetcraft/loot_tables/blocks/stuffer.json",
+          "src/main/java/fuetcraft/block/entity/StufferBlockEntity.java",
+          "src/main/resources/assets/fuetcraft/models/block/stuffer.json",
           "src/main/java/fuetcraft/block/StufferBlock.java",
           "src/main/resources/assets/fuetcraft/models/item/stuffer.json",
-          "src/main/java/fuetcraft/block/entity/StufferBlockEntity.java",
-          "src/main/resources/assets/fuetcraft/models/block/stuffer.json"
+          "src/main/resources/assets/fuetcraft/blockstates/stuffer.json",
+          "src/main/resources/data/fuetcraft/loot_tables/blocks/stuffer.json"
         ]
       },
       "path": "~/blocks/stuffer"
@@ -696,8 +696,8 @@
       "registry_name": "stuffer_gui",
       "metadata": {
         "files": [
-          "src/main/java/fuetcraft/world/inventory/StufferGuiMenu.java",
-          "src/main/java/fuetcraft/client/gui/StufferGuiScreen.java"
+          "src/main/java/fuetcraft/client/gui/StufferGuiScreen.java",
+          "src/main/java/fuetcraft/world/inventory/StufferGuiMenu.java"
         ]
       },
       "path": "~/blocks/stuffer"
@@ -746,6 +746,36 @@
         ]
       },
       "path": "~/items/fuets"
+    },
+    {
+      "name": "StufferGuiTooltipSlot1Text",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_gui_tooltip_slot_1_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/StufferGuiTooltipSlot1TextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/blocks/stuffer/procedures/tooltips"
+    },
+    {
+      "name": "StufferGuiTooltipSlot0Text",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_gui_tooltip_slot_0_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/StufferGuiTooltipSlot0TextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/blocks/stuffer/procedures/tooltips"
     }
   ],
   "variable_elements": [
@@ -838,7 +868,7 @@
   "language_map": {
     "en_us": {
       "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
-      "block.fuetcraft.stuffer": "Chopper",
+      "block.fuetcraft.stuffer": "Stuffer",
       "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
       "block.fuetcraft.chopper": "Chopper",
       "item_group.fuetcraft.fuetcraft": "Fuetcraft",
@@ -851,6 +881,8 @@
       "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
+      "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
+      "gui.fuetcraft.stuffer_gui.tooltip_slot0": "Any type of chopped pork chop is allowed.",
       "item.fuetcraft.fuet": "Fuet",
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
       "subtitles.chopper_craft": ""
@@ -912,6 +944,15 @@
               {
                 "name": "recipes",
                 "children": []
+              },
+              {
+                "name": "procedures",
+                "children": [
+                  {
+                    "name": "tooltips",
+                    "children": []
+                  }
+                ]
               }
             ]
           }

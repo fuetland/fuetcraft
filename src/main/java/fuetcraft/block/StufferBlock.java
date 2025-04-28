@@ -38,7 +38,7 @@ import net.minecraft.core.BlockPos;
 
 import io.netty.buffer.Unpooled;
 
-import fuetcraft.world.inventory.ChopperGuiMenu;
+import fuetcraft.world.inventory.StufferGuiMenu;
 
 import fuetcraft.procedures.ChopperProcessProcedure;
 
@@ -109,12 +109,12 @@ public class StufferBlock extends Block implements EntityBlock {
 			NetworkHooks.openScreen(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Chopper");
+					return Component.literal("Stuffer");
 				}
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new ChopperGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+					return new StufferGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
 				}
 			}, pos);
 		}

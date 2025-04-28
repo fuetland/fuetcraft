@@ -168,7 +168,7 @@
           "name": "tooltip_slot0",
           "text": {
             "fixedValue": "",
-            "name": "ChopperGuiTooltipSlot0Text"
+            "name": "StufferGuiTooltipSlot0Text"
           },
           "displayCondition": {
             "name": "GuiTooltipSlot0Visibility"
@@ -186,7 +186,7 @@
           "name": "tooltip_slot1",
           "text": {
             "fixedValue": "",
-            "name": "ChopperGuiTooltipSlot1Text"
+            "name": "StufferGuiTooltipSlot1Text"
           },
           "displayCondition": {
             "name": "GuiTooltipSlot1Visibility"
