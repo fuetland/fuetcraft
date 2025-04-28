@@ -142,37 +142,6 @@
       "path": "~/blocks/chopper/procedures"
     },
     {
-      "name": "ChopperResetVariables",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chopper_reset_variables",
-      "metadata": {
-        "files": [
-          "src/main/java/fuetcraft/procedures/ChopperResetVariablesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/blocks/chopper/procedures"
-    },
-    {
       "name": "ChopperProcess",
       "type": "procedure",
       "compiles": true,
@@ -1042,6 +1011,37 @@
         ]
       },
       "path": "~/blocks/stuffer/procedures"
+    },
+    {
+      "name": "ResetVariables",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_variables",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ResetVariablesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
     }
   ],
   "variable_elements": [

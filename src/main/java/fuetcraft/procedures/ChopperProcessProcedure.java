@@ -266,7 +266,7 @@ public class ChopperProcessProcedure {
 					});
 				}
 			}
-			ChopperResetVariablesProcedure.execute(world, x, y, z);
+			ResetVariablesProcedure.execute(world, x, y, z);
 		}
 	}
 }

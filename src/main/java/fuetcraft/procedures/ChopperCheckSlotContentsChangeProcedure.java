@@ -43,7 +43,7 @@ public class ChopperCheckSlotContentsChangeProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.GOLDEN_PICKAXE && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.MINING_PORKCHOP_CHOPPED.get())) {
-					ChopperResetVariablesProcedure.execute(world, x, y, z);
+					ResetVariablesProcedure.execute(world, x, y, z);
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -53,7 +53,7 @@ public class ChopperCheckSlotContentsChangeProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Blocks.TORCHFLOWER.asItem() && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.EXPLORER_PORKCHOP_CHOPPED.get())) {
-					ChopperResetVariablesProcedure.execute(world, x, y, z);
+					ResetVariablesProcedure.execute(world, x, y, z);
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -63,7 +63,7 @@ public class ChopperCheckSlotContentsChangeProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.ENDER_PEARL && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.COMBAT_PORKCHOP_CHOPPED.get())) {
-					ChopperResetVariablesProcedure.execute(world, x, y, z);
+					ResetVariablesProcedure.execute(world, x, y, z);
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -73,7 +73,7 @@ public class ChopperCheckSlotContentsChangeProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.SALMON && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.SWIMMING_PORKCHOP_CHOPPED.get())) {
-					ChopperResetVariablesProcedure.execute(world, x, y, z);
+					ResetVariablesProcedure.execute(world, x, y, z);
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -83,7 +83,7 @@ public class ChopperCheckSlotContentsChangeProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.NETHERITE_SCRAP && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.TARRADELLAS_PORKCHOP_CHOPPED.get())) {
-					ChopperResetVariablesProcedure.execute(world, x, y, z);
+					ResetVariablesProcedure.execute(world, x, y, z);
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -93,15 +93,15 @@ public class ChopperCheckSlotContentsChangeProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.POISONOUS_POTATO && !(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.EXPIRED_PORKCHOP_CHOPPED.get())) {
-					ChopperResetVariablesProcedure.execute(world, x, y, z);
+					ResetVariablesProcedure.execute(world, x, y, z);
 				}
 			} else {
 				if (!(ChopperGetChoppedChopFromNBTProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.PORKCHOP_CHOPPED.get())) {
-					ChopperResetVariablesProcedure.execute(world, x, y, z);
+					ResetVariablesProcedure.execute(world, x, y, z);
 				}
 			}
 		} else {
-			ChopperResetVariablesProcedure.execute(world, x, y, z);
+			ResetVariablesProcedure.execute(world, x, y, z);
 		}
 	}
 }

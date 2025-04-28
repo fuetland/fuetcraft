@@ -8,7 +8,7 @@ import net.minecraft.core.BlockPos;
 
 import fuetcraft.network.FuetcraftModVariables;
 
-public class ChopperResetVariablesProcedure {
+public class ResetVariablesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!world.isClientSide()) {
 			BlockPos _bp = BlockPos.containing(x, y, z);
