@@ -30,7 +30,7 @@ import io.netty.buffer.Unpooled;
 
 import fuetcraft.world.inventory.StufferGuiMenu;
 
-import fuetcraft.procedures.ChopperInventorySlotAutomationPlaceConditionProcedure;
+import fuetcraft.procedures.StufferInventorySlotAutomationPlaceConditionProcedure;
 
 import fuetcraft.init.FuetcraftModBlockEntities;
 
@@ -125,7 +125,7 @@ public class StufferBlockEntity extends RandomizableContainerBlockEntity impleme
 
 	@Override
 	public boolean canPlaceItemThroughFace(int index, ItemStack itemstack, @Nullable Direction direction) {
-		return this.canPlaceItem(index, itemstack) && ChopperInventorySlotAutomationPlaceConditionProcedure.execute(itemstack, index);
+		return this.canPlaceItem(index, itemstack) && StufferInventorySlotAutomationPlaceConditionProcedure.execute(itemstack, index);
 	}
 
 	@Override

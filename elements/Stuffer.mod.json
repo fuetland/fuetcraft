@@ -120,7 +120,7 @@
       1
     ],
     "inventoryAutomationPlaceCondition": {
-      "name": "ChopperInventorySlotAutomationPlaceCondition"
+      "name": "StufferInventorySlotAutomationPlaceCondition"
     },
     "hasEnergyStorage": false,
     "energyInitial": 0,
@@ -131,7 +131,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "ChopperProcess"
+      "name": "StufferProcess"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

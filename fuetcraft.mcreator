@@ -1004,6 +1004,44 @@
         "dependencies": []
       },
       "path": "~/procedures"
+    },
+    {
+      "name": "StufferProcess",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_process",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/StufferProcessProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/blocks/stuffer/procedures"
+    },
+    {
+      "name": "StufferInventorySlotAutomationPlaceCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_inventory_slot_automation_place_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/StufferInventorySlotAutomationPlaceConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "index",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/blocks/stuffer/procedures"
     }
   ],
   "variable_elements": [

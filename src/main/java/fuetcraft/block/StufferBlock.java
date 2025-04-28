@@ -40,7 +40,7 @@ import io.netty.buffer.Unpooled;
 
 import fuetcraft.world.inventory.StufferGuiMenu;
 
-import fuetcraft.procedures.ChopperProcessProcedure;
+import fuetcraft.procedures.StufferProcessProcedure;
 
 import fuetcraft.block.entity.StufferBlockEntity;
 
@@ -98,7 +98,7 @@ public class StufferBlock extends Block implements EntityBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		ChopperProcessProcedure.execute(world, x, y, z);
+		StufferProcessProcedure.execute();
 		world.scheduleTick(pos, this, 1);
 	}
 
