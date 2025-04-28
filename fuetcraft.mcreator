@@ -776,6 +776,36 @@
         "dependencies": []
       },
       "path": "~/blocks/stuffer/procedures/tooltips"
+    },
+    {
+      "name": "StufferGuiTitleLabel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_gui_title_label",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/StufferGuiTitleLabelProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/blocks/stuffer/procedures"
+    },
+    {
+      "name": "ChopperGuiTitleLabel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_gui_title_label",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperGuiTitleLabelProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/blocks/chopper/procedures"
     }
   ],
   "variable_elements": [
@@ -872,13 +902,11 @@
       "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
       "block.fuetcraft.chopper": "Chopper",
       "item_group.fuetcraft.fuetcraft": "Fuetcraft",
-      "gui.fuetcraft.stuffer_gui.label_chopper": "Stuffer",
       "item.fuetcraft.expired_porkchop_chopped": "Expired Porkchop Chopped",
       "gui.fuetcraft.chopper_gui.tooltip_slot1": "Valid items:",
       "gui.fuetcraft.chopper_gui.tooltip_slot0": "Only raw pork chop are allowed.",
       "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
       "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped",
-      "gui.fuetcraft.chopper_gui.label_chopper": "Chopper",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
       "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",

@@ -62,22 +62,6 @@
         }
       },
       {
-        "type": "label",
-        "data": {
-          "name": "label_chopper",
-          "text": {
-            "fixedValue": "Stuffer"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 195,
-          "y": 44,
-          "locked": false
-        }
-      },
-      {
         "type": "image",
         "data": {
           "image": "add.png",
@@ -195,6 +179,23 @@
           "height": 24,
           "x": 195,
           "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_stuffer",
+          "text": {
+            "fixedValue": "",
+            "name": "StufferGuiTitleLabel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 44,
           "locked": false
         }
       }

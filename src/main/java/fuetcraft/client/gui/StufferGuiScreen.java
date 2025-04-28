@@ -16,6 +16,7 @@ import fuetcraft.world.inventory.StufferGuiMenu;
 
 import fuetcraft.procedures.StufferGuiTooltipSlot1TextProcedure;
 import fuetcraft.procedures.StufferGuiTooltipSlot0TextProcedure;
+import fuetcraft.procedures.StufferGuiTitleLabelProcedure;
 import fuetcraft.procedures.RigthArrow80VisibilityProcedure;
 import fuetcraft.procedures.RigthArrow60VisibilityProcedure;
 import fuetcraft.procedures.RigthArrow40VisibilityProcedure;
@@ -106,7 +107,9 @@ public class StufferGuiScreen extends AbstractContainerScreen<StufferGuiMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.fuetcraft.stuffer_gui.label_chopper"), 69, 7, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				StufferGuiTitleLabelProcedure.execute(), 69, 7, -12829636, false);
 	}
 
 	@Override

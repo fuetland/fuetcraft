@@ -23,6 +23,7 @@ import fuetcraft.procedures.GuiTooltipSlot1VisibilityProcedure;
 import fuetcraft.procedures.GuiTooltipSlot0VisibilityProcedure;
 import fuetcraft.procedures.ChopperGuiTooltipSlot1TextProcedure;
 import fuetcraft.procedures.ChopperGuiTooltipSlot0TextProcedure;
+import fuetcraft.procedures.ChopperGuiTitleLabelProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -106,7 +107,9 @@ public class ChopperGuiScreen extends AbstractContainerScreen<ChopperGuiMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.fuetcraft.chopper_gui.label_chopper"), 69, 7, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				ChopperGuiTitleLabelProcedure.execute(), 69, 7, -12829636, false);
 	}
 
 	@Override
