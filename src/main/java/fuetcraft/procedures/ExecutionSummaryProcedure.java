@@ -1,6 +1,6 @@
 package fuetcraft.procedures;
 
-public class ChopperExecutionSummaryProcedure {
+public class ExecutionSummaryProcedure {
 	public static void execute() {
 	}
 }

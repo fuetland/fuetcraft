@@ -142,20 +142,6 @@
       "path": "~/blocks/chopper/procedures"
     },
     {
-      "name": "ChopperExecutionSummary",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chopper_execution_summary",
-      "metadata": {
-        "files": [
-          "src/main/java/fuetcraft/procedures/ChopperExecutionSummaryProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/procedures"
-    },
-    {
       "name": "ChopperResetVariables",
       "type": "procedure",
       "compiles": true,
@@ -1004,6 +990,20 @@
         ]
       },
       "path": "~/items/fuets"
+    },
+    {
+      "name": "ExecutionSummary",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "execution_summary",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ExecutionSummaryProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/procedures"
     }
   ],
   "variable_elements": [
