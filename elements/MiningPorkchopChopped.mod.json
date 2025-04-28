@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "porkchop_chopped_mining",
+    "texture": "porkchop-chopped-mining",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
