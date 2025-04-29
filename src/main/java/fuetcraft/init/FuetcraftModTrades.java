@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.common.BasicItemListing;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 
@@ -17,9 +18,31 @@ public class FuetcraftModTrades {
 	@SubscribeEvent
 	public static void registerTrades(VillagerTradesEvent event) {
 		if (event.getType() == FuetcraftModVillagerProfessions.CHOPPER_PROFESSION.get()) {
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.PORKCHOP, 2),
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.BEEF),
 
-					new ItemStack(FuetcraftModItems.PORKCHOP_CHOPPED.get()), 10, 5, 0.05f));
+					new ItemStack(Items.PORKCHOP), 25, 3, 0.03f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.MUTTON),
+
+					new ItemStack(Items.PORKCHOP), 25, 3, 0.03f));
+		}
+		if (event.getType() == FuetcraftModVillagerProfessions.CHOPPER_PROFESSION.get()) {
+			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.COD),
+
+					new ItemStack(Items.SALMON), 20, 5, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.POTATO), new ItemStack(Blocks.MOSS_BLOCK), new ItemStack(Items.POISONOUS_POTATO), 20, 5, 0.05f));
+		}
+		if (event.getType() == FuetcraftModVillagerProfessions.CHOPPER_PROFESSION.get()) {
+			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.PORKCHOP),
+
+					new ItemStack(FuetcraftModItems.PORKCHOP_CHOPPED.get()), 15, 7, 0.07f));
+			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.RAW_GOLD, 3),
+
+					new ItemStack(FuetcraftModItems.MINING_PORKCHOP_CHOPPED.get()), 15, 7, 0.07f));
+		}
+		if (event.getType() == FuetcraftModVillagerProfessions.CHOPPER_PROFESSION.get()) {
+			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Items.EMERALD, 64),
+
+					new ItemStack(FuetcraftModItems.TARRADELLAS_PORKCHOP_CHOPPED.get()), 5, 11, 0.11f));
 		}
 	}
 }
