@@ -53,7 +53,7 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
@@ -82,24 +82,24 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "isCustomSoundType": false,
+    "isCustomSoundType": true,
     "soundOnStep": {
       "value": "ANVIL"
     },
     "breakSound": {
-      "value": ""
+      "value": "block.anvil.break"
     },
     "fallSound": {
-      "value": ""
+      "value": "block.anvil.fall"
     },
     "hitSound": {
-      "value": ""
+      "value": "block.anvil.hit"
     },
     "placeSound": {
-      "value": ""
+      "value": "CUSTOM:chopper-place"
     },
     "stepSound": {
-      "value": ""
+      "value": "block.anvil.step"
     },
     "luminance": 0,
     "unbreakable": false,

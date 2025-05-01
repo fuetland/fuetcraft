@@ -6,5 +6,21 @@
         "stream": false
       }
     ]
+  },
+  "chopper-place": {
+    "sounds": [
+      {
+        "name": "fuetcraft:chopper-place",
+        "stream": false
+      }
+    ]
+  },
+  "stuffer-place": {
+    "sounds": [
+      {
+        "name": "fuetcraft:stuffer-place",
+        "stream": false
+      }
+    ]
   }
 }

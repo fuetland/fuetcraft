@@ -1,7 +1,9 @@
 
 package fuetcraft.block;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.common.util.ForgeSoundType;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -12,7 +14,6 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
@@ -31,6 +32,7 @@ import net.minecraft.world.Containers;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
@@ -48,7 +50,11 @@ public class ChopperBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public ChopperBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.ANVIL).strength(2.5f, 25f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of()
+				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.break")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.step")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:chopper-place")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.hit")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.fall"))))
+				.strength(2.5f, 25f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

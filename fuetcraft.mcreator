@@ -1162,9 +1162,29 @@
       ],
       "category": "block",
       "subtitle": ""
+    },
+    {
+      "name": "chopper-place",
+      "files": [
+        "chopper-place"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "stuffer-place",
+      "files": [
+        "stuffer-place"
+      ],
+      "category": "block",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Stuffer",
+      "~CUSTOM:Chopper"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Stuffer",
       "~CUSTOM:Chopper"
@@ -1190,28 +1210,30 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
       "item.fuetcraft.fuet_exploring": "Exploring Fuet",
-      "block.fuetcraft.stuffer": "Stuffer",
+      "subtitles.chopper-place": "",
       "item.fuetcraft.fuet_swimming": "Swimming Fuet",
-      "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
       "block.fuetcraft.chopper": "Chopper",
-      "item_group.fuetcraft.fuetcraft": "Fuetcraft",
       "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
       "item.fuetcraft.fuet_mining": "Mining Fuet",
+      "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
+      "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
+      "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
+      "subtitles.stuffer-place": "",
+      "gui.fuetcraft.stuffer_gui.tooltip_slot0": "Any type of chopped pork chop is allowed.",
+      "item.fuetcraft.fuet": "Fuet",
+      "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
+      "item.fuetcraft.fuet_expired": "Expired Fuet",
+      "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
+      "block.fuetcraft.stuffer": "Stuffer",
+      "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
+      "item_group.fuetcraft.fuetcraft": "Fuetcraft",
       "item.fuetcraft.expired_porkchop_chopped": "Expired Porkchop Chopped",
       "gui.fuetcraft.chopper_gui.tooltip_slot1": "Valid items:",
       "gui.fuetcraft.chopper_gui.tooltip_slot0": "Only raw pork chop are allowed.",
       "item.fuetcraft.fuet_combat": "Combat Fuet",
       "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
-      "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped",
-      "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
-      "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
-      "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
-      "gui.fuetcraft.stuffer_gui.tooltip_slot0": "Any type of chopped pork chop is allowed.",
-      "item.fuetcraft.fuet": "Fuet",
-      "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
-      "item.fuetcraft.fuet_expired": "Expired Fuet"
+      "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped"
     }
   },
   "foldersRoot": {
