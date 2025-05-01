@@ -1090,6 +1090,16 @@
         ]
       },
       "path": "~/procedures"
+    },
+    {
+      "name": "PaintingOfAFuet",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_of_a_fuet",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [
@@ -1214,6 +1224,7 @@
       "subtitles.chopper-place": "",
       "item.fuetcraft.fuet_swimming": "Swimming Fuet",
       "block.fuetcraft.chopper": "Chopper",
+      "painting.fuetcraft.painting_of_a_fuet.title": "Painting Of A Fuet",
       "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
       "item.fuetcraft.fuet_mining": "Mining Fuet",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
@@ -1225,6 +1236,7 @@
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
       "item.fuetcraft.fuet_expired": "Expired Fuet",
       "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
+      "painting.fuetcraft.painting_of_a_fuet.author": "Fuetcraft",
       "block.fuetcraft.stuffer": "Stuffer",
       "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
       "item_group.fuetcraft.fuetcraft": "Fuetcraft",
