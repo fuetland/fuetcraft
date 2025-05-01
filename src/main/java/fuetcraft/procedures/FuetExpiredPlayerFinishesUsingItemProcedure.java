@@ -10,6 +10,14 @@ public class FuetExpiredPlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 60, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 3600, 1, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 600, 2, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 1200, 4, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1200, 8, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 300, 250, false, false));
 	}
 }

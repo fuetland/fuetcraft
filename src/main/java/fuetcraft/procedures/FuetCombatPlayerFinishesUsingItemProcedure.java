@@ -10,6 +10,8 @@ public class FuetCombatPlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 60, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1200, 1, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1800, 2, false, false));
 	}
 }

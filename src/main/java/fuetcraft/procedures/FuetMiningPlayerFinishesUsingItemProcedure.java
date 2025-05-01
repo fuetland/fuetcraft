@@ -10,6 +10,8 @@ public class FuetMiningPlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 60, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 6000, 0, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 6000, 2, false, false));
 	}
 }

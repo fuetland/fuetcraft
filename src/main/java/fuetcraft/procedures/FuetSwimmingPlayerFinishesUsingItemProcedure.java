@@ -10,6 +10,8 @@ public class FuetSwimmingPlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 60, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 1800, 1, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 1800, 1, false, false));
 	}
 }

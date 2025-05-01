@@ -10,6 +10,10 @@ public class FuetExploringPlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 60, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 9600, 2, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 8400, 1, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 8400, 2, false, false));
 	}
 }
