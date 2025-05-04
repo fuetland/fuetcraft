@@ -1080,7 +1080,8 @@
       "registry_name": "painting_of_a_fuet",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/items/paintings"
     }
   ],
   "variable_elements": [
@@ -1254,6 +1255,10 @@
           },
           {
             "name": "fuets",
+            "children": []
+          },
+          {
+            "name": "paintings",
             "children": []
           }
         ]
