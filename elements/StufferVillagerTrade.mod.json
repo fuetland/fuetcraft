@@ -5,7 +5,7 @@
     "tradeEntries": [
       {
         "villagerProfession": {
-          "value": "CUSTOM:ChopperProfession"
+          "value": "CUSTOM:StufferProfession"
         },
         "entries": [
           {
@@ -84,7 +84,7 @@
       },
       {
         "villagerProfession": {
-          "value": "CUSTOM:ChopperProfession"
+          "value": "CUSTOM:StufferProfession"
         },
         "entries": [
           {
@@ -127,7 +127,7 @@
       },
       {
         "villagerProfession": {
-          "value": "CUSTOM:ChopperProfession"
+          "value": "CUSTOM:StufferProfession"
         },
         "entries": [
           {
@@ -188,7 +188,7 @@
       },
       {
         "villagerProfession": {
-          "value": "CUSTOM:ChopperProfession"
+          "value": "CUSTOM:StufferProfession"
         },
         "entries": [
           {
@@ -231,7 +231,7 @@
       },
       {
         "villagerProfession": {
-          "value": "CUSTOM:ChopperProfession"
+          "value": "CUSTOM:StufferProfession"
         },
         "entries": [
           {
