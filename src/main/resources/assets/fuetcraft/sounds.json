@@ -1,12 +1,4 @@
 {
-  "chopper_craft": {
-    "sounds": [
-      {
-        "name": "fuetcraft:chopper",
-        "stream": false
-      }
-    ]
-  },
   "chopper-place": {
     "sounds": [
       {
@@ -19,6 +11,22 @@
     "sounds": [
       {
         "name": "fuetcraft:stuffer-place",
+        "stream": false
+      }
+    ]
+  },
+  "stuffer-crafting": {
+    "sounds": [
+      {
+        "name": "fuetcraft:stuffer",
+        "stream": false
+      }
+    ]
+  },
+  "chopper-crafting": {
+    "sounds": [
+      {
+        "name": "fuetcraft:chopper",
         "stream": false
       }
     ]

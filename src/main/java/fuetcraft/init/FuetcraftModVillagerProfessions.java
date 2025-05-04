@@ -34,9 +34,9 @@ public class FuetcraftModVillagerProfessions {
 	private static final Map<String, ProfessionPoiType> POI_TYPES = new HashMap<>();
 	public static final DeferredRegister<VillagerProfession> PROFESSIONS = DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, FuetcraftMod.MODID);
 	public static final RegistryObject<VillagerProfession> CHOPPER_PROFESSION = registerProfession("chopper_profession", () -> FuetcraftModBlocks.CHOPPER.get(),
-			() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:chopper_craft")));
+			() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:chopper-crafting")));
 	public static final RegistryObject<VillagerProfession> STUFFER_PROFESSION = registerProfession("stuffer_profession", () -> FuetcraftModBlocks.STUFFER.get(),
-			() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:chopper_craft")));
+			() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fuetcraft:stuffer-crafting")));
 
 	private static RegistryObject<VillagerProfession> registerProfession(String name, Supplier<Block> block, Supplier<SoundEvent> soundEvent) {
 		POI_TYPES.put(name, new ProfessionPoiType(block, null));

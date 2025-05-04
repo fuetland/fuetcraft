@@ -15,7 +15,8 @@ import fuetcraft.FuetcraftMod;
 
 public class FuetcraftModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, FuetcraftMod.MODID);
-	public static final RegistryObject<SoundEvent> CHOPPER_CRAFT = REGISTRY.register("chopper_craft", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fuetcraft", "chopper_craft")));
 	public static final RegistryObject<SoundEvent> CHOPPER_PLACE = REGISTRY.register("chopper-place", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fuetcraft", "chopper-place")));
 	public static final RegistryObject<SoundEvent> STUFFER_PLACE = REGISTRY.register("stuffer-place", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fuetcraft", "stuffer-place")));
+	public static final RegistryObject<SoundEvent> STUFFER_CRAFTING = REGISTRY.register("stuffer-crafting", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fuetcraft", "stuffer-crafting")));
+	public static final RegistryObject<SoundEvent> CHOPPER_CRAFTING = REGISTRY.register("chopper-crafting", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fuetcraft", "chopper-crafting")));
 }

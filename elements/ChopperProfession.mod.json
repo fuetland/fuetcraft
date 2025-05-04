@@ -7,7 +7,7 @@
       "value": "CUSTOM:Chopper"
     },
     "actionSound": {
-      "value": "CUSTOM:chopper_craft"
+      "value": "CUSTOM:chopper-crafting"
     },
     "hat": "Partial",
     "professionTextureFile": "butcher.png",

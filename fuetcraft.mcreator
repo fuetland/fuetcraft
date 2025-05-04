@@ -1210,14 +1210,6 @@
   ],
   "sound_elements": [
     {
-      "name": "chopper_craft",
-      "files": [
-        "chopper"
-      ],
-      "category": "block",
-      "subtitle": ""
-    },
-    {
       "name": "chopper-place",
       "files": [
         "chopper-place"
@@ -1229,6 +1221,22 @@
       "name": "stuffer-place",
       "files": [
         "stuffer-place"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "stuffer-crafting",
+      "files": [
+        "stuffer"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "chopper-crafting",
+      "files": [
+        "chopper"
       ],
       "category": "block",
       "subtitle": ""
@@ -1285,11 +1293,13 @@
     "en_us": {
       "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "subtitles.chopper-place": "",
+      "subtitles.chopper-crafting": "",
       "item.fuetcraft.fuet_swimming": "Swimming Fuet",
       "block.fuetcraft.chopper": "Chopper",
       "painting.fuetcraft.painting_of_a_fuet.title": "Painting Of A Fuet",
       "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
       "item.fuetcraft.fuet_mining": "Mining Fuet",
+      "subtitles.stuffer-crafting": "",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
       "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
