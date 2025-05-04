@@ -1082,6 +1082,44 @@
         "files": []
       },
       "path": "~/items/paintings"
+    },
+    {
+      "name": "GiveChopperRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_chopper_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GiveChopperRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/blocks/chopper/recipes"
+    },
+    {
+      "name": "GiveStufferRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_stuffer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GiveStufferRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/blocks/stuffer/recipes"
     }
   ],
   "variable_elements": [
