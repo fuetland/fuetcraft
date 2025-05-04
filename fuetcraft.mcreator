@@ -1329,8 +1329,9 @@
     "modid": "fuetcraft",
     "modName": "fuetcraft",
     "version": "1.0.0",
+    "description": "This mod includes the ability to craft different types of Fuets. Each of these provides different effects for the adventure.",
     "author": "Fuetland",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://github.com/fuetland/fuetcraft",
     "license": "Not specified",
     "serverSideOnly": false,
     "modPicture": "logo-fuetcraft-landscape",
@@ -1339,7 +1340,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "fuetland@gmail.com",
     "modElementsPackage": "fuetcraft"
   },
   "mcreatorVersion": 202500113416

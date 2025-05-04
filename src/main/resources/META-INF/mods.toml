@@ -6,10 +6,11 @@ license="Not specified"
 modId="fuetcraft"
 version="1.0.0"
 displayName="fuetcraft"
-displayURL="https://mcreator.net"
+displayURL="https://github.com/fuetland/fuetcraft"
 logoFile="logo.png"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+credits="fuetland@gmail.com"
 authors="Fuetland"
+description="This mod includes the ability to craft different types of Fuets. Each of these provides different effects for the adventure."
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
