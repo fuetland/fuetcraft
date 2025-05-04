@@ -1144,6 +1144,17 @@
         "files": []
       },
       "path": "~/blocks/stuffer"
+    },
+    {
+      "name": "RusticRoomWithFuets",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rustic_room_with_fuets",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/items/paintings"
     }
   ],
   "variable_elements": [
@@ -1292,8 +1303,8 @@
   "language_map": {
     "en_us": {
       "item.fuetcraft.fuet_exploring": "Exploring Fuet",
-      "subtitles.chopper-place": "",
       "subtitles.chopper-crafting": "",
+      "subtitles.chopper-place": "",
       "item.fuetcraft.fuet_swimming": "Swimming Fuet",
       "block.fuetcraft.chopper": "Chopper",
       "painting.fuetcraft.painting_of_a_fuet.title": "Painting Of A Fuet",
@@ -1319,7 +1330,9 @@
       "gui.fuetcraft.chopper_gui.tooltip_slot0": "Only raw pork chop are allowed.",
       "item.fuetcraft.fuet_combat": "Combat Fuet",
       "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
-      "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped"
+      "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped",
+      "painting.fuetcraft.rustic_room_with_fuets.title": "Rustic Room With Fuets",
+      "painting.fuetcraft.rustic_room_with_fuets.author": "Fuetcraft"
     }
   },
   "foldersRoot": {

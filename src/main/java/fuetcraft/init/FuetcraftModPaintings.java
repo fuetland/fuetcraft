@@ -15,4 +15,5 @@ import fuetcraft.FuetcraftMod;
 public class FuetcraftModPaintings {
 	public static final DeferredRegister<PaintingVariant> REGISTRY = DeferredRegister.create(ForgeRegistries.PAINTING_VARIANTS, FuetcraftMod.MODID);
 	public static final RegistryObject<PaintingVariant> PAINTING_OF_A_FUET = REGISTRY.register("painting_of_a_fuet", () -> new PaintingVariant(16, 32));
+	public static final RegistryObject<PaintingVariant> RUSTIC_ROOM_WITH_FUETS = REGISTRY.register("rustic_room_with_fuets", () -> new PaintingVariant(112, 80));
 }
