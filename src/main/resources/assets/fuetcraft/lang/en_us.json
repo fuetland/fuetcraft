@@ -10,6 +10,7 @@
   "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
   "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
   "subtitles.stuffer-place": "",
+  "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
   "gui.fuetcraft.stuffer_gui.tooltip_slot0": "Any type of chopped pork chop is allowed.",
   "item.fuetcraft.fuet": "Fuet",
   "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
