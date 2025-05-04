@@ -23,7 +23,7 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": true,
@@ -53,7 +53,7 @@
       "value": ""
     },
     "isMeat": true,
-    "isAlwaysEdible": false,
+    "isAlwaysEdible": true,
     "animation": "eat",
     "isMusicDisc": false,
     "musicDiscMusic": {

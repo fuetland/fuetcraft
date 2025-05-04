@@ -19,7 +19,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class FuetTarradellasItem extends Item {
 	public FuetTarradellasItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(1f).meat().build()));
+		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(1f).alwaysEat().meat().build()));
 	}
 
 	@Override

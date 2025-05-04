@@ -53,7 +53,7 @@
       "value": ""
     },
     "isMeat": true,
-    "isAlwaysEdible": false,
+    "isAlwaysEdible": true,
     "animation": "eat",
     "isMusicDisc": false,
     "musicDiscMusic": {
