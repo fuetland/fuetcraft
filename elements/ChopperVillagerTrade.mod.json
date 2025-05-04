@@ -43,6 +43,60 @@
             "maxTrades": 25,
             "xp": 3,
             "priceMultiplier": 0.03
+          },
+          {
+            "price1": {
+              "value": "Items.ROTTEN_FLESH"
+            },
+            "countPrice1": 20,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.PORKCHOP"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 25,
+            "xp": 3,
+            "priceMultiplier": 0.03
+          },
+          {
+            "price1": {
+              "value": "Items.RABBIT"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.PORKCHOP"
+            },
+            "countOffer": 5,
+            "level": 1,
+            "maxTrades": 25,
+            "xp": 3,
+            "priceMultiplier": 0.03
+          },
+          {
+            "price1": {
+              "value": "Items.CHICKEN"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.PORKCHOP"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 25,
+            "xp": 3,
+            "priceMultiplier": 0.03
           }
         ]
       },
@@ -82,7 +136,43 @@
               "value": "Items.POISONOUS_POTATO"
             },
             "countOffer": 1,
-            "level": 1,
+            "level": 2,
+            "maxTrades": 20,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.FISH#2"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.FISH#1"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 20,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.POTATO"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.FISH#3"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.POISONOUS_POTATO"
+            },
+            "countOffer": 1,
+            "level": 2,
             "maxTrades": 20,
             "xp": 5,
             "priceMultiplier": 0.05
@@ -123,6 +213,24 @@
             "countPrice2": 1,
             "offer": {
               "value": "CUSTOM:MiningPorkchopChopped"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 15,
+            "xp": 7,
+            "priceMultiplier": 0.06999999999999999
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:PorkchopChopped"
             },
             "countOffer": 1,
             "level": 3,
