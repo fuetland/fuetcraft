@@ -1199,7 +1199,26 @@
       "CUSTOM:TarradellasPorkchopChopped"
     ]
   },
-  "tab_element_order": {},
+  "tab_element_order": {
+    "CUSTOM:Fuetcraft": [
+      "PorkchopChopped",
+      "MiningPorkchopChopped",
+      "ExplorerPorkchopChopped",
+      "SwimmingPorkchopChopped",
+      "CombatPorkchopChopped",
+      "ExpiredPorkchopChopped",
+      "TarradellasPorkchopChopped",
+      "Fuet",
+      "FuetMining",
+      "FuetExploring",
+      "FuetSwimming",
+      "FuetCombat",
+      "FuetExpired",
+      "FuetTarradellas",
+      "Chopper",
+      "Stuffer"
+    ]
+  },
   "language_map": {
     "en_us": {
       "item.fuetcraft.fuet_exploring": "Exploring Fuet",
