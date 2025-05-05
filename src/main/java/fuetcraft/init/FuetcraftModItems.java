@@ -16,6 +16,7 @@ import fuetcraft.item.TarradellasPorkchopChoppedItem;
 import fuetcraft.item.SwimmingPorkchopChoppedItem;
 import fuetcraft.item.PorkchopChoppedItem;
 import fuetcraft.item.MiningPorkchopChoppedItem;
+import fuetcraft.item.GuideBookItem;
 import fuetcraft.item.FuetTarradellasItem;
 import fuetcraft.item.FuetSwimmingItem;
 import fuetcraft.item.FuetMiningItem;
@@ -47,6 +48,7 @@ public class FuetcraftModItems {
 	public static final RegistryObject<Item> FUET_MINING = REGISTRY.register("fuet_mining", () -> new FuetMiningItem());
 	public static final RegistryObject<Item> FUET_SWIMMING = REGISTRY.register("fuet_swimming", () -> new FuetSwimmingItem());
 	public static final RegistryObject<Item> FUET_TARRADELLAS = REGISTRY.register("fuet_tarradellas", () -> new FuetTarradellasItem());
+	public static final RegistryObject<Item> GUIDE_BOOK = REGISTRY.register("guide_book", () -> new GuideBookItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

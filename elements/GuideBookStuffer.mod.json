@@ -1,0 +1,83 @@
+{
+  "_fv": 77,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 256,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_stuffer_gui_title_label",
+          "text": {
+            "fixedValue": "Stuffer",
+            "name": "StufferGuiTitleLabel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 45,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stuffer-icon.png",
+          "use1Xscale": false,
+          "x": 106,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_stuffer_guide_text_1",
+          "text": {
+            "fixedValue": "",
+            "name": "GetStufferGuideText1"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 151,
+          "y": 68,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_stuffer_guide_text_2",
+          "text": {
+            "fixedValue": "",
+            "name": "GetStufferGuideText2"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 86,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 13,
+      "oy": 9,
+      "snapOnGrid": true
+    }
+  }
+}

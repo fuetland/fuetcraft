@@ -68,7 +68,7 @@ public class FuetcraftModTrades {
 
 					new ItemStack(FuetcraftModItems.TARRADELLAS_PORKCHOP_CHOPPED.get()), 5, 11, 0.11f));
 		}
-		if (event.getType() == FuetcraftModVillagerProfessions.CHOPPER_PROFESSION.get()) {
+		if (event.getType() == FuetcraftModVillagerProfessions.STUFFER_PROFESSION.get()) {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.PORKCHOP, 2),
 
 					new ItemStack(FuetcraftModItems.PORKCHOP_CHOPPED.get()), 25, 3, 0.03f));
@@ -76,7 +76,7 @@ public class FuetcraftModTrades {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(FuetcraftModItems.PORKCHOP_CHOPPED.get()), new ItemStack(Items.GOLD_INGOT, 3), new ItemStack(FuetcraftModItems.MINING_PORKCHOP_CHOPPED.get()), 25, 3, 0.03f));
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(FuetcraftModItems.PORKCHOP_CHOPPED.get()), new ItemStack(Items.ENDER_PEARL), new ItemStack(FuetcraftModItems.COMBAT_PORKCHOP_CHOPPED.get()), 25, 3, 0.03f));
 		}
-		if (event.getType() == FuetcraftModVillagerProfessions.CHOPPER_PROFESSION.get()) {
+		if (event.getType() == FuetcraftModVillagerProfessions.STUFFER_PROFESSION.get()) {
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.EMERALD, 5),
 
 					new ItemStack(Items.LEATHER), 20, 5, 0.05f));
@@ -84,14 +84,14 @@ public class FuetcraftModTrades {
 
 					new ItemStack(Items.ENDER_PEARL), 20, 5, 0.05f));
 		}
-		if (event.getType() == FuetcraftModVillagerProfessions.CHOPPER_PROFESSION.get()) {
+		if (event.getType() == FuetcraftModVillagerProfessions.STUFFER_PROFESSION.get()) {
 			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.RAW_GOLD, 3), new ItemStack(Items.LEATHER, 2), new ItemStack(FuetcraftModItems.FUET_MINING.get()), 15, 7, 0.07f));
 			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 3),
 
 					new ItemStack(FuetcraftModItems.FUET.get()), 15, 7, 0.07f));
 			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.POISONOUS_POTATO), new ItemStack(Items.LEATHER, 2), new ItemStack(FuetcraftModItems.FUET_EXPIRED.get()), 15, 7, 0.07f));
 		}
-		if (event.getType() == FuetcraftModVillagerProfessions.CHOPPER_PROFESSION.get()) {
+		if (event.getType() == FuetcraftModVillagerProfessions.STUFFER_PROFESSION.get()) {
 			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(FuetcraftModItems.FUET.get()),
 
 					new ItemStack(Items.BOOK), 10, 9, 0.09f));
@@ -99,7 +99,7 @@ public class FuetcraftModTrades {
 
 					new ItemStack(Items.EMERALD), 10, 9, 0.09f));
 		}
-		if (event.getType() == FuetcraftModVillagerProfessions.CHOPPER_PROFESSION.get()) {
+		if (event.getType() == FuetcraftModVillagerProfessions.STUFFER_PROFESSION.get()) {
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Items.EMERALD, 64), new ItemStack(Items.LEATHER, 2), new ItemStack(FuetcraftModItems.FUET_TARRADELLAS.get()), 5, 11, 0.11f));
 		}
 	}

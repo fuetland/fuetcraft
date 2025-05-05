@@ -1,0 +1,92 @@
+{
+  "_fv": 77,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_text_fuetcraft",
+          "text": {
+            "fixedValue": "Fuetcraft",
+            "name": "GetTextFuetcraft"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_choppericon",
+          "image": "chopper-icon-32x32.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OpenChopperGUI"
+          },
+          "x": 159,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_stuffericon",
+          "image": "stuffer-icon.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OpenStufferGUI"
+          },
+          "x": 239,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_porkchopchopped",
+          "image": "porkchop-chopped.png",
+          "hoveredImage": "",
+          "x": 159,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_fuet",
+          "image": "fuet-32x32.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OpenFuetGUI"
+          },
+          "x": 240,
+          "y": 143,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

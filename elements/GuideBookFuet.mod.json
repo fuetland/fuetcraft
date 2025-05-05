@@ -1,0 +1,228 @@
+{
+  "_fv": 77,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 256,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fuets",
+          "text": {
+            "fixedValue": "",
+            "name": "GetTitleOfFuetGuide"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 196,
+          "y": 47,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuet-32x32.png",
+          "use1Xscale": false,
+          "x": 182,
+          "y": 105,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuet-combat-32x32.png",
+          "use1Xscale": false,
+          "x": 127,
+          "y": 65,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuet-expired-32x32.png",
+          "use1Xscale": false,
+          "x": 227,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuet-exploring-32x32.png",
+          "use1Xscale": false,
+          "x": 108,
+          "y": 124,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuet-mining-32x32.png",
+          "use1Xscale": false,
+          "x": 163,
+          "y": 151,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuet-swimming-32x32.png",
+          "use1Xscale": false,
+          "x": 248,
+          "y": 147,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuet-tarradellas-32x32.png",
+          "use1Xscale": false,
+          "x": 279,
+          "y": 99,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrowleft32x16",
+          "image": "arrow-left-32x16.png",
+          "hoveredImage": "arrow-left-hovered-32x16.png.png",
+          "onClick": {
+            "name": "OpenCoverGUI"
+          },
+          "x": 93,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuet_tarradellas_guide_book",
+          "text": {
+            "fixedValue": "",
+            "name": "FuetTarradellasGuideBookTooltip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 285,
+          "y": 105,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuet_swimming_guide_book_to",
+          "text": {
+            "fixedValue": "",
+            "name": "FuetSwimmingGuideBookTooltip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 253,
+          "y": 154,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuet_mining_guide_book_tool",
+          "text": {
+            "fixedValue": "",
+            "name": "FuetMiningGuideBookTooltip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 169,
+          "y": 157,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuet_exploring_guide_book_t",
+          "text": {
+            "fixedValue": "",
+            "name": "FuetExploringGuideBookTooltip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 113,
+          "y": 129,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuet_expired_guide_book_too",
+          "text": {
+            "fixedValue": "",
+            "name": "FuetExpiredGuideBookTooltip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 233,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuet_combat_guide_book_tool",
+          "text": {
+            "fixedValue": "",
+            "name": "FuetCombatGuideBookTooltip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 133,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuet_guide_book_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "FuetGuideBookTooltip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 188,
+          "y": 111,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 13,
+      "oy": 9,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "_fv": 77,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 256,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrowleft32x16",
+          "image": "arrow-left-32x16.png",
+          "hoveredImage": "arrow-left-hovered-32x16.png.png",
+          "onClick": {
+            "name": "OpenCoverGUI"
+          },
+          "x": 93,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_chopper_gui_title_label",
+          "text": {
+            "fixedValue": "",
+            "name": "ChopperGuiTitleLabel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 196,
+          "y": 47,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "chopper-icon-32x32.png",
+          "use1Xscale": false,
+          "x": 300,
+          "y": 47,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_chopper_guide_text_1",
+          "text": {
+            "fixedValue": "",
+            "name": "GetChopperGuideText1"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 70,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "chopper-craft.png",
+          "use1Xscale": false,
+          "x": 269,
+          "y": 129,
+          "locked": true
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 13,
+      "oy": 9,
+      "snapOnGrid": false
+    }
+  }
+}

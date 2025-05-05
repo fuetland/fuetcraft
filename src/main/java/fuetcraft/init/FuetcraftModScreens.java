@@ -12,6 +12,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import fuetcraft.client.gui.StufferGuiScreen;
+import fuetcraft.client.gui.GuideBookStufferScreen;
+import fuetcraft.client.gui.GuideBookFuetScreen;
+import fuetcraft.client.gui.GuideBookCoverScreen;
+import fuetcraft.client.gui.GuideBookChopperScreen;
 import fuetcraft.client.gui.ChopperGuiScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -21,6 +25,10 @@ public class FuetcraftModScreens {
 		event.enqueueWork(() -> {
 			MenuScreens.register(FuetcraftModMenus.CHOPPER_GUI.get(), ChopperGuiScreen::new);
 			MenuScreens.register(FuetcraftModMenus.STUFFER_GUI.get(), StufferGuiScreen::new);
+			MenuScreens.register(FuetcraftModMenus.GUIDE_BOOK_COVER.get(), GuideBookCoverScreen::new);
+			MenuScreens.register(FuetcraftModMenus.GUIDE_BOOK_STUFFER.get(), GuideBookStufferScreen::new);
+			MenuScreens.register(FuetcraftModMenus.GUIDE_BOOK_FUET.get(), GuideBookFuetScreen::new);
+			MenuScreens.register(FuetcraftModMenus.GUIDE_BOOK_CHOPPER.get(), GuideBookChopperScreen::new);
 		});
 	}
 }

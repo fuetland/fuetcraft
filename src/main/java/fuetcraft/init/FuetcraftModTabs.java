@@ -34,5 +34,6 @@ public class FuetcraftModTabs {
 				tabData.accept(FuetcraftModItems.FUET_TARRADELLAS.get());
 				tabData.accept(FuetcraftModBlocks.CHOPPER.get().asItem());
 				tabData.accept(FuetcraftModBlocks.STUFFER.get().asItem());
+				tabData.accept(FuetcraftModItems.GUIDE_BOOK.get());
 			}).withSearchBar().build());
 }
