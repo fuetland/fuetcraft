@@ -1782,6 +1782,17 @@
         ]
       },
       "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "LogoOfAFishWholesaler",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logo_of_a_fish_wholesaler",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/items/paintings"
     }
   ],
   "variable_elements": [
@@ -1941,6 +1952,7 @@
       "gui.guide.book.fuet.effects": "Effects",
       "gui.guide.book.fuet.recipe": "Recipe",
       "item.fuetcraft.fuet_swimming": "Swimming Fuet",
+      "painting.fuetcraft.logo_of_a_fish_wholesaler.author": "Fuetcraft",
       "text.ingredients": "Ingredients",
       "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
       "item.fuetcraft.fuet_mining": "Mining Fuet",
@@ -1978,6 +1990,7 @@
       "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
       "subtitles.stuffer-place": "",
       "text.slot.2": "Slot 2",
+      "painting.fuetcraft.logo_of_a_fish_wholesaler.title": "Logo of a Fish Wholesaler",
       "gui.guide.book.chopper.text.1": "Chop pork chops to obtain",
       "text.slot.1": "Slot 1",
       "item.fuetcraft.fuet": "Fuet",
@@ -2009,6 +2022,7 @@
       "gui.guide.book.fuet.effects": "",
       "gui.guide.book.fuet.recipe": "",
       "item.fuetcraft.fuet_swimming": "Swimming Fuet",
+      "painting.fuetcraft.logo_of_a_fish_wholesaler.author": "Fuetcraft",
       "text.ingredients": "Ingredientes",
       "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
       "item.fuetcraft.fuet_mining": "Mining Fuet",
@@ -2046,6 +2060,7 @@
       "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
       "subtitles.stuffer-place": "",
       "text.slot.2": "",
+      "painting.fuetcraft.logo_of_a_fish_wholesaler.title": "Rustic Room With Fuets",
       "gui.guide.book.chopper.text.1": "",
       "text.slot.1": "",
       "item.fuetcraft.fuet": "Fuet",
