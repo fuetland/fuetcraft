@@ -1486,21 +1486,6 @@
       "path": "~/items/guide-book/fuet"
     },
     {
-      "name": "GuideBookChopper",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "guide_book_chopper",
-      "metadata": {
-        "files": [
-          "src/main/java/fuetcraft/world/inventory/GuideBookChopperMenu.java",
-          "src/main/java/fuetcraft/client/gui/GuideBookChopperScreen.java",
-          "src/main/java/fuetcraft/network/GuideBookChopperButtonMessage.java"
-        ]
-      },
-      "path": "~/items/guide-book/chopper"
-    },
-    {
       "name": "OpenChopperGUI",
       "type": "procedure",
       "compiles": true,
@@ -1549,6 +1534,254 @@
         "dependencies": []
       },
       "path": "~/items/guide-book/chopper"
+    },
+    {
+      "name": "GetCraftingText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_crafting_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetCraftingTextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/procedures/get-texts"
+    },
+    {
+      "name": "GetChopperGuideText2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_chopper_guide_text_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetChopperGuideText2Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/chopper"
+    },
+    {
+      "name": "GetIngredientsText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_ingredients_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetIngredientsTextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/procedures/get-texts"
+    },
+    {
+      "name": "GetSlot1Text",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_slot_1_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetSlot1TextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/procedures/get-texts"
+    },
+    {
+      "name": "GetSlot2Text",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_slot_2_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetSlot2TextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/procedures/get-texts"
+    },
+    {
+      "name": "GuideBookChopper",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_chopper",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/world/inventory/GuideBookChopperMenu.java",
+          "src/main/java/fuetcraft/client/gui/GuideBookChopperScreen.java",
+          "src/main/java/fuetcraft/network/GuideBookChopperButtonMessage.java"
+        ]
+      },
+      "path": "~/items/guide-book/chopper"
+    },
+    {
+      "name": "GuideBookIngredientsAnimationThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredients_animation_this_gui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientsAnimationThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientsAnimationWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredients_animation_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientsAnimationWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientAnimation1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientAnimation2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientAnimation3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientAnimation4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientAnimation5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientAnimation6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
     }
   ],
   "variable_elements": [
@@ -1608,6 +1841,12 @@
     },
     {
       "name": "currentTypeOfFuet",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "ingredientsAnimation",
       "type": "string",
       "scope": "map",
       "value": ""
@@ -1700,24 +1939,25 @@
       "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "subtitles.chopper-crafting": "",
       "gui.guide.book.fuet.effects": "Effects",
-      "item.fuetcraft.fuet_swimming": "Swimming Fuet",
       "gui.guide.book.fuet.recipe": "Recipe",
+      "item.fuetcraft.fuet_swimming": "Swimming Fuet",
+      "text.ingredients": "Ingredients",
       "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
       "item.fuetcraft.fuet_mining": "Mining Fuet",
       "subtitles.stuffer-crafting": "",
       "gui.guide.book.fuet.mining.effect.2": "- Night Vision III for 5 minutes",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "gui.guide.book.fuet.mining.effect.1": "- Haste I for 5 minutes",
-      "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
-      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
       "gui.guide.book.fuet.taradellas.effect.1": "- Regeneration II for 20 seconds",
+      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
+      "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
       "gui.fuetcraft.stuffer_gui.tooltip_slot0": "Any type of chopped pork chop is allowed.",
       "gui.guide.book.fuet.taradellas.effect.3": "- Instant Health II",
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
       "gui.guide.book.fuet.taradellas.effect.2": "- Fire Resistance for 3 minutes",
       "gui.guide.book.fuet.taradellas.effect.5": "- Absortion III for 2 minutes",
-      "gui.guide.book.fuet.taradellas.effect.4": "- Resistance for 3 minutes",
       "item.fuetcraft.fuet_expired": "Expired Fuet",
+      "gui.guide.book.fuet.taradellas.effect.4": "- Resistance for 3 minutes",
       "item.fuetcraft.guide_book": "Guide Book",
       "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
       "gui.guide.book.fuet.combat.effect.2": "- Resistance III for 1 minute 30 seconds",
@@ -1725,19 +1965,26 @@
       "gui.guide.book.fuet.combat.effect.1": "- Strength II for 1 minute",
       "item.fuetcraft.expired_porkchop_chopped": "Expired Porkchop Chopped",
       "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped",
+      "gui.fuetcraft.guide_book_chopper.label_proc_get_slot_2_text": "Slot 2",
       "painting.fuetcraft.rustic_room_with_fuets.author": "Fuetcraft",
       "subtitles.chopper-place": "",
+      "gui.fuetcraft.guide_book_chopper.label_proc_get_crafting_texts": "Crafting",
       "block.fuetcraft.chopper": "Chopper",
       "painting.fuetcraft.painting_of_a_fuet.title": "Painting Of A Fuet",
       "gui.guide.book.stuffer.1": "This block is used to create fuets",
       "gui.guide.book.stuffer.2": "from chopped pork chops.",
+      "text.crafting": "Crafting",
+      "gui.guide.book.chopper.text.2": "chopped pork meat",
       "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
       "subtitles.stuffer-place": "",
-      "gui.guide.book.chopper.text.1": "Chop pork chops to obtain chopped pork meat",
+      "text.slot.2": "Slot 2",
+      "gui.guide.book.chopper.text.1": "Chop pork chops to obtain",
+      "text.slot.1": "Slot 1",
       "item.fuetcraft.fuet": "Fuet",
       "gui.guide.book.fuet.swimming.effect.1": "- Conduit Power II for 1 minute 30 seconds",
       "gui.guide.book.fuet.title": "Fuets",
       "gui.guide.book.fuet.swimming.effect.2": "- Dolphins Grace II for 1 minute 30 seconds",
+      "gui.fuetcraft.guide_book_chopper.label_proc_get_ingredients_text": "Ingredients",
       "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
       "painting.fuetcraft.painting_of_a_fuet.author": "Fuetcraft",
       "block.fuetcraft.stuffer": "Stuffer",
@@ -1746,6 +1993,7 @@
       "gui.fuetcraft.chopper_gui.tooltip_slot1": "Valid items:",
       "gui.fuetcraft.chopper_gui.tooltip_slot0": "Only raw pork chop are allowed.",
       "item.fuetcraft.fuet_combat": "Combat Fuet",
+      "gui.fuetcraft.guide_book_chopper.label_proc_get_slot_1_text": "Slot 1",
       "gui.guide.book.fuet.expired.effect.1": "- Invisibility II for 3 minutes",
       "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
       "painting.fuetcraft.rustic_room_with_fuets.title": "Rustic Room With Fuets",
@@ -1759,24 +2007,25 @@
       "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "subtitles.chopper-crafting": "",
       "gui.guide.book.fuet.effects": "",
-      "item.fuetcraft.fuet_swimming": "Swimming Fuet",
       "gui.guide.book.fuet.recipe": "",
+      "item.fuetcraft.fuet_swimming": "Swimming Fuet",
+      "text.ingredients": "Ingredientes",
       "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
       "item.fuetcraft.fuet_mining": "Mining Fuet",
       "subtitles.stuffer-crafting": "",
       "gui.guide.book.fuet.mining.effect.2": "",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "gui.guide.book.fuet.mining.effect.1": "",
-      "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
-      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
       "gui.guide.book.fuet.taradellas.effect.1": "",
+      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
+      "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
       "gui.fuetcraft.stuffer_gui.tooltip_slot0": "Any type of chopped pork chop is allowed.",
       "gui.guide.book.fuet.taradellas.effect.3": "",
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
       "gui.guide.book.fuet.taradellas.effect.2": "",
       "gui.guide.book.fuet.taradellas.effect.5": "",
-      "gui.guide.book.fuet.taradellas.effect.4": "",
       "item.fuetcraft.fuet_expired": "Expired Fuet",
+      "gui.guide.book.fuet.taradellas.effect.4": "",
       "item.fuetcraft.guide_book": "Guide Book",
       "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
       "gui.guide.book.fuet.combat.effect.2": "",
@@ -1784,19 +2033,26 @@
       "gui.guide.book.fuet.combat.effect.1": "",
       "item.fuetcraft.expired_porkchop_chopped": "Expired Porkchop Chopped",
       "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped",
+      "gui.fuetcraft.guide_book_chopper.label_proc_get_slot_2_text": "Slot 2",
       "painting.fuetcraft.rustic_room_with_fuets.author": "Fuetcraft",
       "subtitles.chopper-place": "",
+      "gui.fuetcraft.guide_book_chopper.label_proc_get_crafting_texts": "Crafting",
       "block.fuetcraft.chopper": "Chopper",
       "painting.fuetcraft.painting_of_a_fuet.title": "Painting Of A Fuet",
       "gui.guide.book.stuffer.1": "Este bloque sirve para crear los fuets",
       "gui.guide.book.stuffer.2": "a partir de las chuletas de cerdo troceadas.",
+      "text.crafting": "Crafting",
+      "gui.guide.book.chopper.text.2": "",
       "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
       "subtitles.stuffer-place": "",
+      "text.slot.2": "",
       "gui.guide.book.chopper.text.1": "",
+      "text.slot.1": "",
       "item.fuetcraft.fuet": "Fuet",
       "gui.guide.book.fuet.swimming.effect.1": "",
       "gui.guide.book.fuet.title": "",
       "gui.guide.book.fuet.swimming.effect.2": "",
+      "gui.fuetcraft.guide_book_chopper.label_proc_get_ingredients_text": "Ingredients",
       "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
       "painting.fuetcraft.painting_of_a_fuet.author": "Fuetcraft",
       "block.fuetcraft.stuffer": "Stuffer",
@@ -1805,6 +2061,7 @@
       "gui.fuetcraft.chopper_gui.tooltip_slot1": "Valid items:",
       "gui.fuetcraft.chopper_gui.tooltip_slot0": "Only raw pork chop are allowed.",
       "item.fuetcraft.fuet_combat": "Combat Fuet",
+      "gui.fuetcraft.guide_book_chopper.label_proc_get_slot_1_text": "Slot 1",
       "gui.guide.book.fuet.expired.effect.1": "",
       "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
       "painting.fuetcraft.rustic_room_with_fuets.title": "Rustic Room With Fuets",
@@ -1827,6 +2084,14 @@
           },
           {
             "name": "tooltips-visibility",
+            "children": []
+          },
+          {
+            "name": "get-texts",
+            "children": []
+          },
+          {
+            "name": "ingredients-animation",
             "children": []
           }
         ]

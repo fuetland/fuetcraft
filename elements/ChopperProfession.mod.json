@@ -11,6 +11,6 @@
     },
     "hat": "Partial",
     "professionTextureFile": "butcher.png",
-    "zombifiedProfessionTextureFile": "zombified-butcher.png"
+    "zombifiedProfessionTextureFile": "zombified_butcher.png"
   }
 }

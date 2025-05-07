@@ -13,6 +13,17 @@ import java.util.HashMap;
 
 import fuetcraft.world.inventory.GuideBookChopperMenu;
 
+import fuetcraft.procedures.GuideBookIngredientAnimation6Procedure;
+import fuetcraft.procedures.GuideBookIngredientAnimation5Procedure;
+import fuetcraft.procedures.GuideBookIngredientAnimation4Procedure;
+import fuetcraft.procedures.GuideBookIngredientAnimation3Procedure;
+import fuetcraft.procedures.GuideBookIngredientAnimation2Procedure;
+import fuetcraft.procedures.GuideBookIngredientAnimation1Procedure;
+import fuetcraft.procedures.GetSlot2TextProcedure;
+import fuetcraft.procedures.GetSlot1TextProcedure;
+import fuetcraft.procedures.GetIngredientsTextProcedure;
+import fuetcraft.procedures.GetCraftingTextProcedure;
+import fuetcraft.procedures.GetChopperGuideText2Procedure;
 import fuetcraft.procedures.GetChopperGuideText1Procedure;
 import fuetcraft.procedures.ChopperGuiTitleLabelProcedure;
 
@@ -60,6 +71,26 @@ public class GuideBookChopperScreen extends AbstractContainerScreen<GuideBookCho
 
 		guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/chopper-craft.png"), this.leftPos + 183, this.topPos + 92, 0, 0, 63, 64, 63, 64);
 
+		guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/porkchop-32x32.png"), this.leftPos + 25, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+
+		if (GuideBookIngredientAnimation1Procedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/netherite-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+		}
+		if (GuideBookIngredientAnimation2Procedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/salmon-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+		}
+		if (GuideBookIngredientAnimation3Procedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/ender-pearl-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+		}
+		if (GuideBookIngredientAnimation4Procedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/torchflower-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+		}
+		if (GuideBookIngredientAnimation5Procedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/golden-pickaxe-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+		}
+		if (GuideBookIngredientAnimation6Procedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/poisonous-potato-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+		}
 		RenderSystem.disableBlend();
 	}
 
@@ -79,7 +110,22 @@ public class GuideBookChopperScreen extends AbstractContainerScreen<GuideBookCho
 				ChopperGuiTitleLabelProcedure.execute(), 110, 10, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				GetChopperGuideText1Procedure.execute(), 70, 33, -12829636, false);
+				GetChopperGuideText1Procedure.execute(), 61, 34, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				GetChopperGuideText2Procedure.execute(), 80, 46, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				GetCraftingTextProcedure.execute(), 194, 79, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				GetIngredientsTextProcedure.execute(), 51, 79, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				GetSlot1TextProcedure.execute(), 25, 135, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				GetSlot2TextProcedure.execute(), 105, 135, -12829636, false);
 	}
 
 	@Override
