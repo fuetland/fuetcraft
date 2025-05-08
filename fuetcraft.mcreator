@@ -1202,20 +1202,6 @@
       "path": "~/items/guide-book"
     },
     {
-      "name": "GuideBookStuffer",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "guide_book_stuffer",
-      "metadata": {
-        "files": [
-          "src/main/java/fuetcraft/client/gui/GuideBookStufferScreen.java",
-          "src/main/java/fuetcraft/world/inventory/GuideBookStufferMenu.java"
-        ]
-      },
-      "path": "~/items/guide-book/stuffer"
-    },
-    {
       "name": "OpenStufferGUI",
       "type": "procedure",
       "compiles": true,
@@ -1793,6 +1779,79 @@
         "files": []
       },
       "path": "~/items/paintings"
+    },
+    {
+      "name": "GuideBookStuffer",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_stuffer",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/client/gui/GuideBookStufferScreen.java",
+          "src/main/java/fuetcraft/network/GuideBookStufferButtonMessage.java",
+          "src/main/java/fuetcraft/world/inventory/GuideBookStufferMenu.java"
+        ]
+      },
+      "path": "~/items/guide-book/stuffer"
+    },
+    {
+      "name": "GuideBookChopperThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_chopper_this_gui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookChopperThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/guide-book/chopper"
+    },
+    {
+      "name": "GuideBookStufferThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_stuffer_this_gui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookStufferThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/guide-book/stuffer"
+    },
+    {
+      "name": "GuideBookIngredientAnimation0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_0",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
     }
   ],
   "variable_elements": [

@@ -25,7 +25,7 @@ public class FuetcraftModMenus {
 	public static final RegistryObject<MenuType<ChopperGuiMenu>> CHOPPER_GUI = REGISTRY.register("chopper_gui", () -> IForgeMenuType.create(ChopperGuiMenu::new));
 	public static final RegistryObject<MenuType<StufferGuiMenu>> STUFFER_GUI = REGISTRY.register("stuffer_gui", () -> IForgeMenuType.create(StufferGuiMenu::new));
 	public static final RegistryObject<MenuType<GuideBookCoverMenu>> GUIDE_BOOK_COVER = REGISTRY.register("guide_book_cover", () -> IForgeMenuType.create(GuideBookCoverMenu::new));
-	public static final RegistryObject<MenuType<GuideBookStufferMenu>> GUIDE_BOOK_STUFFER = REGISTRY.register("guide_book_stuffer", () -> IForgeMenuType.create(GuideBookStufferMenu::new));
 	public static final RegistryObject<MenuType<GuideBookFuetMenu>> GUIDE_BOOK_FUET = REGISTRY.register("guide_book_fuet", () -> IForgeMenuType.create(GuideBookFuetMenu::new));
 	public static final RegistryObject<MenuType<GuideBookChopperMenu>> GUIDE_BOOK_CHOPPER = REGISTRY.register("guide_book_chopper", () -> IForgeMenuType.create(GuideBookChopperMenu::new));
+	public static final RegistryObject<MenuType<GuideBookStufferMenu>> GUIDE_BOOK_STUFFER = REGISTRY.register("guide_book_stuffer", () -> IForgeMenuType.create(GuideBookStufferMenu::new));
 }

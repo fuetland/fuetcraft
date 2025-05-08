@@ -26,9 +26,9 @@ public class FuetcraftModScreens {
 			MenuScreens.register(FuetcraftModMenus.CHOPPER_GUI.get(), ChopperGuiScreen::new);
 			MenuScreens.register(FuetcraftModMenus.STUFFER_GUI.get(), StufferGuiScreen::new);
 			MenuScreens.register(FuetcraftModMenus.GUIDE_BOOK_COVER.get(), GuideBookCoverScreen::new);
-			MenuScreens.register(FuetcraftModMenus.GUIDE_BOOK_STUFFER.get(), GuideBookStufferScreen::new);
 			MenuScreens.register(FuetcraftModMenus.GUIDE_BOOK_FUET.get(), GuideBookFuetScreen::new);
 			MenuScreens.register(FuetcraftModMenus.GUIDE_BOOK_CHOPPER.get(), GuideBookChopperScreen::new);
+			MenuScreens.register(FuetcraftModMenus.GUIDE_BOOK_STUFFER.get(), GuideBookStufferScreen::new);
 		});
 	}
 }

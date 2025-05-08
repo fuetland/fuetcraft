@@ -253,7 +253,7 @@
       }
     ],
     "onOpen": {
-      "name": "GuideBookIngredientsAnimationThisGUIIsOpened"
+      "name": "GuideBookChopperThisGUIIsOpened"
     },
     "onTick": {
       "name": "GuideBookIngredientsAnimationWhileThisGUIIsOpenTick"

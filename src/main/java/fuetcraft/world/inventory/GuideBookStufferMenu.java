@@ -3,6 +3,9 @@ package fuetcraft.world.inventory;
 
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
@@ -20,8 +23,12 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+import fuetcraft.procedures.GuideBookStufferThisGUIIsOpenedProcedure;
+import fuetcraft.procedures.GuideBookIngredientsAnimationWhileThisGUIIsOpenTickProcedure;
+
 import fuetcraft.init.FuetcraftModMenus;
 
+@Mod.EventBusSubscriber
 public class GuideBookStufferMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -48,6 +55,7 @@ public class GuideBookStufferMenu extends AbstractContainerMenu implements Suppl
 			this.z = pos.getZ();
 			access = ContainerLevelAccess.create(world, pos);
 		}
+		GuideBookStufferThisGUIIsOpenedProcedure.execute(entity);
 	}
 
 	@Override
@@ -70,5 +78,17 @@ public class GuideBookStufferMenu extends AbstractContainerMenu implements Suppl
 
 	public Map<Integer, Slot> get() {
 		return customSlots;
+	}
+
+	@SubscribeEvent
+	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		Player entity = event.player;
+		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof GuideBookStufferMenu) {
+			Level world = entity.level();
+			double x = entity.getX();
+			double y = entity.getY();
+			double z = entity.getZ();
+			GuideBookIngredientsAnimationWhileThisGUIIsOpenTickProcedure.execute(entity);
+		}
 	}
 }

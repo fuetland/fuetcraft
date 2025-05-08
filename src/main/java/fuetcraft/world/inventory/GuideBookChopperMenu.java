@@ -24,7 +24,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 import fuetcraft.procedures.GuideBookIngredientsAnimationWhileThisGUIIsOpenTickProcedure;
-import fuetcraft.procedures.GuideBookIngredientsAnimationThisGUIIsOpenedProcedure;
+import fuetcraft.procedures.GuideBookChopperThisGUIIsOpenedProcedure;
 
 import fuetcraft.init.FuetcraftModMenus;
 
@@ -55,7 +55,7 @@ public class GuideBookChopperMenu extends AbstractContainerMenu implements Suppl
 			this.z = pos.getZ();
 			access = ContainerLevelAccess.create(world, pos);
 		}
-		GuideBookIngredientsAnimationThisGUIIsOpenedProcedure.execute(entity);
+		GuideBookChopperThisGUIIsOpenedProcedure.execute(entity);
 	}
 
 	@Override

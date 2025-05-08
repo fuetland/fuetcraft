@@ -7,7 +7,7 @@ public class GuideBookIngredientsAnimationWhileThisGUIIsOpenTickProcedure {
 		if (entity == null)
 			return;
 		if (entity.getPersistentData().getDouble("ingredientsAnimation") <= 1) {
-			entity.getPersistentData().putDouble("ingredientsAnimation", 360);
+			entity.getPersistentData().putDouble("ingredientsAnimation", (entity.getPersistentData().getDouble("totalIngredientsAnimation")));
 		}
 		entity.getPersistentData().putDouble("ingredientsAnimation", (entity.getPersistentData().getDouble("ingredientsAnimation") - 1));
 	}
