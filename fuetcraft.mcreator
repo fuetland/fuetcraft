@@ -1852,6 +1852,71 @@
         ]
       },
       "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookPorkchopChopped",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/world/inventory/GuideBookPorkchopChoppedMenu.java",
+          "src/main/java/fuetcraft/client/gui/GuideBookPorkchopChoppedScreen.java",
+          "src/main/java/fuetcraft/network/GuideBookPorkchopChoppedButtonMessage.java"
+        ]
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "OpenPorkchopChoppedGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_porkchop_chopped_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/OpenPorkchopChoppedGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "GetPorckchopChoppedText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_porckchop_chopped_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetPorckchopChoppedTextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/procedures/get-texts"
     }
   ],
   "variable_elements": [
@@ -2198,6 +2263,10 @@
               },
               {
                 "name": "chopper",
+                "children": []
+              },
+              {
+                "name": "porckchop-chopped",
                 "children": []
               }
             ]

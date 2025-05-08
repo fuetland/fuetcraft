@@ -13,6 +13,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 
 import fuetcraft.client.gui.StufferGuiScreen;
 import fuetcraft.client.gui.GuideBookStufferScreen;
+import fuetcraft.client.gui.GuideBookPorkchopChoppedScreen;
 import fuetcraft.client.gui.GuideBookFuetScreen;
 import fuetcraft.client.gui.GuideBookCoverScreen;
 import fuetcraft.client.gui.GuideBookChopperScreen;
@@ -29,6 +30,7 @@ public class FuetcraftModScreens {
 			MenuScreens.register(FuetcraftModMenus.GUIDE_BOOK_FUET.get(), GuideBookFuetScreen::new);
 			MenuScreens.register(FuetcraftModMenus.GUIDE_BOOK_CHOPPER.get(), GuideBookChopperScreen::new);
 			MenuScreens.register(FuetcraftModMenus.GUIDE_BOOK_STUFFER.get(), GuideBookStufferScreen::new);
+			MenuScreens.register(FuetcraftModMenus.GUIDE_BOOK_PORKCHOP_CHOPPED.get(), GuideBookPorkchopChoppedScreen::new);
 		});
 	}
 }

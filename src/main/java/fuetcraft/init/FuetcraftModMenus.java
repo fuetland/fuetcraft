@@ -13,6 +13,7 @@ import net.minecraft.world.inventory.MenuType;
 
 import fuetcraft.world.inventory.StufferGuiMenu;
 import fuetcraft.world.inventory.GuideBookStufferMenu;
+import fuetcraft.world.inventory.GuideBookPorkchopChoppedMenu;
 import fuetcraft.world.inventory.GuideBookFuetMenu;
 import fuetcraft.world.inventory.GuideBookCoverMenu;
 import fuetcraft.world.inventory.GuideBookChopperMenu;
@@ -28,4 +29,5 @@ public class FuetcraftModMenus {
 	public static final RegistryObject<MenuType<GuideBookFuetMenu>> GUIDE_BOOK_FUET = REGISTRY.register("guide_book_fuet", () -> IForgeMenuType.create(GuideBookFuetMenu::new));
 	public static final RegistryObject<MenuType<GuideBookChopperMenu>> GUIDE_BOOK_CHOPPER = REGISTRY.register("guide_book_chopper", () -> IForgeMenuType.create(GuideBookChopperMenu::new));
 	public static final RegistryObject<MenuType<GuideBookStufferMenu>> GUIDE_BOOK_STUFFER = REGISTRY.register("guide_book_stuffer", () -> IForgeMenuType.create(GuideBookStufferMenu::new));
+	public static final RegistryObject<MenuType<GuideBookPorkchopChoppedMenu>> GUIDE_BOOK_PORKCHOP_CHOPPED = REGISTRY.register("guide_book_porkchop_chopped", () -> IForgeMenuType.create(GuideBookPorkchopChoppedMenu::new));
 }
