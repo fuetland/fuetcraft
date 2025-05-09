@@ -17,6 +17,7 @@ import java.util.HashMap;
 import fuetcraft.world.inventory.GuideBookCoverMenu;
 
 import fuetcraft.procedures.OpenStufferGUIProcedure;
+import fuetcraft.procedures.OpenPorkchopChoppedGUIProcedure;
 import fuetcraft.procedures.OpenFuetGUIProcedure;
 import fuetcraft.procedures.OpenChopperGUIProcedure;
 
@@ -73,6 +74,10 @@ public class GuideBookCoverButtonMessage {
 		if (buttonID == 1) {
 
 			OpenStufferGUIProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 2) {
+
+			OpenPorkchopChoppedGUIProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 3) {
 

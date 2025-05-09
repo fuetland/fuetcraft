@@ -15,14 +15,14 @@ import java.util.Arrays;
 
 import fuetcraft.world.inventory.GuideBookPorkchopChoppedMenu;
 
+import fuetcraft.procedures.PorkchopChoppedTarradellasGuideBookTooltipProcedure;
+import fuetcraft.procedures.PorkchopChoppedSwimmingGuideBookTooltipProcedure;
+import fuetcraft.procedures.PorkchopChoppedMiningGuideBookTooltipProcedure;
+import fuetcraft.procedures.PorkchopChoppedGuideBookTooltipProcedure;
+import fuetcraft.procedures.PorkchopChoppedExploringGuideBookTooltipProcedure;
+import fuetcraft.procedures.PorkchopChoppedExpiredGuideBookTooltipProcedure;
+import fuetcraft.procedures.PorkchopChoppedCombatGuideBookTooltipProcedure;
 import fuetcraft.procedures.GetPorckchopChoppedTextProcedure;
-import fuetcraft.procedures.FuetTarradellasGuideBookTooltipProcedure;
-import fuetcraft.procedures.FuetSwimmingGuideBookTooltipProcedure;
-import fuetcraft.procedures.FuetMiningGuideBookTooltipProcedure;
-import fuetcraft.procedures.FuetGuideBookTooltipProcedure;
-import fuetcraft.procedures.FuetExploringGuideBookTooltipProcedure;
-import fuetcraft.procedures.FuetExpiredGuideBookTooltipProcedure;
-import fuetcraft.procedures.FuetCombatGuideBookTooltipProcedure;
 
 import fuetcraft.network.GuideBookPorkchopChoppedButtonMessage;
 
@@ -56,43 +56,43 @@ public class GuideBookPorkchopChoppedScreen extends AbstractContainerScreen<Guid
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 		if (mouseX > leftPos + 199 && mouseX < leftPos + 223 && mouseY > topPos + 68 && mouseY < topPos + 92) {
-			String hoverText = FuetTarradellasGuideBookTooltipProcedure.execute();
+			String hoverText = PorkchopChoppedTarradellasGuideBookTooltipProcedure.execute();
 			if (hoverText != null) {
 				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
 			}
 		}
 		if (mouseX > leftPos + 167 && mouseX < leftPos + 191 && mouseY > topPos + 117 && mouseY < topPos + 141) {
-			String hoverText = FuetSwimmingGuideBookTooltipProcedure.execute();
+			String hoverText = PorkchopChoppedSwimmingGuideBookTooltipProcedure.execute();
 			if (hoverText != null) {
 				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
 			}
 		}
 		if (mouseX > leftPos + 83 && mouseX < leftPos + 107 && mouseY > topPos + 120 && mouseY < topPos + 144) {
-			String hoverText = FuetMiningGuideBookTooltipProcedure.execute();
+			String hoverText = PorkchopChoppedMiningGuideBookTooltipProcedure.execute();
 			if (hoverText != null) {
 				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
 			}
 		}
 		if (mouseX > leftPos + 27 && mouseX < leftPos + 51 && mouseY > topPos + 92 && mouseY < topPos + 116) {
-			String hoverText = FuetExploringGuideBookTooltipProcedure.execute();
+			String hoverText = PorkchopChoppedExploringGuideBookTooltipProcedure.execute();
 			if (hoverText != null) {
 				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
 			}
 		}
 		if (mouseX > leftPos + 147 && mouseX < leftPos + 171 && mouseY > topPos + 36 && mouseY < topPos + 60) {
-			String hoverText = FuetExpiredGuideBookTooltipProcedure.execute();
+			String hoverText = PorkchopChoppedExpiredGuideBookTooltipProcedure.execute();
 			if (hoverText != null) {
 				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
 			}
 		}
 		if (mouseX > leftPos + 47 && mouseX < leftPos + 71 && mouseY > topPos + 34 && mouseY < topPos + 58) {
-			String hoverText = FuetCombatGuideBookTooltipProcedure.execute();
+			String hoverText = PorkchopChoppedCombatGuideBookTooltipProcedure.execute();
 			if (hoverText != null) {
 				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
 			}
 		}
 		if (mouseX > leftPos + 102 && mouseX < leftPos + 126 && mouseY > topPos + 74 && mouseY < topPos + 98) {
-			String hoverText = FuetGuideBookTooltipProcedure.execute();
+			String hoverText = PorkchopChoppedGuideBookTooltipProcedure.execute();
 			if (hoverText != null) {
 				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
 			}

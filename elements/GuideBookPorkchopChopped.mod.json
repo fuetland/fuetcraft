@@ -117,7 +117,7 @@
           "name": "tooltip_proc_fuet_tarradellas_guide_book",
           "text": {
             "fixedValue": "",
-            "name": "FuetTarradellasGuideBookTooltip"
+            "name": "PorkchopChoppedTarradellasGuideBookTooltip"
           },
           "width": 24,
           "height": 24,
@@ -132,7 +132,7 @@
           "name": "tooltip_proc_fuet_swimming_guide_book_to",
           "text": {
             "fixedValue": "",
-            "name": "FuetSwimmingGuideBookTooltip"
+            "name": "PorkchopChoppedSwimmingGuideBookTooltip"
           },
           "width": 24,
           "height": 24,
@@ -147,7 +147,7 @@
           "name": "tooltip_proc_fuet_mining_guide_book_tool",
           "text": {
             "fixedValue": "",
-            "name": "FuetMiningGuideBookTooltip"
+            "name": "PorkchopChoppedMiningGuideBookTooltip"
           },
           "width": 24,
           "height": 24,
@@ -162,7 +162,7 @@
           "name": "tooltip_proc_fuet_exploring_guide_book_t",
           "text": {
             "fixedValue": "",
-            "name": "FuetExploringGuideBookTooltip"
+            "name": "PorkchopChoppedExploringGuideBookTooltip"
           },
           "width": 24,
           "height": 24,
@@ -177,7 +177,7 @@
           "name": "tooltip_proc_fuet_expired_guide_book_too",
           "text": {
             "fixedValue": "",
-            "name": "FuetExpiredGuideBookTooltip"
+            "name": "PorkchopChoppedExpiredGuideBookTooltip"
           },
           "width": 24,
           "height": 24,
@@ -192,7 +192,7 @@
           "name": "tooltip_proc_fuet_combat_guide_book_tool",
           "text": {
             "fixedValue": "",
-            "name": "FuetCombatGuideBookTooltip"
+            "name": "PorkchopChoppedCombatGuideBookTooltip"
           },
           "width": 24,
           "height": 24,
@@ -207,7 +207,7 @@
           "name": "tooltip_proc_fuet_guide_book_tooltip",
           "text": {
             "fixedValue": "",
-            "name": "FuetGuideBookTooltip"
+            "name": "PorkchopChoppedGuideBookTooltip"
           },
           "width": 24,
           "height": 24,

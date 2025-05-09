@@ -96,6 +96,10 @@ public class GuideBookCoverScreen extends AbstractContainerScreen<GuideBookCover
 		guistate.put("button:imagebutton_stuffericon", imagebutton_stuffericon);
 		this.addRenderableWidget(imagebutton_stuffericon);
 		imagebutton_porkchopchopped = new ImageButton(this.leftPos + 33, this.topPos + 106, 32, 32, 0, 0, 32, new ResourceLocation("fuetcraft:textures/screens/atlas/imagebutton_porkchopchopped.png"), 32, 64, e -> {
+			if (true) {
+				FuetcraftMod.PACKET_HANDLER.sendToServer(new GuideBookCoverButtonMessage(2, x, y, z));
+				GuideBookCoverButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_porkchopchopped", imagebutton_porkchopchopped);
 		this.addRenderableWidget(imagebutton_porkchopchopped);

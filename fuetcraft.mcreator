@@ -1917,6 +1917,111 @@
         "dependencies": []
       },
       "path": "~/procedures/get-texts"
+    },
+    {
+      "name": "PorkchopChoppedCombatGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_combat_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedCombatGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "PorkchopChoppedGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "PorkchopChoppedExpiredGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_expired_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedExpiredGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "PorkchopChoppedExploringGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_exploring_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedExploringGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "PorkchopChoppedMiningGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_mining_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedMiningGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "PorkchopChoppedSwimmingGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_swimming_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedSwimmingGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "PorkchopChoppedTarradellasGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_tarradellas_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedTarradellasGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
     }
   ],
   "variable_elements": [
@@ -2074,8 +2179,8 @@
       "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "subtitles.chopper-crafting": "",
       "gui.guide.book.fuet.effects": "Effects",
-      "gui.guide.book.fuet.recipe": "Recipe",
       "item.fuetcraft.fuet_swimming": "Swimming Fuet",
+      "gui.guide.book.fuet.recipe": "Recipe",
       "painting.fuetcraft.logo_of_a_fish_wholesaler.author": "Fuetcraft",
       "text.ingredients": "Ingredients",
       "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
@@ -2084,9 +2189,9 @@
       "gui.guide.book.fuet.mining.effect.2": "- Night Vision III for 5 minutes",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "gui.guide.book.fuet.mining.effect.1": "- Haste I for 5 minutes",
-      "gui.guide.book.fuet.taradellas.effect.1": "- Regeneration II for 20 seconds",
-      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
       "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
+      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
+      "gui.guide.book.fuet.taradellas.effect.1": "- Regeneration II for 20 seconds",
       "gui.fuetcraft.stuffer_gui.tooltip_slot0": "Any type of chopped pork chop is allowed.",
       "gui.guide.book.fuet.taradellas.effect.3": "- Instant Health II",
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
@@ -2144,8 +2249,8 @@
       "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "subtitles.chopper-crafting": "",
       "gui.guide.book.fuet.effects": "",
-      "gui.guide.book.fuet.recipe": "",
       "item.fuetcraft.fuet_swimming": "Swimming Fuet",
+      "gui.guide.book.fuet.recipe": "",
       "painting.fuetcraft.logo_of_a_fish_wholesaler.author": "Fuetcraft",
       "text.ingredients": "Ingredientes",
       "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
@@ -2154,9 +2259,9 @@
       "gui.guide.book.fuet.mining.effect.2": "",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "gui.guide.book.fuet.mining.effect.1": "",
-      "gui.guide.book.fuet.taradellas.effect.1": "",
-      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
       "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
+      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
+      "gui.guide.book.fuet.taradellas.effect.1": "",
       "gui.fuetcraft.stuffer_gui.tooltip_slot0": "Any type of chopped pork chop is allowed.",
       "gui.guide.book.fuet.taradellas.effect.3": "",
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
