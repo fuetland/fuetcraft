@@ -2086,9 +2086,9 @@
       "registry_name": "thinking_in_fuets_disc",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fuetcraft/items/thinking_in_fuets_disc.json",
           "src/main/java/fuetcraft/item/ThinkingInFuetsDiscItem.java",
           "src/main/resources/data/fuetcraft/jukebox_song/thinking_in_fuets_disc.json",
+          "src/main/resources/assets/fuetcraft/items/thinking_in_fuets_disc.json",
           "src/main/resources/assets/fuetcraft/models/item/thinking_in_fuets_disc.json"
         ]
       },
@@ -2386,7 +2386,7 @@
       "gui.guide.book.stuffer.1": "This block is used to create fuets",
       "gui.guide.book.stuffer.2": "from chopped pork chops.",
       "block.fuetcraft.banner.fuet_banner.white": "White Fuet Banner",
-      "item.fuetcraft.thinking_in_fuets_disc.desc": "Thinking of fuets",
+      "item.fuetcraft.thinking_in_fuets_disc.desc": "Thinking in fuets",
       "text.crafting": "Crafting",
       "gui.guide.book.chopper.text.2": "chopped pork meat",
       "block.fuetcraft.banner.fuet_banner.lime": "Lime Fuet Banner",

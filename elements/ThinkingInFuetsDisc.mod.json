@@ -56,7 +56,7 @@
     "musicDiscMusic": {
       "value": "CUSTOM:thinkinginfuets"
     },
-    "musicDiscDescription": "Thinking of fuets",
+    "musicDiscDescription": "Thinking in fuets",
     "musicDiscLengthInTicks": 4340,
     "musicDiscAnalogOutput": 10,
     "providedBannerPatterns": []
