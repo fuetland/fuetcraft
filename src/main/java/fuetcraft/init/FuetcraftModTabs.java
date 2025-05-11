@@ -35,5 +35,7 @@ public class FuetcraftModTabs {
 				tabData.accept(FuetcraftModBlocks.CHOPPER.get().asItem());
 				tabData.accept(FuetcraftModBlocks.STUFFER.get().asItem());
 				tabData.accept(FuetcraftModItems.GUIDE_BOOK.get());
+				tabData.accept(FuetcraftModItems.THINKING_IN_FUETS_DISC.get());
+				tabData.accept(FuetcraftModItems.JOYFUL_IBERIAN_DANCE.get());
 			}).withSearchBar().build());
 }

@@ -30,5 +30,21 @@
         "stream": false
       }
     ]
+  },
+  "thinkinginfuets": {
+    "sounds": [
+      {
+        "name": "fuetcraft:pensandoenfuets",
+        "stream": true
+      }
+    ]
+  },
+  "joyfuliberiandance": {
+    "sounds": [
+      {
+        "name": "fuetcraft:bailejobialiberico",
+        "stream": true
+      }
+    ]
   }
 }

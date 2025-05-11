@@ -19,10 +19,12 @@ import net.minecraft.world.item.BlockItem;
 import java.util.function.Function;
 
 import fuetcraft.item.inventory.GuideBookInventoryCapability;
+import fuetcraft.item.ThinkingInFuetsDiscItem;
 import fuetcraft.item.TarradellasPorkchopChoppedItem;
 import fuetcraft.item.SwimmingPorkchopChoppedItem;
 import fuetcraft.item.PorkchopChoppedItem;
 import fuetcraft.item.MiningPorkchopChoppedItem;
+import fuetcraft.item.JoyfulIberianDanceItem;
 import fuetcraft.item.GuideBookItem;
 import fuetcraft.item.FuetTarradellasItem;
 import fuetcraft.item.FuetSwimmingItem;
@@ -57,6 +59,8 @@ public class FuetcraftModItems {
 	public static final DeferredItem<Item> FUET_SWIMMING = register("fuet_swimming", FuetSwimmingItem::new);
 	public static final DeferredItem<Item> FUET_TARRADELLAS = register("fuet_tarradellas", FuetTarradellasItem::new);
 	public static final DeferredItem<Item> GUIDE_BOOK = register("guide_book", GuideBookItem::new);
+	public static final DeferredItem<Item> THINKING_IN_FUETS_DISC = register("thinking_in_fuets_disc", ThinkingInFuetsDiscItem::new);
+	public static final DeferredItem<Item> JOYFUL_IBERIAN_DANCE = register("joyful_iberian_dance", JoyfulIberianDanceItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

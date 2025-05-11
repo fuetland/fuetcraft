@@ -2077,6 +2077,77 @@
         ]
       },
       "path": "~/items/banners"
+    },
+    {
+      "name": "ThinkingInFuetsDisc",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thinking_in_fuets_disc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/items/thinking_in_fuets_disc.json",
+          "src/main/java/fuetcraft/item/ThinkingInFuetsDiscItem.java",
+          "src/main/resources/data/fuetcraft/jukebox_song/thinking_in_fuets_disc.json",
+          "src/main/resources/assets/fuetcraft/models/item/thinking_in_fuets_disc.json"
+        ]
+      },
+      "path": "~/items/music-discs"
+    },
+    {
+      "name": "JoyfulIberianDance",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "joyful_iberian_dance",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/joyful_iberian_dance.json",
+          "src/main/java/fuetcraft/item/JoyfulIberianDanceItem.java",
+          "src/main/resources/data/fuetcraft/jukebox_song/joyful_iberian_dance.json",
+          "src/main/resources/assets/fuetcraft/items/joyful_iberian_dance.json"
+        ]
+      },
+      "path": "~/items/music-discs"
+    },
+    {
+      "name": "OnCreeperDieBySkeletor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_creeper_die_by_skeletor",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/OnCreeperDieBySkeletorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/items/music-discs"
     }
   ],
   "variable_elements": [
@@ -2179,6 +2250,22 @@
       ],
       "category": "block",
       "subtitle": ""
+    },
+    {
+      "name": "thinkinginfuets",
+      "files": [
+        "pensandoenfuets"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "joyfuliberiandance",
+      "files": [
+        "bailejobialiberico"
+      ],
+      "category": "music",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -2222,6 +2309,10 @@
       "~CUSTOM:ExplorerPorkchopChopped",
       "~CUSTOM:MiningPorkchopChopped",
       "~CUSTOM:PorkchopChopped"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:JoyfulIberianDance",
+      "~CUSTOM:ThinkingInFuetsDisc"
     ]
   },
   "tab_element_order": {
@@ -2242,7 +2333,9 @@
       "FuetTarradellas",
       "Chopper",
       "Stuffer",
-      "GuideBook"
+      "GuideBook",
+      "ThinkingInFuetsDisc",
+      "JoyfulIberianDance"
     ]
   },
   "language_map": {
@@ -2259,6 +2352,8 @@
       "block.fuetcraft.banner.fuet_banner.yellow": "Yellow Fuet Banner",
       "item.fuetcraft.fuet_mining": "Mining Fuet",
       "block.fuetcraft.banner.fuet_banner.magenta": "Magenta Fuet Banner",
+      "item.fuetcraft.thinking_in_fuets_disc": "Music Disc",
+      "item.fuetcraft.joyful_iberian_dance": "Music Disc",
       "gui.guide.book.fuet.mining.effect.2": "- Night Vision III for 5 minutes",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "gui.guide.book.fuet.mining.effect.1": "- Haste I for 5 minutes",
@@ -2269,6 +2364,7 @@
       "gui.guide.book.fuet.taradellas.effect.3": "- Instant Health II",
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
       "gui.guide.book.fuet.taradellas.effect.2": "- Fire Resistance for 3 minutes",
+      "subtitles.joyfuliberiandance": "",
       "gui.guide.book.fuet.taradellas.effect.5": "- Absortion III for 2 minutes",
       "block.fuetcraft.banner.fuet_banner.light_blue": "Light Blue Fuet Banner",
       "gui.guide.book.fuet.taradellas.effect.4": "- Resistance for 3 minutes",
@@ -2290,6 +2386,7 @@
       "gui.guide.book.stuffer.1": "This block is used to create fuets",
       "gui.guide.book.stuffer.2": "from chopped pork chops.",
       "block.fuetcraft.banner.fuet_banner.white": "White Fuet Banner",
+      "item.fuetcraft.thinking_in_fuets_disc.desc": "Thinking of fuets",
       "text.crafting": "Crafting",
       "gui.guide.book.chopper.text.2": "chopped pork meat",
       "block.fuetcraft.banner.fuet_banner.lime": "Lime Fuet Banner",
@@ -2304,11 +2401,13 @@
       "gui.guide.book.fuet.swimming.effect.1": "- Conduit Power II for 1 minute 30 seconds",
       "block.fuetcraft.banner.fuet_banner.purple": "Purple Fuet Banner",
       "gui.guide.book.fuet.title": "Fuets",
+      "item.fuetcraft.joyful_iberian_dance.desc": "Joyful Iberian Dance",
       "gui.guide.book.fuet.swimming.effect.2": "- Dolphins Grace II for 1 minute 30 seconds",
       "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
       "painting.fuetcraft.painting_of_a_fuet.author": "Fuetcraft",
       "block.fuetcraft.banner.fuet_banner.orange": "Orange Fuet Banner",
       "block.fuetcraft.stuffer": "Stuffer",
+      "subtitles.thinkinginfuets": "",
       "gui.guide.book.fuet.expired.effect.5": "- Nausea CCL for 15 seconds",
       "block.fuetcraft.banner.fuet_banner.light_gray": "Light Gray Fuet Banner",
       "gui.guide.book.fuet.expired.effect.4": "- Slowness IX for 1 minute",
@@ -2339,6 +2438,8 @@
       "block.fuetcraft.banner.fuet_banner.yellow": "Fuet amarillo",
       "item.fuetcraft.fuet_mining": "Mining Fuet",
       "block.fuetcraft.banner.fuet_banner.magenta": "Fuet magenta",
+      "item.fuetcraft.thinking_in_fuets_disc": "Thinking In Fuets Disc",
+      "item.fuetcraft.joyful_iberian_dance": "Thinking In Fuets Disc",
       "gui.guide.book.fuet.mining.effect.2": "- Visión nocturna III por 5 minutos",
       "item.fuetcraft.combat_porkchop_chopped": "Chuleta de combate picada",
       "gui.guide.book.fuet.mining.effect.1": "- Prisa minera I por 5 minutos",
@@ -2349,6 +2450,7 @@
       "gui.guide.book.fuet.taradellas.effect.3": "- Salud instantánea II",
       "item.fuetcraft.mining_porkchop_chopped": "Chuleta minera picada",
       "gui.guide.book.fuet.taradellas.effect.2": "- Resistencia al fuego por 3 minutos",
+      "subtitles.joyfuliberiandance": "",
       "gui.guide.book.fuet.taradellas.effect.5": "- Absorción III por 2 minutos",
       "block.fuetcraft.banner.fuet_banner.light_blue": "Fuet azul claro",
       "gui.guide.book.fuet.taradellas.effect.4": "- Resistencia por 3 minutos",
@@ -2370,6 +2472,7 @@
       "gui.guide.book.stuffer.1": "Este bloque sirve para crear los fuets",
       "gui.guide.book.stuffer.2": "a partir de las chuletas de cerdo picadas.",
       "block.fuetcraft.banner.fuet_banner.white": "Fuet blanco",
+      "item.fuetcraft.thinking_in_fuets_disc.desc": "Thinking if fuets",
       "text.crafting": "Creación",
       "gui.guide.book.chopper.text.2": "obtener carne de cerdo picada.",
       "block.fuetcraft.banner.fuet_banner.lime": "Fuet lima",
@@ -2384,11 +2487,13 @@
       "gui.guide.book.fuet.swimming.effect.1": "- Canalizador II por 1 minuto 30 segundos",
       "block.fuetcraft.banner.fuet_banner.purple": "Fuet morado",
       "gui.guide.book.fuet.title": "Fuets",
+      "item.fuetcraft.joyful_iberian_dance.desc": "Thinking if fuets",
       "gui.guide.book.fuet.swimming.effect.2": "- Gracia del delfín II por 1 minuto 30 segundos",
       "item.fuetcraft.explorer_porkchop_chopped": "Chuleta exploradora picada",
       "painting.fuetcraft.painting_of_a_fuet.author": "Fuetcraft",
       "block.fuetcraft.banner.fuet_banner.orange": "Fuet naranja",
       "block.fuetcraft.stuffer": "Embutidor",
+      "subtitles.thinkinginfuets": "",
       "gui.guide.book.fuet.expired.effect.5": "- Náuseas CCL por 15 segundos",
       "block.fuetcraft.banner.fuet_banner.light_gray": "Fuet gris claro",
       "gui.guide.book.fuet.expired.effect.4": "- Lentitud IX por 1 minuto",
@@ -2469,6 +2574,10 @@
           },
           {
             "name": "banners",
+            "children": []
+          },
+          {
+            "name": "music-discs",
             "children": []
           }
         ]

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 10,
+  "description": {
+    "translate": "item.fuetcraft.thinking_in_fuets_disc.desc"
+  },
+  "length_in_seconds": 217,
+  "sound_event": "fuetcraft:thinkinginfuets"
+}
