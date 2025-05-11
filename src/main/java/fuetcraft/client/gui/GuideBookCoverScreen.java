@@ -92,7 +92,6 @@ public class GuideBookCoverScreen extends AbstractContainerScreen<GuideBookCover
 				guiGraphics.blit(RenderType::guiTextured, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_choppericon", imagebutton_choppericon);
 		this.addRenderableWidget(imagebutton_choppericon);
 		imagebutton_stuffericon = new ImageButton(this.leftPos + 113, this.topPos + 30, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("fuetcraft:textures/screens/stuffer-icon.png"), ResourceLocation.parse("fuetcraft:textures/screens/stuffer-icon.png")), e -> {
@@ -106,7 +105,6 @@ public class GuideBookCoverScreen extends AbstractContainerScreen<GuideBookCover
 				guiGraphics.blit(RenderType::guiTextured, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_stuffericon", imagebutton_stuffericon);
 		this.addRenderableWidget(imagebutton_stuffericon);
 		imagebutton_porkchopchopped = new ImageButton(this.leftPos + 33, this.topPos + 106, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("fuetcraft:textures/screens/porkchop-chopped.png"), ResourceLocation.parse("fuetcraft:textures/screens/porkchop-chopped.png")), e -> {
@@ -120,7 +118,6 @@ public class GuideBookCoverScreen extends AbstractContainerScreen<GuideBookCover
 				guiGraphics.blit(RenderType::guiTextured, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_porkchopchopped", imagebutton_porkchopchopped);
 		this.addRenderableWidget(imagebutton_porkchopchopped);
 		imagebutton_fuet = new ImageButton(this.leftPos + 114, this.topPos + 106, 32, 32, new WidgetSprites(ResourceLocation.parse("fuetcraft:textures/screens/fuet-32x32.png"), ResourceLocation.parse("fuetcraft:textures/screens/fuet-32x32.png")),
 				e -> {
@@ -134,7 +131,6 @@ public class GuideBookCoverScreen extends AbstractContainerScreen<GuideBookCover
 				guiGraphics.blit(RenderType::guiTextured, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_fuet", imagebutton_fuet);
 		this.addRenderableWidget(imagebutton_fuet);
 	}
 }

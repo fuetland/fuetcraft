@@ -144,7 +144,6 @@ public class GuideBookChopperScreen extends AbstractContainerScreen<GuideBookCho
 				guiGraphics.blit(RenderType::guiTextured, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_arrowleft32x16", imagebutton_arrowleft32x16);
 		this.addRenderableWidget(imagebutton_arrowleft32x16);
 	}
 }
