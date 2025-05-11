@@ -4,8 +4,8 @@
  */
 package fuetcraft.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,7 +16,7 @@ import fuetcraft.FuetcraftMod;
 
 public class FuetcraftModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FuetcraftMod.MODID);
-	public static final RegistryObject<CreativeModeTab> FUETCRAFT = REGISTRY.register("fuetcraft",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> FUETCRAFT = REGISTRY.register("fuetcraft",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fuetcraft.fuetcraft")).icon(() -> new ItemStack(FuetcraftModItems.FUET.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FuetcraftModItems.PORKCHOP_CHOPPED.get());
 				tabData.accept(FuetcraftModItems.MINING_PORKCHOP_CHOPPED.get());

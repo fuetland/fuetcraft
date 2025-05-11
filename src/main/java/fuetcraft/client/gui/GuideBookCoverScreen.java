@@ -1,11 +1,15 @@
 package fuetcraft.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.WidgetSprites;
 import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
@@ -16,8 +20,6 @@ import fuetcraft.world.inventory.GuideBookCoverMenu;
 import fuetcraft.procedures.GetTextFuetcraftProcedure;
 
 import fuetcraft.network.GuideBookCoverButtonMessage;
-
-import fuetcraft.FuetcraftMod;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -42,11 +44,10 @@ public class GuideBookCoverScreen extends AbstractContainerScreen<GuideBookCover
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("fuetcraft:textures/screens/guide_book_cover.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("fuetcraft:textures/screens/guide_book_cover.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -56,7 +57,7 @@ public class GuideBookCoverScreen extends AbstractContainerScreen<GuideBookCover
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(RenderType::guiTextured, texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
 	}
 
@@ -79,36 +80,60 @@ public class GuideBookCoverScreen extends AbstractContainerScreen<GuideBookCover
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_choppericon = new ImageButton(this.leftPos + 33, this.topPos + 34, 32, 32, 0, 0, 32, new ResourceLocation("fuetcraft:textures/screens/atlas/imagebutton_choppericon.png"), 32, 64, e -> {
-			if (true) {
-				FuetcraftMod.PACKET_HANDLER.sendToServer(new GuideBookCoverButtonMessage(0, x, y, z));
-				GuideBookCoverButtonMessage.handleButtonAction(entity, 0, x, y, z);
+		imagebutton_choppericon = new ImageButton(this.leftPos + 33, this.topPos + 34, 32, 32,
+				new WidgetSprites(ResourceLocation.parse("fuetcraft:textures/screens/chopper-icon-32x32.png"), ResourceLocation.parse("fuetcraft:textures/screens/chopper-icon-32x32.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new GuideBookCoverButtonMessage(0, x, y, z));
+						GuideBookCoverButtonMessage.handleButtonAction(entity, 0, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(RenderType::guiTextured, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
-		});
+		};
 		guistate.put("button:imagebutton_choppericon", imagebutton_choppericon);
 		this.addRenderableWidget(imagebutton_choppericon);
-		imagebutton_stuffericon = new ImageButton(this.leftPos + 113, this.topPos + 30, 32, 32, 0, 0, 32, new ResourceLocation("fuetcraft:textures/screens/atlas/imagebutton_stuffericon.png"), 32, 64, e -> {
-			if (true) {
-				FuetcraftMod.PACKET_HANDLER.sendToServer(new GuideBookCoverButtonMessage(1, x, y, z));
-				GuideBookCoverButtonMessage.handleButtonAction(entity, 1, x, y, z);
+		imagebutton_stuffericon = new ImageButton(this.leftPos + 113, this.topPos + 30, 32, 32,
+				new WidgetSprites(ResourceLocation.parse("fuetcraft:textures/screens/stuffer-icon.png"), ResourceLocation.parse("fuetcraft:textures/screens/stuffer-icon.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new GuideBookCoverButtonMessage(1, x, y, z));
+						GuideBookCoverButtonMessage.handleButtonAction(entity, 1, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(RenderType::guiTextured, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
-		});
+		};
 		guistate.put("button:imagebutton_stuffericon", imagebutton_stuffericon);
 		this.addRenderableWidget(imagebutton_stuffericon);
-		imagebutton_porkchopchopped = new ImageButton(this.leftPos + 33, this.topPos + 106, 32, 32, 0, 0, 32, new ResourceLocation("fuetcraft:textures/screens/atlas/imagebutton_porkchopchopped.png"), 32, 64, e -> {
-			if (true) {
-				FuetcraftMod.PACKET_HANDLER.sendToServer(new GuideBookCoverButtonMessage(2, x, y, z));
-				GuideBookCoverButtonMessage.handleButtonAction(entity, 2, x, y, z);
+		imagebutton_porkchopchopped = new ImageButton(this.leftPos + 33, this.topPos + 106, 32, 32,
+				new WidgetSprites(ResourceLocation.parse("fuetcraft:textures/screens/porkchop-chopped.png"), ResourceLocation.parse("fuetcraft:textures/screens/porkchop-chopped.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new GuideBookCoverButtonMessage(2, x, y, z));
+						GuideBookCoverButtonMessage.handleButtonAction(entity, 2, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(RenderType::guiTextured, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
-		});
+		};
 		guistate.put("button:imagebutton_porkchopchopped", imagebutton_porkchopchopped);
 		this.addRenderableWidget(imagebutton_porkchopchopped);
-		imagebutton_fuet = new ImageButton(this.leftPos + 114, this.topPos + 106, 32, 32, 0, 0, 32, new ResourceLocation("fuetcraft:textures/screens/atlas/imagebutton_fuet.png"), 32, 64, e -> {
-			if (true) {
-				FuetcraftMod.PACKET_HANDLER.sendToServer(new GuideBookCoverButtonMessage(3, x, y, z));
-				GuideBookCoverButtonMessage.handleButtonAction(entity, 3, x, y, z);
+		imagebutton_fuet = new ImageButton(this.leftPos + 114, this.topPos + 106, 32, 32, new WidgetSprites(ResourceLocation.parse("fuetcraft:textures/screens/fuet-32x32.png"), ResourceLocation.parse("fuetcraft:textures/screens/fuet-32x32.png")),
+				e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new GuideBookCoverButtonMessage(3, x, y, z));
+						GuideBookCoverButtonMessage.handleButtonAction(entity, 3, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(RenderType::guiTextured, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
-		});
+		};
 		guistate.put("button:imagebutton_fuet", imagebutton_fuet);
 		this.addRenderableWidget(imagebutton_fuet);
 	}

@@ -12,7 +12,8 @@
           "src/main/resources/assets/fuetcraft/blockstates/chopper.json",
           "src/main/java/fuetcraft/block/entity/ChopperBlockEntity.java",
           "src/main/java/fuetcraft/block/ChopperBlock.java",
-          "src/main/resources/data/fuetcraft/loot_tables/blocks/chopper.json",
+          "src/main/resources/assets/fuetcraft/items/chopper.json",
+          "src/main/resources/data/fuetcraft/loot_table/blocks/chopper.json",
           "src/main/resources/assets/fuetcraft/models/block/chopper.json"
         ]
       },
@@ -50,8 +51,9 @@
       "registry_name": "porkchop_chopped",
       "metadata": {
         "files": [
-          "src/main/java/fuetcraft/item/PorkchopChoppedItem.java",
-          "src/main/resources/assets/fuetcraft/models/item/porkchop_chopped.json"
+          "src/main/resources/assets/fuetcraft/models/item/porkchop_chopped.json",
+          "src/main/resources/assets/fuetcraft/items/porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/PorkchopChoppedItem.java"
         ]
       },
       "path": "~/items/porkchop-chopped"
@@ -64,7 +66,7 @@
       "registry_name": "chopper_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/fuetcraft/recipes/chopper_recipe.json"
+          "src/main/resources/data/fuetcraft/recipe/chopper_recipe.json"
         ]
       },
       "path": "~/blocks/chopper/recipes"
@@ -77,7 +79,7 @@
       "registry_name": "chopper_recipe_simetric",
       "metadata": {
         "files": [
-          "src/main/resources/data/fuetcraft/recipes/chopper_recipe_simetric.json"
+          "src/main/resources/data/fuetcraft/recipe/chopper_recipe_simetric.json"
         ]
       },
       "path": "~/blocks/chopper/recipes"
@@ -90,6 +92,7 @@
       "registry_name": "mining_porkchop_chopped",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fuetcraft/items/mining_porkchop_chopped.json",
           "src/main/resources/assets/fuetcraft/models/item/mining_porkchop_chopped.json",
           "src/main/java/fuetcraft/item/MiningPorkchopChoppedItem.java"
         ]
@@ -104,6 +107,7 @@
       "registry_name": "explorer_porkchop_chopped",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fuetcraft/items/explorer_porkchop_chopped.json",
           "src/main/resources/assets/fuetcraft/models/item/explorer_porkchop_chopped.json",
           "src/main/java/fuetcraft/item/ExplorerPorkchopChoppedItem.java"
         ]
@@ -359,7 +363,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fuetcraft/models/item/expired_porkchop_chopped.json",
-          "src/main/java/fuetcraft/item/ExpiredPorkchopChoppedItem.java"
+          "src/main/java/fuetcraft/item/ExpiredPorkchopChoppedItem.java",
+          "src/main/resources/assets/fuetcraft/items/expired_porkchop_chopped.json"
         ]
       },
       "path": "~/items/porkchop-chopped"
@@ -373,7 +378,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fuetcraft/models/item/swimming_porkchop_chopped.json",
-          "src/main/java/fuetcraft/item/SwimmingPorkchopChoppedItem.java"
+          "src/main/java/fuetcraft/item/SwimmingPorkchopChoppedItem.java",
+          "src/main/resources/assets/fuetcraft/items/swimming_porkchop_chopped.json"
         ]
       },
       "path": "~/items/porkchop-chopped"
@@ -387,6 +393,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fuetcraft/models/item/combat_porkchop_chopped.json",
+          "src/main/resources/assets/fuetcraft/items/combat_porkchop_chopped.json",
           "src/main/java/fuetcraft/item/CombatPorkchopChoppedItem.java"
         ]
       },
@@ -400,6 +407,7 @@
       "registry_name": "tarradellas_porkchop_chopped",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fuetcraft/items/tarradellas_porkchop_chopped.json",
           "src/main/resources/assets/fuetcraft/models/item/tarradellas_porkchop_chopped.json",
           "src/main/java/fuetcraft/item/TarradellasPorkchopChoppedItem.java"
         ]
@@ -557,6 +565,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fuetcraft/models/item/fuet.json",
+          "src/main/resources/assets/fuetcraft/items/fuet.json",
           "src/main/java/fuetcraft/item/FuetItem.java"
         ]
       },
@@ -570,12 +579,13 @@
       "registry_name": "stuffer",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fuetcraft/items/stuffer.json",
           "src/main/java/fuetcraft/block/entity/StufferBlockEntity.java",
+          "src/main/resources/data/fuetcraft/loot_table/blocks/stuffer.json",
           "src/main/resources/assets/fuetcraft/models/block/stuffer.json",
           "src/main/java/fuetcraft/block/StufferBlock.java",
           "src/main/resources/assets/fuetcraft/models/item/stuffer.json",
-          "src/main/resources/assets/fuetcraft/blockstates/stuffer.json",
-          "src/main/resources/data/fuetcraft/loot_tables/blocks/stuffer.json"
+          "src/main/resources/assets/fuetcraft/blockstates/stuffer.json"
         ]
       },
       "path": "~/blocks/stuffer"
@@ -602,7 +612,7 @@
       "registry_name": "stuffer_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/fuetcraft/recipes/stuffer_recipe.json"
+          "src/main/resources/data/fuetcraft/recipe/stuffer_recipe.json"
         ]
       },
       "path": "~/blocks/stuffer/recipes"
@@ -615,7 +625,7 @@
       "registry_name": "stuffer_recipe_simetric",
       "metadata": {
         "files": [
-          "src/main/resources/data/fuetcraft/recipes/stuffer_recipe_simetric.json"
+          "src/main/resources/data/fuetcraft/recipe/stuffer_recipe_simetric.json"
         ]
       },
       "path": "~/blocks/stuffer/recipes"
@@ -689,7 +699,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fuetcraft/models/item/fuet_combat.json",
-          "src/main/java/fuetcraft/item/FuetCombatItem.java"
+          "src/main/java/fuetcraft/item/FuetCombatItem.java",
+          "src/main/resources/assets/fuetcraft/items/fuet_combat.json"
         ]
       },
       "path": "~/items/fuets"
@@ -702,6 +713,7 @@
       "registry_name": "fuet_expired",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fuetcraft/items/fuet_expired.json",
           "src/main/resources/assets/fuetcraft/models/item/fuet_expired.json",
           "src/main/java/fuetcraft/item/FuetExpiredItem.java"
         ]
@@ -716,6 +728,7 @@
       "registry_name": "fuet_exploring",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fuetcraft/items/fuet_exploring.json",
           "src/main/resources/assets/fuetcraft/models/item/fuet_exploring.json",
           "src/main/java/fuetcraft/item/FuetExploringItem.java"
         ]
@@ -730,6 +743,7 @@
       "registry_name": "fuet_mining",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fuetcraft/items/fuet_mining.json",
           "src/main/java/fuetcraft/item/FuetMiningItem.java",
           "src/main/resources/assets/fuetcraft/models/item/fuet_mining.json"
         ]
@@ -745,6 +759,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fuetcraft/models/item/fuet_swimming.json",
+          "src/main/resources/assets/fuetcraft/items/fuet_swimming.json",
           "src/main/java/fuetcraft/item/FuetSwimmingItem.java"
         ]
       },
@@ -759,7 +774,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fuetcraft/models/item/fuet_tarradellas.json",
-          "src/main/java/fuetcraft/item/FuetTarradellasItem.java"
+          "src/main/java/fuetcraft/item/FuetTarradellasItem.java",
+          "src/main/resources/assets/fuetcraft/items/fuet_tarradellas.json"
         ]
       },
       "path": "~/items/fuets"
@@ -1079,7 +1095,9 @@
       "locked_code": false,
       "registry_name": "painting_of_a_fuet",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/fuetcraft/painting_variant/painting_of_a_fuet.json"
+        ]
       },
       "path": "~/items/paintings"
     },
@@ -1152,7 +1170,9 @@
       "locked_code": false,
       "registry_name": "rustic_room_with_fuets",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/fuetcraft/painting_variant/rustic_room_with_fuets.json"
+        ]
       },
       "path": "~/items/paintings"
     },
@@ -1166,7 +1186,8 @@
         "files": [
           "src/main/java/fuetcraft/item/inventory/GuideBookInventoryCapability.java",
           "src/main/resources/assets/fuetcraft/models/item/guide_book.json",
-          "src/main/java/fuetcraft/item/GuideBookItem.java"
+          "src/main/java/fuetcraft/item/GuideBookItem.java",
+          "src/main/resources/assets/fuetcraft/items/guide_book.json"
         ]
       },
       "path": "~/items/guide-book"
@@ -1776,7 +1797,9 @@
       "locked_code": false,
       "registry_name": "logo_of_a_fish_wholesaler",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/fuetcraft/painting_variant/logo_of_a_fish_wholesaler.json"
+        ]
       },
       "path": "~/items/paintings"
     },
@@ -2170,6 +2193,22 @@
       "CUSTOM:SwimmingPorkchopChopped",
       "CUSTOM:CombatPorkchopChopped",
       "CUSTOM:TarradellasPorkchopChopped"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:FuetTarradellas",
+      "~CUSTOM:FuetSwimming",
+      "~CUSTOM:FuetMining",
+      "~CUSTOM:FuetExploring",
+      "~CUSTOM:FuetExpired",
+      "~CUSTOM:FuetCombat",
+      "~CUSTOM:Fuet",
+      "~CUSTOM:TarradellasPorkchopChopped",
+      "~CUSTOM:CombatPorkchopChopped",
+      "~CUSTOM:SwimmingPorkchopChopped",
+      "~CUSTOM:ExpiredPorkchopChopped",
+      "~CUSTOM:ExplorerPorkchopChopped",
+      "~CUSTOM:MiningPorkchopChopped",
+      "~CUSTOM:PorkchopChopped"
     ]
   },
   "tab_element_order": {
@@ -2236,6 +2275,7 @@
       "text.crafting": "Crafting",
       "gui.guide.book.chopper.text.2": "chopped pork meat",
       "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
+      "item.fuetcraft.chopper": "Chopper",
       "subtitles.stuffer-place": "",
       "text.slot.2": "Slot 2",
       "painting.fuetcraft.logo_of_a_fish_wholesaler.title": "Logo of a Fish Wholesaler",
@@ -2251,6 +2291,7 @@
       "block.fuetcraft.stuffer": "Stuffer",
       "gui.guide.book.fuet.expired.effect.5": "- Nausea CCL for 15 seconds",
       "gui.guide.book.fuet.expired.effect.4": "- Slowness IX for 1 minute",
+      "item.fuetcraft.stuffer": "Stuffer",
       "gui.fuetcraft.chopper_gui.tooltip_slot1": "Valid items:",
       "gui.fuetcraft.chopper_gui.tooltip_slot0": "Only raw pork chop are allowed.",
       "item.fuetcraft.fuet_combat": "Combat Fuet",
@@ -2306,6 +2347,7 @@
       "text.crafting": "Crafting",
       "gui.guide.book.chopper.text.2": "",
       "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
+      "item.fuetcraft.chopper": "Chopper",
       "subtitles.stuffer-place": "",
       "text.slot.2": "",
       "painting.fuetcraft.logo_of_a_fish_wholesaler.title": "Rustic Room With Fuets",
@@ -2321,6 +2363,7 @@
       "block.fuetcraft.stuffer": "Stuffer",
       "gui.guide.book.fuet.expired.effect.5": "",
       "gui.guide.book.fuet.expired.effect.4": "",
+      "item.fuetcraft.stuffer": "Stuffer",
       "gui.fuetcraft.chopper_gui.tooltip_slot1": "Valid items:",
       "gui.fuetcraft.chopper_gui.tooltip_slot0": "Only raw pork chop are allowed.",
       "item.fuetcraft.fuet_combat": "Combat Fuet",
@@ -2454,7 +2497,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.20.1",
+    "currentGenerator": "neoforge-1.21.4",
     "credits": "fuetland@gmail.com",
     "modElementsPackage": "fuetcraft"
   },

@@ -1,8 +1,8 @@
 package fuetcraft.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 
@@ -10,10 +10,10 @@ import javax.annotation.Nullable;
 
 import fuetcraft.network.FuetcraftModVariables;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class SetValuteToGlobalVariablesProcedure {
 	@SubscribeEvent
-	public static void onWorldLoad(net.minecraftforge.event.level.LevelEvent.Load event) {
+	public static void onWorldLoad(net.neoforged.neoforge.event.level.LevelEvent.Load event) {
 		execute(event, event.getLevel());
 	}
 

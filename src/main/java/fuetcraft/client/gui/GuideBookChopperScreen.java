@@ -1,11 +1,15 @@
 package fuetcraft.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.WidgetSprites;
 import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
@@ -29,8 +33,6 @@ import fuetcraft.procedures.ChopperGuiTitleLabelProcedure;
 
 import fuetcraft.network.GuideBookChopperButtonMessage;
 
-import fuetcraft.FuetcraftMod;
-
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class GuideBookChopperScreen extends AbstractContainerScreen<GuideBookChopperMenu> {
@@ -51,11 +53,10 @@ public class GuideBookChopperScreen extends AbstractContainerScreen<GuideBookCho
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("fuetcraft:textures/screens/guide_book_chopper.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("fuetcraft:textures/screens/guide_book_chopper.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -65,31 +66,31 @@ public class GuideBookChopperScreen extends AbstractContainerScreen<GuideBookCho
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(RenderType::guiTextured, texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/chopper-icon-32x32.png"), this.leftPos + 214, this.topPos + 10, 0, 0, 32, 32, 32, 32);
+		guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/chopper-icon-32x32.png"), this.leftPos + 214, this.topPos + 10, 0, 0, 32, 32, 32, 32);
 
-		guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/chopper-craft.png"), this.leftPos + 183, this.topPos + 92, 0, 0, 63, 64, 63, 64);
+		guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/chopper-craft.png"), this.leftPos + 183, this.topPos + 92, 0, 0, 63, 64, 63, 64);
 
-		guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/porkchop-32x32.png"), this.leftPos + 25, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+		guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/porkchop-32x32.png"), this.leftPos + 25, this.topPos + 102, 0, 0, 32, 32, 32, 32);
 
 		if (GuideBookIngredientAnimation1Procedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/netherite-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/netherite-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
 		}
 		if (GuideBookIngredientAnimation2Procedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/salmon-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/salmon-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
 		}
 		if (GuideBookIngredientAnimation3Procedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/ender-pearl-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/ender-pearl-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
 		}
 		if (GuideBookIngredientAnimation4Procedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/torchflower-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/torchflower-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
 		}
 		if (GuideBookIngredientAnimation5Procedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/golden-pickaxe-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/golden-pickaxe-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
 		}
 		if (GuideBookIngredientAnimation6Procedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/poisonous-potato-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/poisonous-potato-32x32.png"), this.leftPos + 106, this.topPos + 102, 0, 0, 32, 32, 32, 32);
 		}
 		RenderSystem.disableBlend();
 	}
@@ -131,12 +132,18 @@ public class GuideBookChopperScreen extends AbstractContainerScreen<GuideBookCho
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_arrowleft32x16 = new ImageButton(this.leftPos + 7, this.topPos + 7, 32, 16, 0, 0, 16, new ResourceLocation("fuetcraft:textures/screens/atlas/imagebutton_arrowleft32x16.png"), 32, 32, e -> {
-			if (true) {
-				FuetcraftMod.PACKET_HANDLER.sendToServer(new GuideBookChopperButtonMessage(0, x, y, z));
-				GuideBookChopperButtonMessage.handleButtonAction(entity, 0, x, y, z);
+		imagebutton_arrowleft32x16 = new ImageButton(this.leftPos + 7, this.topPos + 7, 32, 16,
+				new WidgetSprites(ResourceLocation.parse("fuetcraft:textures/screens/arrow-left-32x16.png"), ResourceLocation.parse("fuetcraft:textures/screens/arrow-left-hovered-32x16.png.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new GuideBookChopperButtonMessage(0, x, y, z));
+						GuideBookChopperButtonMessage.handleButtonAction(entity, 0, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(RenderType::guiTextured, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
-		});
+		};
 		guistate.put("button:imagebutton_arrowleft32x16", imagebutton_arrowleft32x16);
 		this.addRenderableWidget(imagebutton_arrowleft32x16);
 	}

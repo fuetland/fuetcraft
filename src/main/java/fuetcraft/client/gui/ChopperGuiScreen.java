@@ -5,6 +5,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
@@ -44,11 +45,10 @@ public class ChopperGuiScreen extends AbstractContainerScreen<ChopperGuiMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("fuetcraft:textures/screens/chopper_gui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("fuetcraft:textures/screens/chopper_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 		if (GuiTooltipSlot0VisibilityProcedure.execute(world, x, y, z))
@@ -72,26 +72,26 @@ public class ChopperGuiScreen extends AbstractContainerScreen<ChopperGuiMenu> {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(RenderType::guiTextured, texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/add.png"), this.leftPos + 42, this.topPos + 34, 0, 0, 17, 17, 17, 17);
+		guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/add.png"), this.leftPos + 42, this.topPos + 34, 0, 0, 17, 17, 17, 17);
 
-		guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
+		guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/right-arrow.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
 
 		if (RigthArrow20VisibilityProcedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow-20.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
+			guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/right-arrow-20.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
 		}
 		if (RigthArrow40VisibilityProcedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow-40.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
+			guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/right-arrow-40.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
 		}
 		if (RigthArrow60VisibilityProcedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow-60.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
+			guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/right-arrow-60.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
 		}
 		if (RigthArrow80VisibilityProcedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow-80.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
+			guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/right-arrow-80.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
 		}
 		if (RigthArrow100VisibilityProcedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("fuetcraft:textures/screens/right-arrow-100.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
+			guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("fuetcraft:textures/screens/right-arrow-100.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 26, 17, 26, 17);
 		}
 		RenderSystem.disableBlend();
 	}

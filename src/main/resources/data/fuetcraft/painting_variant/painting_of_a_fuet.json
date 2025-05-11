@@ -1,0 +1,11 @@
+{
+  "asset_id": "fuetcraft:painting_of_a_fuet",
+  "height": 2,
+  "width": 1,
+  "title": {
+    "translate": "painting.fuetcraft.painting_of_a_fuet.title"
+  },
+  "author": {
+    "translate": "painting.fuetcraft.painting_of_a_fuet.author"
+  }
+}

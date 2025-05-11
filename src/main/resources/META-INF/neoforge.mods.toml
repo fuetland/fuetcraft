@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[47,)"
+loaderVersion="[4,)"
 license="Not specified"
 
 [[mods]]
@@ -16,9 +16,16 @@ description="This mod includes the ability to craft different types of Fuets. Ea
 # End of user code block mod configuration
 
 [[dependencies.fuetcraft]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.4.123,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.fuetcraft]]
     modId="minecraft"
-    mandatory=true
-    versionRange="[1.20.1]"
+    type="required"
+    versionRange="[1.21.4]"
     ordering="AFTER"
     side="BOTH"
 

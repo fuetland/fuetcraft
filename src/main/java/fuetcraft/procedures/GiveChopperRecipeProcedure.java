@@ -1,9 +1,9 @@
 package fuetcraft.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.Items;
@@ -12,17 +12,18 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+import java.util.Collections;
+
+@EventBusSubscriber
 public class GiveChopperRecipeProcedure {
 	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player);
-		}
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
+		execute(event, event.getEntity());
 	}
 
 	public static void execute(Entity entity) {
@@ -32,21 +33,14 @@ public class GiveChopperRecipeProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (!(new Object() {
-			public boolean hasRecipe(Entity _ent, ResourceLocation recipe) {
-				if (_ent instanceof ServerPlayer _player)
-					return _player.getRecipeBook().contains(recipe);
-				else if (_ent.level().isClientSide() && _ent instanceof LocalPlayer _player)
-					return _player.getRecipeBook().contains(recipe);
-				return false;
-			}
-		}.hasRecipe(entity, new ResourceLocation("fuetcraft:chopper_recipe"))) && ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.IRON_INGOT)) : false)
-				|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.IRON_SWORD)) : false)
-				|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Blocks.REDSTONE_BLOCK)) : false)
-				|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Blocks.HOPPER)) : false)
-				|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Blocks.DISPENSER)) : false))) {
+		if (!(entity instanceof ServerPlayer _playerHasRecipe0 && _playerHasRecipe0.getRecipeBook().contains(ResourceKey.create(Registries.RECIPE, ResourceLocation.parse("fuetcraft:chopper_recipe"))))
+				&& ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.IRON_INGOT)) : false)
+						|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.IRON_SWORD)) : false)
+						|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Blocks.REDSTONE_BLOCK)) : false)
+						|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Blocks.HOPPER)) : false)
+						|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Blocks.DISPENSER)) : false))) {
 			if (entity instanceof ServerPlayer _serverPlayer)
-				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("fuetcraft:chopper_recipe")});
+				_serverPlayer.awardRecipesByKey(Collections.singletonList(ResourceKey.create(Registries.RECIPE, ResourceLocation.parse("fuetcraft:chopper_recipe"))));
 		}
 	}
 }

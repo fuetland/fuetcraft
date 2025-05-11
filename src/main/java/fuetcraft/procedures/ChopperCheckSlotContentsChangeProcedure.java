@@ -1,98 +1,36 @@
 package fuetcraft.procedures;
 
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.neoforged.neoforge.items.IItemHandler;
+import net.neoforged.neoforge.common.extensions.ILevelExtension;
+import net.neoforged.neoforge.capabilities.Capabilities;
 
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.BlockPos;
 
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.atomic.AtomicInteger;
-
 import fuetcraft.init.FuetcraftModItems;
 
 public class ChopperCheckSlotContentsChangeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (new Object() {
-			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
-				return _retval.get();
-			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 0) > 0) {
-			if (new Object() {
-				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicInteger _retval = new AtomicInteger(0);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
-					return _retval.get();
-				}
-			}.getAmount(world, BlockPos.containing(x, y, z), 1) > 0) {
-				if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						BlockEntity _ent = world.getBlockEntity(pos);
-						if (_ent != null)
-							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-						return _retval.get();
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.GOLDEN_PICKAXE && !(GetProcessOutputItemProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.MINING_PORKCHOP_CHOPPED.get())) {
+		if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() > 0) {
+			if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() > 0) {
+				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Items.GOLDEN_PICKAXE && !(GetProcessOutputItemProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.MINING_PORKCHOP_CHOPPED.get())) {
 					ResetVariablesProcedure.execute(world, x, y, z);
-				} else if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						BlockEntity _ent = world.getBlockEntity(pos);
-						if (_ent != null)
-							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-						return _retval.get();
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Blocks.TORCHFLOWER.asItem() && !(GetProcessOutputItemProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.EXPLORER_PORKCHOP_CHOPPED.get())) {
+				} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.TORCHFLOWER.asItem()
+						&& !(GetProcessOutputItemProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.EXPLORER_PORKCHOP_CHOPPED.get())) {
 					ResetVariablesProcedure.execute(world, x, y, z);
-				} else if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						BlockEntity _ent = world.getBlockEntity(pos);
-						if (_ent != null)
-							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-						return _retval.get();
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.ENDER_PEARL && !(GetProcessOutputItemProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.COMBAT_PORKCHOP_CHOPPED.get())) {
+				} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Items.ENDER_PEARL
+						&& !(GetProcessOutputItemProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.COMBAT_PORKCHOP_CHOPPED.get())) {
 					ResetVariablesProcedure.execute(world, x, y, z);
-				} else if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						BlockEntity _ent = world.getBlockEntity(pos);
-						if (_ent != null)
-							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-						return _retval.get();
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.SALMON && !(GetProcessOutputItemProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.SWIMMING_PORKCHOP_CHOPPED.get())) {
+				} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Items.SALMON && !(GetProcessOutputItemProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.SWIMMING_PORKCHOP_CHOPPED.get())) {
 					ResetVariablesProcedure.execute(world, x, y, z);
-				} else if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						BlockEntity _ent = world.getBlockEntity(pos);
-						if (_ent != null)
-							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-						return _retval.get();
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.NETHERITE_SCRAP && !(GetProcessOutputItemProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.TARRADELLAS_PORKCHOP_CHOPPED.get())) {
+				} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Items.NETHERITE_SCRAP
+						&& !(GetProcessOutputItemProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.TARRADELLAS_PORKCHOP_CHOPPED.get())) {
 					ResetVariablesProcedure.execute(world, x, y, z);
-				} else if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						BlockEntity _ent = world.getBlockEntity(pos);
-						if (_ent != null)
-							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-						return _retval.get();
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.POISONOUS_POTATO && !(GetProcessOutputItemProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.EXPIRED_PORKCHOP_CHOPPED.get())) {
+				} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Items.POISONOUS_POTATO
+						&& !(GetProcessOutputItemProcedure.execute(world, x, y, z).getItem() == FuetcraftModItems.EXPIRED_PORKCHOP_CHOPPED.get())) {
 					ResetVariablesProcedure.execute(world, x, y, z);
 				}
 			} else {
@@ -103,5 +41,14 @@ public class ChopperCheckSlotContentsChangeProcedure {
 		} else {
 			ResetVariablesProcedure.execute(world, x, y, z);
 		}
+	}
+
+	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
+		if (world instanceof ILevelExtension ext) {
+			IItemHandler itemHandler = ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+			if (itemHandler != null)
+				return itemHandler.getStackInSlot(slot);
+		}
+		return ItemStack.EMPTY;
 	}
 }
