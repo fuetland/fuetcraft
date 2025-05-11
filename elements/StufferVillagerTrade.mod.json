@@ -164,7 +164,7 @@
             "level": 3,
             "maxTrades": 15,
             "xp": 7,
-            "priceMultiplier": 0.06999999999999999
+            "priceMultiplier": 0.2
           },
           {
             "price1": {
@@ -225,7 +225,7 @@
             "level": 4,
             "maxTrades": 10,
             "xp": 9,
-            "priceMultiplier": 0.09
+            "priceMultiplier": 0.2
           }
         ]
       },
@@ -250,7 +250,7 @@
             "level": 5,
             "maxTrades": 5,
             "xp": 11,
-            "priceMultiplier": 0.11
+            "priceMultiplier": 0.2
           }
         ]
       }
