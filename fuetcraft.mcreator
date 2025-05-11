@@ -2022,6 +2022,25 @@
         "dependencies": []
       },
       "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "GetGuideBookEnterServerFirstTime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_guide_book_enter_server_first_time",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetGuideBookEnterServerFirstTimeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/guide-book"
     }
   ],
   "variable_elements": [
@@ -2179,8 +2198,8 @@
       "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "subtitles.chopper-crafting": "",
       "gui.guide.book.fuet.effects": "Effects",
-      "item.fuetcraft.fuet_swimming": "Swimming Fuet",
       "gui.guide.book.fuet.recipe": "Recipe",
+      "item.fuetcraft.fuet_swimming": "Swimming Fuet",
       "painting.fuetcraft.logo_of_a_fish_wholesaler.author": "Fuetcraft",
       "text.ingredients": "Ingredients",
       "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
@@ -2189,9 +2208,9 @@
       "gui.guide.book.fuet.mining.effect.2": "- Night Vision III for 5 minutes",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "gui.guide.book.fuet.mining.effect.1": "- Haste I for 5 minutes",
-      "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
-      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
       "gui.guide.book.fuet.taradellas.effect.1": "- Regeneration II for 20 seconds",
+      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
+      "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
       "gui.fuetcraft.stuffer_gui.tooltip_slot0": "Any type of chopped pork chop is allowed.",
       "gui.guide.book.fuet.taradellas.effect.3": "- Instant Health II",
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
@@ -2249,8 +2268,8 @@
       "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "subtitles.chopper-crafting": "",
       "gui.guide.book.fuet.effects": "",
-      "item.fuetcraft.fuet_swimming": "Swimming Fuet",
       "gui.guide.book.fuet.recipe": "",
+      "item.fuetcraft.fuet_swimming": "Swimming Fuet",
       "painting.fuetcraft.logo_of_a_fish_wholesaler.author": "Fuetcraft",
       "text.ingredients": "Ingredientes",
       "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
@@ -2259,9 +2278,9 @@
       "gui.guide.book.fuet.mining.effect.2": "",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "gui.guide.book.fuet.mining.effect.1": "",
-      "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
-      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
       "gui.guide.book.fuet.taradellas.effect.1": "",
+      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
+      "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
       "gui.fuetcraft.stuffer_gui.tooltip_slot0": "Any type of chopped pork chop is allowed.",
       "gui.guide.book.fuet.taradellas.effect.3": "",
       "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
