@@ -34,3 +34,6 @@ out/
 
 # fuetcraft
 .mcreator
+
+# IDEs
+.eclipse
