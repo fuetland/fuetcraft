@@ -1,6 +1,6 @@
 {
-  "item.fuetcraft.fuet_exploring": "Exploring Fuet",
   "block.fuetcraft.banner.fuet_banner.cyan": "Cyan Fuet Banner",
+  "item.fuetcraft.fuet_exploring": "Exploring Fuet",
   "gui.guide.book.fuet.effects": "Effects",
   "gui.guide.book.fuet.recipe": "Recipe",
   "item.fuetcraft.fuet_swimming": "Swimming Fuet",
@@ -45,7 +45,7 @@
   "gui.guide.book.stuffer.1": "This block is used to create fuets",
   "gui.guide.book.stuffer.2": "from chopped pork chops.",
   "block.fuetcraft.banner.fuet_banner.white": "White Fuet Banner",
-  "item.fuetcraft.thinking_in_fuets_disc.desc": "Thinking if fuets",
+  "item.fuetcraft.thinking_in_fuets_disc.desc": "Thinking of fuets",
   "text.crafting": "Crafting",
   "gui.guide.book.chopper.text.2": "chopped pork meat",
   "block.fuetcraft.banner.fuet_banner.lime": "Lime Fuet Banner",
