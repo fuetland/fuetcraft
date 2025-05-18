@@ -2340,8 +2340,8 @@
   },
   "language_map": {
     "en_us": {
-      "block.fuetcraft.banner.fuet_banner.cyan": "Cyan Fuet Banner",
       "item.fuetcraft.fuet_exploring": "Exploring Fuet",
+      "block.fuetcraft.banner.fuet_banner.cyan": "Cyan Fuet Banner",
       "gui.guide.book.fuet.effects": "Effects",
       "gui.guide.book.fuet.recipe": "Recipe",
       "item.fuetcraft.fuet_swimming": "Swimming Fuet",
