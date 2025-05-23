@@ -93,11 +93,11 @@ Los Fuets se obtienen en el Stuffer, con un tiempo de procesamiento de cinco
 
 #### Effects <!-- omit in toc -->
 
-| **Mining**                       | **Combat**                               | **Swimming**                                |
+| ![fuet-mining](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/item/fuet-mining.png) **Mining**                       | ![fuet-combat](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/item/fuet-combat.png) **Combat**                               | ![fuet-swimming](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/item/fuet-swimming.png) **Swimming**                                |
 |----------------------------------|------------------------------------------|---------------------------------------------|
 | - Haste I for 5 minutes          | - Strength II for 1 minute               | - Conduit Power II for 1 minute 30 seconds  |
 | - Night Vision III for 5 minutes | - Resistance III for 1 minute 30 seconds | - Dolphins Grace II for 1 minute 30 seconds |
-| **Exploring**                    | **Expired**                              | **Taradellas**                              |
+| ![fuet-exploring](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/item/fuet-exploring.png) **Exploring**                    | ![fuet-expired](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/item/fuet-expired.png) **Expired**                              | ![fuet-tarradellas](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/item/fuet-tarradellas.png) **Tarradellas**                              |
 | - Speed III for 8 minutes        | - Invisibility II for 3 minutes          | - Regeneration II for 20 seconds            |
 | - Jump Boost II for 7 minutes    | - Poison III for 30 seconds              | - Fire Resistance for 3 minutes             |
 | - Night Vision III for 7 minutes | - Slow Falling V for 1 minute            | - Instant Health II                         |
