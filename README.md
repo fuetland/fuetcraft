@@ -41,9 +41,9 @@ La GUI cuenta con dos slots de entrada y uno de salida. En el primer slot de ent
   crear los diferentes Fuets que hay. Dentro de la interfaz, hay tooltips en los
    slots para ayudar al usuario que hay que colocar en cada uno.
 
-| Crafteo |   | GUI |
-|:-------:|---|:---:|
-|    ![chopper-craft](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/screens/chopper-craft.png)    |   |  ![chopper-gui](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/chopper-gui.png)  |
+| Crafteo                                                                                                                                                                | GUI                                                                                                                                                    | In-game                                                                                                                                                        |
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|    ![chopper-craft](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/screens/chopper-craft.png)    |  ![chopper-gui](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/chopper-gui.png)  |  ![chopper-in-game](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/chopper-in-game.png)  |
 
 ### ![stuffer-icon](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/block/stuffericon.png) · Stuffer <!-- omit in toc -->
 
@@ -56,9 +56,9 @@ La GUI tiene dos slots de entrada y uno de salida. En el primer slot de entrada
   cuero. Dentro de la interfaz, hay tooltips en los slots para ayudar al usuario
    que hay que colocar en cada uno.
 
-| Crafteo |   | GUI |
-|:-------:|---|:---:|
-|    ![stuffer-craft](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/screens/stuffer-craft.png)    |   |  ![stuffer-gui](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/stuffer-gui.png)  |
+| Crafteo                                                                                                                                                                | GUI                                                                                                                                                    | In-game                                                                                                                                                    |
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|    ![stuffer-craft](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/screens/stuffer-craft.png)    |  ![stuffer-gui](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/stuffer-gui.png)  |    ![stuffer-in-game](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/stuffer-in-game.png)    |
 
 ## Items
 
