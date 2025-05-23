@@ -97,7 +97,6 @@ Los Fuets se obtienen en el Stuffer, con un tiempo de procesamiento de cinco
 |----------------------------------|------------------------------------------|---------------------------------------------|
 | - Haste I for 5 minutes          | - Strength II for 1 minute               | - Conduit Power II for 1 minute 30 seconds  |
 | - Night Vision III for 5 minutes | - Resistance III for 1 minute 30 seconds | - Dolphins Grace II for 1 minute 30 seconds |
-|                                  |                                          |                                             |
 | **Exploring**                    | **Expired**                              | **Taradellas**                              |
 | - Speed III for 8 minutes        | - Invisibility II for 3 minutes          | - Regeneration II for 20 seconds            |
 | - Jump Boost II for 7 minutes    | - Poison III for 30 seconds              | - Fire Resistance for 3 minutes             |
