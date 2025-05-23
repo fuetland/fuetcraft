@@ -4,9 +4,9 @@
 
 Fuetcraft es un mod que aporta diferentes formas de mejorar la experiencia de un
  mundo en supervivencia. Se pueden crear hasta siete Fuets diferentes, cada uno
-  especializado en una faceta de Minecraft: minería, exploración, combate, etc.
-   La clave de cada Fuet es que al comerlo aporta efectos durante un tiempo para
-   mejorar las características del jugador.
+ especializado en una faceta de Minecraft: minería, exploración, combate, etc.
+ La clave de cada Fuet es que al comerlo aporta efectos durante un tiempo para
+ mejorar las características del jugador.
 
 ### Index <!-- omit in toc -->
 
@@ -15,16 +15,13 @@ Fuetcraft es un mod que aporta diferentes formas de mejorar la experiencia de un
   - [Items](#items)
   - [Villager's profession](#villagers-profession)
 - [Easter eggs](#easter-eggs)
-  - [Paintings](#paintings)
-  - [Banners](#banners)
-  - [Music discs](#music-discs)
 - [Future updates](#future-updates)
 
 # Main features
 
-Al iniciar un mundo con este mod, al jugador se le otorga un libro que explica
+Al iniciar un mundo con este mod, al jugador se le otorga un libro que explica 
  como crear los dos nuevos bloques y como fabricar los dos ítems nuevos y los
-  efectos que otorgan al comerlos.
+ efectos que otorgan al comerlos.
 
 ## Blocks
 
@@ -32,14 +29,14 @@ Al iniciar un mundo con este mod, al jugador se le otorga un libro que explica
 
 Chopper es el primer bloque que hay que craftear para empezar con el proceso de
  fabricación de los fuets. Se utiliza para crear los difrentes
-  porkchop chopped que hay. Además, si le pones el bloque cerca de un aldeano,
-   se le asignará una nueva [profesión](#villagers-profession). También se ha
-    añadido funcionalidad con las tolvas.
+ porkchop chopped que hay. Además, si le pones el bloque cerca de un aldeano,
+ se le asignará una nueva [profesión](#villagers-profession). También se ha
+ añadido funcionalidad con las tolvas.
 
 La GUI cuenta con dos slots de entrada y uno de salida. En el primer slot de entrada
  se colocan las chuletas de cerdo, y en el segundo, diversos ingredientes para
-  crear los diferentes Fuets que hay. Dentro de la interfaz, hay tooltips en los
-   slots para ayudar al usuario que hay que colocar en cada uno.
+ crear los diferentes Fuets que hay. Dentro de la interfaz, hay tooltips en los
+ slots para ayudar al usuario que hay que colocar en cada uno.
 
 | Crafteo                                                                                                                                                                | GUI                                                                                                                                                    | In-game                                                                                                                                                        |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -49,12 +46,12 @@ La GUI cuenta con dos slots de entrada y uno de salida. En el primer slot de ent
 
 Una vez obtenidos los porkchop chopped, con el Stuffer y cuero, se pueden fabricar
  los Fuets. Como él Chopper, este bloque puede interactuar con las tolvas y tiene
-  su propia [profesión](#villagers-profession) de aldeano.
+ su propia [profesión](#villagers-profession) de aldeano.
 
 La GUI tiene dos slots de entrada y uno de salida. En el primer slot de entrada
  se colocan los diferentes porkchop chopped que hay, y en el segundo se coloca el
-  cuero. Dentro de la interfaz, hay tooltips en los slots para ayudar al usuario
-   que hay que colocar en cada uno.
+ cuero. Dentro de la interfaz, hay tooltips en los slots para ayudar al usuario
+ que hay que colocar en cada uno.
 
 | Crafteo                                                                                                                                                                | GUI                                                                                                                                                    | In-game                                                                                                                                                    |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -66,8 +63,8 @@ La GUI tiene dos slots de entrada y uno de salida. En el primer slot de entrada
 
 Se fabrican utilizando el Chopper y se utilizan en el Stuffer. Se pueden comer,
  pero no alimentan mucho. El aldeano de la profesión del Chopper ofrece algunos
-  intercambios con este item. A continuación, se muestra una tabla de los diferentes
-   prokchop chopped que hay, y como se producen.
+ intercambios con este item. A continuación, se muestra una tabla de los diferentes
+ prokchop chopped que hay, y como se producen.
 
 #### Recipes <!-- omit in toc -->
 
@@ -81,7 +78,7 @@ Se fabrican utilizando el Chopper y se utilizan en el Stuffer. Se pueden comer,
 
 Los Fuets se obtienen en el Stuffer, con un tiempo de procesamiento de cinco
  segundos, o en algún intercambio de la profesión del aldeano del Stuffer. Cada
-  Fuet (excepto el normal), proporciona diferentes efectos al comerlos.
+ Fuet (excepto el normal), proporciona diferentes efectos al comerlos.
 
 #### Recipes <!-- omit in toc -->
 
@@ -103,12 +100,25 @@ Los Fuets se obtienen en el Stuffer, con un tiempo de procesamiento de cinco
 
 ## Villager's profession
 
+Los tradeos son una parte fundamental de Minecraft y como no, aprovechando que se
+ han añadidos dos bloques, se ha creado un nuevo oficio para cada uno de ellos.
+
+### Chopper <!-- omit in toc -->
+
+### Stuffer <!-- omit in toc -->
+
 # Easter eggs
 
-## Paintings
-
-## Banners
-
-## Music discs
+Para no spoilear todo el contenido del mod en la documentación, se han dejado
+ diferentes easter eggs. Como ayuda, solo voy a proporcionar estos datos:
+ **3 paintings**, **1 banners** y **1 music discs**.
 
 # Future updates
+
+En las próximas versiones, los desarrolladores tenemos pensado las siguientes
+ ideas:
+
+- Crear una **estructura** relacionada con el Chopper y Stuffer
+- Añadir **logros**
+- Añadir **proceso de secado** antes de que se pueda comer el Fuet
+- Mejorar proceso de **fabricación** de los Fuets
