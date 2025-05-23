@@ -3,10 +3,10 @@
 ## Introduction <!-- omit in toc -->
 
 Fuetcraft es un mod que aporta diferentes formas de mejorar la experiencia de un
- mundo en supervivencia. Se pueden crear hasta siete [Fuets](#fuet-icon--fuet) diferentes,
-  cada uno especializado en una faceta de Minecraft: minería, exploración, combate,
-   etc. La clave de cada Fuet es que al comerlo aporta efectos durante un tiempo
-    para mejorar las características del jugador.
+ mundo en supervivencia. Se pueden crear hasta siete Fuets diferentes, cada uno
+  especializado en una faceta de Minecraft: minería, exploración, combate, etc.
+   La clave de cada Fuet es que al comerlo aporta efectos durante un tiempo para
+   mejorar las características del jugador.
 
 ### Index <!-- omit in toc -->
 
@@ -31,17 +31,15 @@ Al iniciar un mundo con este mod, al jugador se le otorga un libro que explica
 ### ![chopper-icon](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/block/choppericon.png) · Chopper <!-- omit in toc -->
 
 Chopper es el primer bloque que hay que craftear para empezar con el proceso de
- fabricación de los [fuets](#fuet-icon--fuet). Se utiliza para crear los difrentes
-  [porkchop chopped](#prokchop-chopped-icon--porkchop-chopped) que hay. Además,
-   si le pones el bloque cerca de un aldeano, se le asignará una nueva
-    [profesión](#villagers-profession). También se ha añadido funcionalidad con
-     las tolvas.
+ fabricación de los fuets. Se utiliza para crear los difrentes
+  porkchop chopped que hay. Además, si le pones el bloque cerca de un aldeano,
+   se le asignará una nueva [profesión](#villagers-profession). También se ha
+    añadido funcionalidad con las tolvas.
 
 La GUI cuenta con dos slots de entrada y uno de salida. En el primer slot de entrada
- se colocan las chuletas de cerdo, y en el segundo, diversos
-  [ingredientes](#chopper-icon--chopper) para crear los diferentes Fuets que hay.
-   Dentro de la interfaz, hay tooltips en los slots para ayudar al usuario que hay
-    que colocar en cada uno.
+ se colocan las chuletas de cerdo, y en el segundo, diversos ingredientes para
+  crear los diferentes Fuets que hay. Dentro de la interfaz, hay tooltips en los
+   slots para ayudar al usuario que hay que colocar en cada uno.
 
 | Crafteo |   | GUI |
 |:-------:|---|:---:|
@@ -49,15 +47,14 @@ La GUI cuenta con dos slots de entrada y uno de salida. En el primer slot de ent
 
 ### ![stuffer-icon](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/block/stuffericon.png) · Stuffer <!-- omit in toc -->
 
-Una vez obtenidos los [porkchop chopped](#prokchop-chopped-icon--porkchop-chopped),
- con el Stuffer y cuero, se pueden fabricar los [Fuets](#fuet-icon--fuet). Como
-  él [Chopper](#chopper-icon--chopper), este bloque puede interactuar con las
-   tolvas y tiene su propia [profesión](#villagers-profession) de aldeano.
+Una vez obtenidos los porkchop chopped, con el Stuffer y cuero, se pueden fabricar
+ los Fuets. Como él Chopper, este bloque puede interactuar con las tolvas y tiene
+  su propia [profesión](#villagers-profession) de aldeano.
 
 La GUI tiene dos slots de entrada y uno de salida. En el primer slot de entrada
- se colocan los diferentes [porkchop chopped](#prokchop-chopped-icon--porkchop-chopped)
-  que hay, y en el segundo se coloca el cuero. Dentro de la interfaz, hay tooltips
-   en los slots para ayudar al usuario que hay que colocar en cada uno.
+ se colocan los diferentes porkchop chopped que hay, y en el segundo se coloca el
+  cuero. Dentro de la interfaz, hay tooltips en los slots para ayudar al usuario
+   que hay que colocar en cada uno.
 
 | Crafteo |   | GUI |
 |:-------:|---|:---:|
@@ -67,11 +64,10 @@ La GUI tiene dos slots de entrada y uno de salida. En el primer slot de entrada
 
 ### ![prokchop-chopped-icon](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/item/porkchop-chopped.png) · Porkchop chopped <!-- omit in toc -->
 
-Se fabrican utilizando el [Chopper](#chopper-icon--chopper) y se utilizan en el
- [Stuffer](#stuffer-icon--stuffer). Se pueden comer, pero no alimentan mucho. El
-  aldeano de la profesión del Chopper ofrece algunos intercambios con este item.
-   A continuación, se muestra una tabla de los diferentes prokchop chopped que
-    hay, y como se producen.
+Se fabrican utilizando el Chopper y se utilizan en el Stuffer. Se pueden comer,
+ pero no alimentan mucho. El aldeano de la profesión del Chopper ofrece algunos
+  intercambios con este item. A continuación, se muestra una tabla de los diferentes
+   prokchop chopped que hay, y como se producen.
 
 #### Recipes <!-- omit in toc -->
 
@@ -83,10 +79,9 @@ Se fabrican utilizando el [Chopper](#chopper-icon--chopper) y se utilizan en el
 
 ### ![fuet-icon](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/develop/src/main/resources/assets/fuetcraft/textures/item/fuet.png) · Fuet <!-- omit in toc -->
 
-Los Fuets se obtienen en el [Stuffer](#stuffer-icon--stuffer), con un tiempo de
- procesamiento de cinco segundos, o en algún intercambio de la profesión del
-  aldeano del Stuffer. Cada Fuet (excepto el normal), proporciona diferentes efectos
-   al comerlos.
+Los Fuets se obtienen en el Stuffer, con un tiempo de procesamiento de cinco
+ segundos, o en algún intercambio de la profesión del aldeano del Stuffer. Cada
+  Fuet (excepto el normal), proporciona diferentes efectos al comerlos.
 
 #### Recipes <!-- omit in toc -->
 
