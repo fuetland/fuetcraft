@@ -2322,8 +2322,8 @@
   },
   "language_map": {
     "en_us": {
-      "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "block.fuetcraft.banner.fuet_banner.cyan": "Cyan Fuet Banner",
+      "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "gui.guide.book.fuet.effects": "Effects",
       "gui.guide.book.fuet.recipe": "Recipe",
       "item.fuetcraft.fuet_swimming": "Swimming Fuet",
@@ -2406,8 +2406,8 @@
       "gui.guide.book.fuet.exploring.effect.2": "- Jump Boost II for 7 minutes"
     },
     "es_es": {
-      "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "block.fuetcraft.banner.fuet_banner.cyan": "Fuet cian",
+      "item.fuetcraft.fuet_exploring": "Exploring Fuet",
       "gui.guide.book.fuet.effects": "Efectos",
       "gui.guide.book.fuet.recipe": "Receta",
       "item.fuetcraft.fuet_swimming": "Swimming Fuet",
