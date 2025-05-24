@@ -1,0 +1,11 @@
+{
+  "asset_id": "fuetcraft:rustic_room_with_fuets",
+  "height": 5,
+  "width": 7,
+  "title": {
+    "translate": "painting.fuetcraft.rustic_room_with_fuets.title"
+  },
+  "author": {
+    "translate": "painting.fuetcraft.rustic_room_with_fuets.author"
+  }
+}

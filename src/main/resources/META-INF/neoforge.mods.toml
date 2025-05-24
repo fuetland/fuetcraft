@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="Not specified"
+
+[[mods]]
+modId="fuetcraft"
+version="1.0.0"
+displayName="fuetcraft"
+displayURL="https://github.com/fuetland/fuetcraft"
+logoFile="logo.png"
+credits="fuetland@gmail.com"
+authors="Fuetland"
+description="This mod includes the ability to craft different types of Fuets. Each of these provides different effects for the adventure."
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.fuetcraft]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.4.123,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.fuetcraft]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.4]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

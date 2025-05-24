@@ -1,0 +1,269 @@
+{
+  "_fv": 78,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 256,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrowleft32x16",
+          "image": "arrow-left-32x16.png",
+          "hoveredImage": "arrow-left-hovered-32x16.png.png",
+          "onClick": {
+            "name": "OpenCoverGUI"
+          },
+          "x": 93,
+          "y": 44,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_chopper_gui_title_label",
+          "text": {
+            "fixedValue": "",
+            "name": "ChopperGuiTitleLabel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 196,
+          "y": 47,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "chopper-icon-32x32.png",
+          "use1Xscale": false,
+          "x": 300,
+          "y": 47,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_chopper_guide_text_1",
+          "text": {
+            "fixedValue": "",
+            "name": "GetChopperGuideText1"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 147,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_chopper_guide_text_2",
+          "text": {
+            "fixedValue": "",
+            "name": "GetChopperGuideText2"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 166,
+          "y": 83,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "chopper-craft.png",
+          "use1Xscale": false,
+          "x": 269,
+          "y": 129,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_crafting_texts",
+          "text": {
+            "fixedValue": "",
+            "name": "GetCraftingText"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 280,
+          "y": 116,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_ingredients_text",
+          "text": {
+            "fixedValue": "Ingredients",
+            "name": "GetIngredientsText"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 137,
+          "y": 116,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_slot_1_text",
+          "text": {
+            "fixedValue": "Slot 1",
+            "name": "GetSlot1Text"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 111,
+          "y": 172,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_slot_2_text",
+          "text": {
+            "fixedValue": "Slot 2",
+            "name": "GetSlot2Text"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 191,
+          "y": 172,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "porkchop-32x32.png",
+          "use1Xscale": false,
+          "x": 111,
+          "y": 139,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "netherite-32x32.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GuideBookIngredientAnimation1"
+          },
+          "x": 192,
+          "y": 139,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "salmon-32x32.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GuideBookIngredientAnimation2"
+          },
+          "x": 192,
+          "y": 139,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ender-pearl-32x32.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GuideBookIngredientAnimation3"
+          },
+          "x": 192,
+          "y": 139,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "torchflower-32x32.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GuideBookIngredientAnimation4"
+          },
+          "x": 192,
+          "y": 139,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "golden-pickaxe-32x32.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GuideBookIngredientAnimation5"
+          },
+          "x": 192,
+          "y": 139,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "poisonous-potato-32x32.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GuideBookIngredientAnimation6"
+          },
+          "x": 192,
+          "y": 139,
+          "locked": true
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "GuideBookChopperThisGUIIsOpened"
+    },
+    "onTick": {
+      "name": "GuideBookIngredientsAnimationWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 13,
+      "oy": 9,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "fuetcraft:fuet_tarradellas",
+    "fuetcraft:fuet_swimming",
+    "fuetcraft:fuet_mining",
+    "fuetcraft:fuet_exploring",
+    "fuetcraft:fuet_expired",
+    "fuetcraft:fuet_combat",
+    "fuetcraft:fuet",
+    "fuetcraft:tarradellas_porkchop_chopped",
+    "fuetcraft:combat_porkchop_chopped",
+    "fuetcraft:swimming_porkchop_chopped",
+    "fuetcraft:expired_porkchop_chopped",
+    "fuetcraft:explorer_porkchop_chopped",
+    "fuetcraft:mining_porkchop_chopped",
+    "fuetcraft:porkchop_chopped"
+  ]
+}

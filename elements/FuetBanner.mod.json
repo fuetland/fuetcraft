@@ -1,0 +1,10 @@
+{
+  "_fv": 78,
+  "_type": "bannerpattern",
+  "definition": {
+    "texture": "fuet-banner",
+    "shieldTexture": "fuet-shield",
+    "name": "Fuet Banner",
+    "requireItem": false
+  }
+}

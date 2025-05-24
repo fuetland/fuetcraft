@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:golden_pickaxe",
+    "minecraft:torchflower",
+    "minecraft:ender_pearl",
+    "minecraft:salmon",
+    "minecraft:netherite_scrap",
+    "minecraft:poisonous_potato"
+  ]
+}

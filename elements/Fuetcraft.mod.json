@@ -1,0 +1,11 @@
+{
+  "_fv": 78,
+  "_type": "tab",
+  "definition": {
+    "name": "Fuetcraft",
+    "icon": {
+      "value": "CUSTOM:Fuet"
+    },
+    "showSearch": true
+  }
+}

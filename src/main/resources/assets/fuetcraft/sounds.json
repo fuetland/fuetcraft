@@ -1,0 +1,50 @@
+{
+  "chopper-place": {
+    "sounds": [
+      {
+        "name": "fuetcraft:chopper-place",
+        "stream": false
+      }
+    ]
+  },
+  "stuffer-place": {
+    "sounds": [
+      {
+        "name": "fuetcraft:stuffer-place",
+        "stream": false
+      }
+    ]
+  },
+  "stuffer-crafting": {
+    "sounds": [
+      {
+        "name": "fuetcraft:stuffer",
+        "stream": false
+      }
+    ]
+  },
+  "chopper-crafting": {
+    "sounds": [
+      {
+        "name": "fuetcraft:chopper",
+        "stream": false
+      }
+    ]
+  },
+  "thinkinginfuets": {
+    "sounds": [
+      {
+        "name": "fuetcraft:pensandoenfuets",
+        "stream": true
+      }
+    ]
+  },
+  "joyfuliberiandance": {
+    "sounds": [
+      {
+        "name": "fuetcraft:bailejobialiberico",
+        "stream": true
+      }
+    ]
+  }
+}

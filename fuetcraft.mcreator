@@ -1,0 +1,2625 @@
+{
+  "mod_elements": [
+    {
+      "name": "Chopper",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/chopper.json",
+          "src/main/resources/assets/fuetcraft/blockstates/chopper.json",
+          "src/main/java/fuetcraft/block/entity/ChopperBlockEntity.java",
+          "src/main/java/fuetcraft/block/ChopperBlock.java",
+          "src/main/resources/assets/fuetcraft/items/chopper.json",
+          "src/main/resources/data/fuetcraft/loot_table/blocks/chopper.json",
+          "src/main/resources/assets/fuetcraft/models/block/chopper.json"
+        ]
+      },
+      "path": "~/blocks/chopper"
+    },
+    {
+      "name": "ChopperGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/world/inventory/ChopperGuiMenu.java",
+          "src/main/java/fuetcraft/client/gui/ChopperGuiScreen.java"
+        ]
+      },
+      "path": "~/blocks/chopper"
+    },
+    {
+      "name": "Fuetcraft",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuetcraft",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "PorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/porkchop_chopped.json",
+          "src/main/resources/assets/fuetcraft/items/porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/PorkchopChoppedItem.java"
+        ]
+      },
+      "path": "~/items/porkchop-chopped"
+    },
+    {
+      "name": "ChopperRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fuetcraft/recipe/chopper_recipe.json"
+        ]
+      },
+      "path": "~/blocks/chopper/recipes"
+    },
+    {
+      "name": "ChopperRecipeSimetric",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_recipe_simetric",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fuetcraft/recipe/chopper_recipe_simetric.json"
+        ]
+      },
+      "path": "~/blocks/chopper/recipes"
+    },
+    {
+      "name": "MiningPorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/items/mining_porkchop_chopped.json",
+          "src/main/resources/assets/fuetcraft/models/item/mining_porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/MiningPorkchopChoppedItem.java"
+        ]
+      },
+      "path": "~/items/porkchop-chopped"
+    },
+    {
+      "name": "ExplorerPorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explorer_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/items/explorer_porkchop_chopped.json",
+          "src/main/resources/assets/fuetcraft/models/item/explorer_porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/ExplorerPorkchopChoppedItem.java"
+        ]
+      },
+      "path": "~/items/porkchop-chopped"
+    },
+    {
+      "name": "ChopperCheckSlotContentsChange",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_check_slot_contents_change",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperCheckSlotContentsChangeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/chopper/procedures"
+    },
+    {
+      "name": "ChopperProcess",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_process",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperProcessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/chopper/procedures"
+    },
+    {
+      "name": "SetValuteToGlobalVariables",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_valute_to_global_variables",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/SetValuteToGlobalVariablesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RigthArrow20Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigth_arrow_20_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/RigthArrow20VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures/right-arrow-animation"
+    },
+    {
+      "name": "RigthArrow40Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigth_arrow_40_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/RigthArrow40VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures/right-arrow-animation"
+    },
+    {
+      "name": "RigthArrow60Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigth_arrow_60_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/RigthArrow60VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures/right-arrow-animation"
+    },
+    {
+      "name": "RigthArrow80Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigth_arrow_80_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/RigthArrow80VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures/right-arrow-animation"
+    },
+    {
+      "name": "RigthArrow100Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigth_arrow_100_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/RigthArrow100VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures/right-arrow-animation"
+    },
+    {
+      "name": "ExpiredPorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "expired_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/expired_porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/ExpiredPorkchopChoppedItem.java",
+          "src/main/resources/assets/fuetcraft/items/expired_porkchop_chopped.json"
+        ]
+      },
+      "path": "~/items/porkchop-chopped"
+    },
+    {
+      "name": "SwimmingPorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swimming_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/swimming_porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/SwimmingPorkchopChoppedItem.java",
+          "src/main/resources/assets/fuetcraft/items/swimming_porkchop_chopped.json"
+        ]
+      },
+      "path": "~/items/porkchop-chopped"
+    },
+    {
+      "name": "CombatPorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combat_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/combat_porkchop_chopped.json",
+          "src/main/resources/assets/fuetcraft/items/combat_porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/CombatPorkchopChoppedItem.java"
+        ]
+      },
+      "path": "~/items/porkchop-chopped"
+    },
+    {
+      "name": "TarradellasPorkchopChopped",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tarradellas_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/items/tarradellas_porkchop_chopped.json",
+          "src/main/resources/assets/fuetcraft/models/item/tarradellas_porkchop_chopped.json",
+          "src/main/java/fuetcraft/item/TarradellasPorkchopChoppedItem.java"
+        ]
+      },
+      "path": "~/items/porkchop-chopped"
+    },
+    {
+      "name": "ChopperInventorySlotAutomationPlaceCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_inventory_slot_automation_place_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperInventorySlotAutomationPlaceConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "index",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/blocks/chopper/procedures"
+    },
+    {
+      "name": "ChopperGuiTooltipSlot0Text",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_gui_tooltip_slot_0_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperGuiTooltipSlot0TextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/blocks/chopper/procedures/tooltips"
+    },
+    {
+      "name": "GuiTooltipSlot0Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_tooltip_slot_0_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuiTooltipSlot0VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures/tooltips-visibility"
+    },
+    {
+      "name": "GuiTooltipSlot1Visibility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_tooltip_slot_1_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuiTooltipSlot1VisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures/tooltips-visibility"
+    },
+    {
+      "name": "ChopperGuiTooltipSlot1Text",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_gui_tooltip_slot_1_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperGuiTooltipSlot1TextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/blocks/chopper/procedures/tooltips"
+    },
+    {
+      "name": "ChopperProfession",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_profession",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/textures/entity/villager/profession/chopper_profession.png.mcmeta"
+        ]
+      },
+      "path": "~/blocks/chopper"
+    },
+    {
+      "name": "ChopperVillagerTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_villager_trade",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/blocks/chopper"
+    },
+    {
+      "name": "Fuet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/fuet.json",
+          "src/main/resources/assets/fuetcraft/items/fuet.json",
+          "src/main/java/fuetcraft/item/FuetItem.java"
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "Stuffer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/items/stuffer.json",
+          "src/main/java/fuetcraft/block/entity/StufferBlockEntity.java",
+          "src/main/resources/data/fuetcraft/loot_table/blocks/stuffer.json",
+          "src/main/resources/assets/fuetcraft/models/block/stuffer.json",
+          "src/main/java/fuetcraft/block/StufferBlock.java",
+          "src/main/resources/assets/fuetcraft/models/item/stuffer.json",
+          "src/main/resources/assets/fuetcraft/blockstates/stuffer.json"
+        ]
+      },
+      "path": "~/blocks/stuffer"
+    },
+    {
+      "name": "StufferGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/client/gui/StufferGuiScreen.java",
+          "src/main/java/fuetcraft/world/inventory/StufferGuiMenu.java"
+        ]
+      },
+      "path": "~/blocks/stuffer"
+    },
+    {
+      "name": "StufferRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fuetcraft/recipe/stuffer_recipe.json"
+        ]
+      },
+      "path": "~/blocks/stuffer/recipes"
+    },
+    {
+      "name": "StufferRecipeSimetric",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_recipe_simetric",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fuetcraft/recipe/stuffer_recipe_simetric.json"
+        ]
+      },
+      "path": "~/blocks/stuffer/recipes"
+    },
+    {
+      "name": "StufferGuiTooltipSlot1Text",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_gui_tooltip_slot_1_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/StufferGuiTooltipSlot1TextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/blocks/stuffer/procedures/tooltips"
+    },
+    {
+      "name": "StufferGuiTooltipSlot0Text",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_gui_tooltip_slot_0_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/StufferGuiTooltipSlot0TextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/blocks/stuffer/procedures/tooltips"
+    },
+    {
+      "name": "StufferGuiTitleLabel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_gui_title_label",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/StufferGuiTitleLabelProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/blocks/stuffer/procedures"
+    },
+    {
+      "name": "ChopperGuiTitleLabel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chopper_gui_title_label",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/ChopperGuiTitleLabelProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/blocks/chopper/procedures"
+    },
+    {
+      "name": "FuetCombat",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_combat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/fuet_combat.json",
+          "src/main/java/fuetcraft/item/FuetCombatItem.java",
+          "src/main/resources/assets/fuetcraft/items/fuet_combat.json"
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetExpired",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_expired",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/items/fuet_expired.json",
+          "src/main/resources/assets/fuetcraft/models/item/fuet_expired.json",
+          "src/main/java/fuetcraft/item/FuetExpiredItem.java"
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetExploring",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_exploring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/items/fuet_exploring.json",
+          "src/main/resources/assets/fuetcraft/models/item/fuet_exploring.json",
+          "src/main/java/fuetcraft/item/FuetExploringItem.java"
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetMining",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_mining",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/items/fuet_mining.json",
+          "src/main/java/fuetcraft/item/FuetMiningItem.java",
+          "src/main/resources/assets/fuetcraft/models/item/fuet_mining.json"
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetSwimming",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_swimming",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/fuet_swimming.json",
+          "src/main/resources/assets/fuetcraft/items/fuet_swimming.json",
+          "src/main/java/fuetcraft/item/FuetSwimmingItem.java"
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetTarradellas",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_tarradellas",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/models/item/fuet_tarradellas.json",
+          "src/main/java/fuetcraft/item/FuetTarradellasItem.java",
+          "src/main/resources/assets/fuetcraft/items/fuet_tarradellas.json"
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetCombatPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_combat_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetCombatPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetExpiredPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_expired_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetExpiredPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetExploringPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_exploring_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetExploringPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetMiningPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_mining_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetMiningPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetSwimmingPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_swimming_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetSwimmingPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "FuetTarradellasPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_tarradellas_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetTarradellasPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/fuets"
+    },
+    {
+      "name": "ExecutionSummary",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "execution_summary",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ExecutionSummaryProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "StufferInventorySlotAutomationPlaceCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_inventory_slot_automation_place_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/StufferInventorySlotAutomationPlaceConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "index",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/blocks/stuffer/procedures"
+    },
+    {
+      "name": "ResetVariables",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_variables",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ResetVariablesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "StufferCheckSlotContentsChange",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_check_slot_contents_change",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/StufferCheckSlotContentsChangeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/stuffer/procedures"
+    },
+    {
+      "name": "GetProcessOutputItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_process_output_item",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetProcessOutputItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "StufferProcess",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_process",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/StufferProcessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/stuffer/procedures"
+    },
+    {
+      "name": "ValidateOutputItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "validate_output_item",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/ValidateOutputItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "PaintingOfAFuet",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_of_a_fuet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fuetcraft/painting_variant/painting_of_a_fuet.json"
+        ]
+      },
+      "path": "~/items/paintings"
+    },
+    {
+      "name": "GiveChopperRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_chopper_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GiveChopperRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/blocks/chopper/recipes"
+    },
+    {
+      "name": "GiveStufferRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_stuffer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GiveStufferRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/blocks/stuffer/recipes"
+    },
+    {
+      "name": "StufferProfession",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_profession",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fuetcraft/textures/entity/villager/profession/stuffer_profession.png.mcmeta"
+        ]
+      },
+      "path": "~/blocks/stuffer"
+    },
+    {
+      "name": "StufferVillagerTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffer_villager_trade",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/blocks/stuffer"
+    },
+    {
+      "name": "RusticRoomWithFuets",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rustic_room_with_fuets",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fuetcraft/painting_variant/rustic_room_with_fuets.json"
+        ]
+      },
+      "path": "~/items/paintings"
+    },
+    {
+      "name": "GuideBook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/item/inventory/GuideBookInventoryCapability.java",
+          "src/main/resources/assets/fuetcraft/models/item/guide_book.json",
+          "src/main/java/fuetcraft/item/GuideBookItem.java",
+          "src/main/resources/assets/fuetcraft/items/guide_book.json"
+        ]
+      },
+      "path": "~/items/guide-book"
+    },
+    {
+      "name": "GetTextFuetcraft",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_text_fuetcraft",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetTextFuetcraftProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "GuideBookCover",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_cover",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/world/inventory/GuideBookCoverMenu.java",
+          "src/main/java/fuetcraft/network/GuideBookCoverButtonMessage.java",
+          "src/main/java/fuetcraft/client/gui/GuideBookCoverScreen.java"
+        ]
+      },
+      "path": "~/items/guide-book"
+    },
+    {
+      "name": "OpenStufferGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_stuffer_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/OpenStufferGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/items/guide-book/stuffer"
+    },
+    {
+      "name": "GetStufferGuideText1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_stuffer_guide_text_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetStufferGuideText1Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/stuffer"
+    },
+    {
+      "name": "GetStufferGuideText2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_stuffer_guide_text_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetStufferGuideText2Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/stuffer"
+    },
+    {
+      "name": "GuideBookFuet",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_fuet",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/network/GuideBookFuetButtonMessage.java",
+          "src/main/java/fuetcraft/world/inventory/GuideBookFuetMenu.java",
+          "src/main/java/fuetcraft/client/gui/GuideBookFuetScreen.java"
+        ]
+      },
+      "path": "~/items/guide-book/fuet"
+    },
+    {
+      "name": "GetTitleOfFuetGuide",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_title_of_fuet_guide",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetTitleOfFuetGuideProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/fuet"
+    },
+    {
+      "name": "OpenFuetGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_fuet_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/OpenFuetGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/items/guide-book/fuet"
+    },
+    {
+      "name": "OpenCoverGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_cover_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/OpenCoverGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/items/guide-book"
+    },
+    {
+      "name": "FuetTarradellasGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_tarradellas_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetTarradellasGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/fuet"
+    },
+    {
+      "name": "FuetSwimmingGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_swimming_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetSwimmingGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/fuet"
+    },
+    {
+      "name": "FuetMiningGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_mining_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetMiningGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/fuet"
+    },
+    {
+      "name": "FuetExploringGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_exploring_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetExploringGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/fuet"
+    },
+    {
+      "name": "FuetExpiredGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_expired_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetExpiredGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/fuet"
+    },
+    {
+      "name": "FuetCombatGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_combat_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetCombatGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/fuet"
+    },
+    {
+      "name": "FuetGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/FuetGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/fuet"
+    },
+    {
+      "name": "OpenChopperGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_chopper_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/OpenChopperGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/items/guide-book/chopper"
+    },
+    {
+      "name": "GetChopperGuideText1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_chopper_guide_text_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetChopperGuideText1Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/chopper"
+    },
+    {
+      "name": "GetCraftingText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_crafting_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetCraftingTextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/procedures/get-texts"
+    },
+    {
+      "name": "GetChopperGuideText2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_chopper_guide_text_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetChopperGuideText2Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/chopper"
+    },
+    {
+      "name": "GetIngredientsText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_ingredients_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetIngredientsTextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/procedures/get-texts"
+    },
+    {
+      "name": "GetSlot1Text",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_slot_1_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetSlot1TextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/procedures/get-texts"
+    },
+    {
+      "name": "GetSlot2Text",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_slot_2_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetSlot2TextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/procedures/get-texts"
+    },
+    {
+      "name": "GuideBookChopper",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_chopper",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/world/inventory/GuideBookChopperMenu.java",
+          "src/main/java/fuetcraft/client/gui/GuideBookChopperScreen.java",
+          "src/main/java/fuetcraft/network/GuideBookChopperButtonMessage.java"
+        ]
+      },
+      "path": "~/items/guide-book/chopper"
+    },
+    {
+      "name": "GuideBookIngredientsAnimationThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredients_animation_this_gui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientsAnimationThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientsAnimationWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredients_animation_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientsAnimationWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientAnimation1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientAnimation2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientAnimation3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientAnimation4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientAnimation5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookIngredientAnimation6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "LogoOfAFishWholesaler",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logo_of_a_fish_wholesaler",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fuetcraft/painting_variant/logo_of_a_fish_wholesaler.json"
+        ]
+      },
+      "path": "~/items/paintings"
+    },
+    {
+      "name": "GuideBookStuffer",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_stuffer",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/client/gui/GuideBookStufferScreen.java",
+          "src/main/java/fuetcraft/network/GuideBookStufferButtonMessage.java",
+          "src/main/java/fuetcraft/world/inventory/GuideBookStufferMenu.java"
+        ]
+      },
+      "path": "~/items/guide-book/stuffer"
+    },
+    {
+      "name": "GuideBookChopperThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_chopper_this_gui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookChopperThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/guide-book/chopper"
+    },
+    {
+      "name": "GuideBookStufferThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_stuffer_this_gui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookStufferThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/guide-book/stuffer"
+    },
+    {
+      "name": "GuideBookIngredientAnimation0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_ingredient_animation_0",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GuideBookIngredientAnimation0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures/ingredients-animation"
+    },
+    {
+      "name": "GuideBookPorkchopChopped",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guide_book_porkchop_chopped",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/world/inventory/GuideBookPorkchopChoppedMenu.java",
+          "src/main/java/fuetcraft/client/gui/GuideBookPorkchopChoppedScreen.java",
+          "src/main/java/fuetcraft/network/GuideBookPorkchopChoppedButtonMessage.java"
+        ]
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "OpenPorkchopChoppedGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_porkchop_chopped_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/OpenPorkchopChoppedGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "GetPorckchopChoppedText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_porckchop_chopped_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetPorckchopChoppedTextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/procedures/get-texts"
+    },
+    {
+      "name": "PorkchopChoppedCombatGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_combat_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedCombatGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "PorkchopChoppedGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "PorkchopChoppedExpiredGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_expired_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedExpiredGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "PorkchopChoppedExploringGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_exploring_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedExploringGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "PorkchopChoppedMiningGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_mining_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedMiningGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "PorkchopChoppedSwimmingGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_swimming_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedSwimmingGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "PorkchopChoppedTarradellasGuideBookTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porkchop_chopped_tarradellas_guide_book_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fuetcraft/procedures/PorkchopChoppedTarradellasGuideBookTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/items/guide-book/porckchop-chopped"
+    },
+    {
+      "name": "GetGuideBookEnterServerFirstTime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_guide_book_enter_server_first_time",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/GetGuideBookEnterServerFirstTimeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items/guide-book"
+    },
+    {
+      "name": "FuetBanner",
+      "type": "bannerpattern",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuet_banner",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fuetcraft/banner_pattern/fuet_banner.json"
+        ]
+      },
+      "path": "~/items/banners"
+    },
+    {
+      "name": "ThinkingInFuetsDisc",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thinking_in_fuets_disc",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/item/ThinkingInFuetsDiscItem.java",
+          "src/main/resources/data/fuetcraft/jukebox_song/thinking_in_fuets_disc.json",
+          "src/main/resources/assets/fuetcraft/items/thinking_in_fuets_disc.json",
+          "src/main/resources/assets/fuetcraft/models/item/thinking_in_fuets_disc.json"
+        ]
+      },
+      "path": "~/items/music-discs"
+    },
+    {
+      "name": "OnCreeperDieBySkeletor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_creeper_die_by_skeletor",
+      "metadata": {
+        "files": [
+          "src/main/java/fuetcraft/procedures/OnCreeperDieBySkeletorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/items/music-discs"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "fuetMining",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "fuetExploration",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "fuetCombat",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "fuetSwimming",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "fuetEspetec",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "fuetExpired",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "fuetNormal",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "processIsActive",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "processTimer",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "currentTypeOfFuet",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "ingredientsAnimation",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "chopper-place",
+      "files": [
+        "chopper-place"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "stuffer-place",
+      "files": [
+        "stuffer-place"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "stuffer-crafting",
+      "files": [
+        "stuffer"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "chopper-crafting",
+      "files": [
+        "chopper"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "thinkinginfuets",
+      "files": [
+        "pensandoenfuets"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "joyfuliberiandance",
+      "files": [
+        "bailejobialiberico"
+      ],
+      "category": "music",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Stuffer",
+      "~CUSTOM:Chopper"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Stuffer",
+      "~CUSTOM:Chopper"
+    ],
+    "ITEMS:mod:items_minced_meat_purposes": [
+      "Items.GOLDEN_PICKAXE",
+      "Blocks.TORCHFLOWER",
+      "Items.ENDER_PEARL",
+      "Items.FISH#1",
+      "Items.NETHERITE_SCRAP",
+      "Items.POISONOUS_POTATO"
+    ],
+    "ITEMS:mod:items_valid_for_slot_0_of_the_stuffer": [
+      "CUSTOM:PorkchopChopped",
+      "CUSTOM:MiningPorkchopChopped",
+      "CUSTOM:ExplorerPorkchopChopped",
+      "CUSTOM:ExpiredPorkchopChopped",
+      "CUSTOM:SwimmingPorkchopChopped",
+      "CUSTOM:CombatPorkchopChopped",
+      "CUSTOM:TarradellasPorkchopChopped"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:FuetTarradellas",
+      "~CUSTOM:FuetSwimming",
+      "~CUSTOM:FuetMining",
+      "~CUSTOM:FuetExploring",
+      "~CUSTOM:FuetExpired",
+      "~CUSTOM:FuetCombat",
+      "~CUSTOM:Fuet",
+      "~CUSTOM:TarradellasPorkchopChopped",
+      "~CUSTOM:CombatPorkchopChopped",
+      "~CUSTOM:SwimmingPorkchopChopped",
+      "~CUSTOM:ExpiredPorkchopChopped",
+      "~CUSTOM:ExplorerPorkchopChopped",
+      "~CUSTOM:MiningPorkchopChopped",
+      "~CUSTOM:PorkchopChopped"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:ThinkingInFuetsDisc"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:Fuetcraft": [
+      "PorkchopChopped",
+      "MiningPorkchopChopped",
+      "ExplorerPorkchopChopped",
+      "SwimmingPorkchopChopped",
+      "CombatPorkchopChopped",
+      "ExpiredPorkchopChopped",
+      "TarradellasPorkchopChopped",
+      "Fuet",
+      "FuetMining",
+      "FuetExploring",
+      "FuetSwimming",
+      "FuetCombat",
+      "FuetExpired",
+      "FuetTarradellas",
+      "Chopper",
+      "Stuffer",
+      "GuideBook",
+      "ThinkingInFuetsDisc"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "block.fuetcraft.banner.fuet_banner.cyan": "Cyan Fuet Banner",
+      "item.fuetcraft.fuet_exploring": "Exploring Fuet",
+      "gui.guide.book.fuet.effects": "Effects",
+      "gui.guide.book.fuet.recipe": "Recipe",
+      "item.fuetcraft.fuet_swimming": "Swimming Fuet",
+      "painting.fuetcraft.logo_of_a_fish_wholesaler.author": "Fuetcraft",
+      "text.ingredients": "Ingredients",
+      "block.fuetcraft.banner.fuet_banner.green": "Green Fuet Banner",
+      "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
+      "block.fuetcraft.banner.fuet_banner.yellow": "Yellow Fuet Banner",
+      "item.fuetcraft.fuet_mining": "Mining Fuet",
+      "block.fuetcraft.banner.fuet_banner.magenta": "Magenta Fuet Banner",
+      "item.fuetcraft.thinking_in_fuets_disc": "Music Disc",
+      "gui.guide.book.fuet.mining.effect.2": "- Night Vision III for 5 minutes",
+      "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
+      "gui.guide.book.fuet.mining.effect.1": "- Haste I for 5 minutes",
+      "gui.guide.book.fuet.taradellas.effect.1": "- Regeneration II for 20 seconds",
+      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Stuffer Profession",
+      "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Only leather is allowed.",
+      "gui.fuetcraft.stuffer_gui.tooltip_slot0": "Any type of chopped pork chop is allowed.",
+      "gui.guide.book.fuet.taradellas.effect.3": "- Instant Health II",
+      "item.fuetcraft.mining_porkchop_chopped": "Mining Porkchop Chopped",
+      "gui.guide.book.fuet.taradellas.effect.2": "- Fire Resistance for 3 minutes",
+      "subtitles.joyfuliberiandance": "",
+      "gui.guide.book.fuet.taradellas.effect.5": "- Absortion III for 2 minutes",
+      "block.fuetcraft.banner.fuet_banner.light_blue": "Light Blue Fuet Banner",
+      "gui.guide.book.fuet.taradellas.effect.4": "- Resistance for 3 minutes",
+      "item.fuetcraft.fuet_expired": "Expired Fuet",
+      "item.fuetcraft.guide_book": "Guide Book",
+      "item.fuetcraft.swimming_porkchop_chopped": "Swimming Porkchop Chopped",
+      "gui.guide.book.fuet.combat.effect.2": "- Resistance III for 1 minute 30 seconds",
+      "item_group.fuetcraft.fuetcraft": "Fuetcraft",
+      "gui.guide.book.fuet.combat.effect.1": "- Strength II for 1 minute",
+      "item.fuetcraft.expired_porkchop_chopped": "Expired Porkchop Chopped",
+      "block.fuetcraft.banner.fuet_banner.pink": "Pink Fuet Banner",
+      "item.fuetcraft.tarradellas_porkchop_chopped": "Tarradellas Porkchop Chopped",
+      "painting.fuetcraft.rustic_room_with_fuets.author": "Fuetcraft",
+      "block.fuetcraft.banner.fuet_banner.brown": "Brown Fuet Banner",
+      "block.fuetcraft.banner.fuet_banner.gray": "Gray Fuet Banner",
+      "block.fuetcraft.chopper": "Chopper",
+      "block.fuetcraft.banner.fuet_banner.blue": "Blue Fuet Banner",
+      "painting.fuetcraft.painting_of_a_fuet.title": "Painting Of A Fuet",
+      "gui.guide.book.stuffer.1": "This block is used to create fuets",
+      "gui.guide.book.stuffer.2": "from chopped pork chops.",
+      "block.fuetcraft.banner.fuet_banner.white": "White Fuet Banner",
+      "item.fuetcraft.thinking_in_fuets_disc.desc": "Thinking in fuets",
+      "text.crafting": "Crafting",
+      "gui.guide.book.chopper.text.2": "chopped pork meat",
+      "block.fuetcraft.banner.fuet_banner.lime": "Lime Fuet Banner",
+      "entity.minecraft.villager.fuetcraft.chopper_profession": "Chopper Profession",
+      "item.fuetcraft.chopper": "Chopper",
+      "text.slot.2": "Slot 2",
+      "painting.fuetcraft.logo_of_a_fish_wholesaler.title": "Logo of a Fish Wholesaler",
+      "block.fuetcraft.banner.fuet_banner.red": "Red Fuet Banner",
+      "gui.guide.book.chopper.text.1": "Chop pork chops to obtain",
+      "text.slot.1": "Slot 1",
+      "item.fuetcraft.fuet": "Fuet",
+      "gui.guide.book.fuet.swimming.effect.1": "- Conduit Power II for 1 minute 30 seconds",
+      "block.fuetcraft.banner.fuet_banner.purple": "Purple Fuet Banner",
+      "gui.guide.book.fuet.title": "Fuets",
+      "gui.guide.book.fuet.swimming.effect.2": "- Dolphins Grace II for 1 minute 30 seconds",
+      "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
+      "painting.fuetcraft.painting_of_a_fuet.author": "Fuetcraft",
+      "block.fuetcraft.banner.fuet_banner.orange": "Orange Fuet Banner",
+      "block.fuetcraft.stuffer": "Stuffer",
+      "subtitles.thinkinginfuets": "",
+      "gui.guide.book.fuet.expired.effect.5": "- Nausea CCL for 15 seconds",
+      "block.fuetcraft.banner.fuet_banner.light_gray": "Light Gray Fuet Banner",
+      "gui.guide.book.fuet.expired.effect.4": "- Slowness IX for 1 minute",
+      "item.fuetcraft.stuffer": "Stuffer",
+      "gui.fuetcraft.chopper_gui.tooltip_slot1": "Valid items:",
+      "block.fuetcraft.banner.fuet_banner.black": "Black Fuet Banner",
+      "gui.fuetcraft.chopper_gui.tooltip_slot0": "Only raw pork chop are allowed.",
+      "item.fuetcraft.fuet_combat": "Combat Fuet",
+      "gui.guide.book.fuet.expired.effect.1": "- Invisibility II for 3 minutes",
+      "item.fuetcraft.porkchop_chopped": "Porkchop Chopped",
+      "painting.fuetcraft.rustic_room_with_fuets.title": "Rustic Room With Fuets",
+      "gui.guide.book.fuet.expired.effect.3": "- Slow Falling V for 1 minute",
+      "gui.guide.book.fuet.expired.effect.2": "- Poison III for 30 seconds",
+      "gui.guide.book.fuet.exploring.effect.3": "- Night Vision III for 7 minutes",
+      "gui.guide.book.fuet.exploring.effect.1": "- Speed III for 8 minutes",
+      "gui.guide.book.fuet.exploring.effect.2": "- Jump Boost II for 7 minutes"
+    },
+    "es_es": {
+      "block.fuetcraft.banner.fuet_banner.cyan": "Fuet cian",
+      "item.fuetcraft.fuet_exploring": "Exploring Fuet",
+      "gui.guide.book.fuet.effects": "Efectos",
+      "gui.guide.book.fuet.recipe": "Receta",
+      "item.fuetcraft.fuet_swimming": "Swimming Fuet",
+      "painting.fuetcraft.logo_of_a_fish_wholesaler.author": "Fuetcraft",
+      "text.ingredients": "Ingredientes",
+      "block.fuetcraft.banner.fuet_banner.green": "Fuet verde",
+      "item.fuetcraft.fuet_tarradellas": "Tarradellas Fuet",
+      "block.fuetcraft.banner.fuet_banner.yellow": "Fuet amarillo",
+      "item.fuetcraft.fuet_mining": "Mining Fuet",
+      "block.fuetcraft.banner.fuet_banner.magenta": "Fuet magenta",
+      "item.fuetcraft.thinking_in_fuets_disc": "Thinking In Fuets Disc",
+      "gui.guide.book.fuet.mining.effect.2": "- Visión nocturna III por 5 minutos",
+      "item.fuetcraft.combat_porkchop_chopped": "Chuleta de combate picada",
+      "gui.guide.book.fuet.mining.effect.1": "- Prisa minera I por 5 minutos",
+      "gui.guide.book.fuet.taradellas.effect.1": "- Regeneración II por 20 segundos",
+      "entity.minecraft.villager.fuetcraft.stuffer_profession": "Profesión del embutidor",
+      "gui.fuetcraft.stuffer_gui.tooltip_slot1": "Solo se permite cuero.",
+      "gui.fuetcraft.stuffer_gui.tooltip_slot0": "Se permite cualquier tipo de chuleta de cerdo picada.",
+      "gui.guide.book.fuet.taradellas.effect.3": "- Salud instantánea II",
+      "item.fuetcraft.mining_porkchop_chopped": "Chuleta minera picada",
+      "gui.guide.book.fuet.taradellas.effect.2": "- Resistencia al fuego por 3 minutos",
+      "subtitles.joyfuliberiandance": "",
+      "gui.guide.book.fuet.taradellas.effect.5": "- Absorción III por 2 minutos",
+      "block.fuetcraft.banner.fuet_banner.light_blue": "Fuet azul claro",
+      "gui.guide.book.fuet.taradellas.effect.4": "- Resistencia por 3 minutos",
+      "item.fuetcraft.fuet_expired": "Fuet caducado",
+      "item.fuetcraft.guide_book": "Libro guía",
+      "item.fuetcraft.swimming_porkchop_chopped": "Chuleta nadadora picada",
+      "gui.guide.book.fuet.combat.effect.2": "- Resistencia III por 1 minuto 30 segundos",
+      "item_group.fuetcraft.fuetcraft": "Fuetcraft",
+      "gui.guide.book.fuet.combat.effect.1": "- Fuerza II por 1 minuto",
+      "item.fuetcraft.expired_porkchop_chopped": "Chuleta caducada picada",
+      "block.fuetcraft.banner.fuet_banner.pink": "Fuet rosa",
+      "item.fuetcraft.tarradellas_porkchop_chopped": "Chuleta Tarradellas picada",
+      "painting.fuetcraft.rustic_room_with_fuets.author": "Fuetcraft",
+      "block.fuetcraft.banner.fuet_banner.brown": "Fuet marrón",
+      "block.fuetcraft.banner.fuet_banner.gray": "Fuet gris",
+      "block.fuetcraft.chopper": "Picadora",
+      "block.fuetcraft.banner.fuet_banner.blue": "Fuet azul",
+      "painting.fuetcraft.painting_of_a_fuet.title": "Cuadro de un Fuet",
+      "gui.guide.book.stuffer.1": "Este bloque sirve para crear los fuets",
+      "gui.guide.book.stuffer.2": "a partir de las chuletas de cerdo picadas.",
+      "block.fuetcraft.banner.fuet_banner.white": "Fuet blanco",
+      "item.fuetcraft.thinking_in_fuets_disc.desc": "Thinking if fuets",
+      "text.crafting": "Creación",
+      "gui.guide.book.chopper.text.2": "obtener carne de cerdo picada.",
+      "block.fuetcraft.banner.fuet_banner.lime": "Fuet lima",
+      "entity.minecraft.villager.fuetcraft.chopper_profession": "Profesión de la picadora",
+      "item.fuetcraft.chopper": "Picadora",
+      "text.slot.2": "Slot 2",
+      "painting.fuetcraft.logo_of_a_fish_wholesaler.title": "Logo de un mayorista de pescado",
+      "block.fuetcraft.banner.fuet_banner.red": "Fuet rojo",
+      "gui.guide.book.chopper.text.1": "Picar chuletas de cerdo para",
+      "text.slot.1": "Slot 1",
+      "item.fuetcraft.fuet": "Fuet",
+      "gui.guide.book.fuet.swimming.effect.1": "- Canalizador II por 1 minuto 30 segundos",
+      "block.fuetcraft.banner.fuet_banner.purple": "Fuet morado",
+      "gui.guide.book.fuet.title": "Fuets",
+      "gui.guide.book.fuet.swimming.effect.2": "- Gracia del delfín II por 1 minuto 30 segundos",
+      "item.fuetcraft.explorer_porkchop_chopped": "Chuleta exploradora picada",
+      "painting.fuetcraft.painting_of_a_fuet.author": "Fuetcraft",
+      "block.fuetcraft.banner.fuet_banner.orange": "Fuet naranja",
+      "block.fuetcraft.stuffer": "Embutidor",
+      "subtitles.thinkinginfuets": "",
+      "gui.guide.book.fuet.expired.effect.5": "- Náuseas CCL por 15 segundos",
+      "block.fuetcraft.banner.fuet_banner.light_gray": "Fuet gris claro",
+      "gui.guide.book.fuet.expired.effect.4": "- Lentitud IX por 1 minuto",
+      "item.fuetcraft.stuffer": "Embutidor",
+      "gui.fuetcraft.chopper_gui.tooltip_slot1": "Items válidos:",
+      "block.fuetcraft.banner.fuet_banner.black": "Fuet negro",
+      "gui.fuetcraft.chopper_gui.tooltip_slot0": "Solamente se permiten chuletas de cerdo crudas.",
+      "item.fuetcraft.fuet_combat": "Fuet de combate",
+      "gui.guide.book.fuet.expired.effect.1": "- Invisibilidad II por 3 minutos",
+      "item.fuetcraft.porkchop_chopped": "Chuleta de cerdo picada",
+      "painting.fuetcraft.rustic_room_with_fuets.title": "Habitación rústica con fuets",
+      "gui.guide.book.fuet.expired.effect.3": "- Caída lenta V por 1 minuto",
+      "gui.guide.book.fuet.expired.effect.2": "- Veneno III por 30 segundos",
+      "gui.guide.book.fuet.exploring.effect.3": "- Visión nocturna III por 7 minutos",
+      "gui.guide.book.fuet.exploring.effect.1": "- Velocidad III por 8 minutos",
+      "gui.guide.book.fuet.exploring.effect.2": "- Salto II por 7 minutos"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "procedures",
+        "children": [
+          {
+            "name": "right-arrow-animation",
+            "children": []
+          },
+          {
+            "name": "tooltips-visibility",
+            "children": []
+          },
+          {
+            "name": "get-texts",
+            "children": []
+          },
+          {
+            "name": "ingredients-animation",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "items",
+        "children": [
+          {
+            "name": "porkchop-chopped",
+            "children": []
+          },
+          {
+            "name": "fuets",
+            "children": []
+          },
+          {
+            "name": "paintings",
+            "children": []
+          },
+          {
+            "name": "guide-book",
+            "children": [
+              {
+                "name": "stuffer",
+                "children": []
+              },
+              {
+                "name": "fuet",
+                "children": []
+              },
+              {
+                "name": "chopper",
+                "children": []
+              },
+              {
+                "name": "porckchop-chopped",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "banners",
+            "children": []
+          },
+          {
+            "name": "music-discs",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "blocks",
+        "children": [
+          {
+            "name": "chopper",
+            "children": [
+              {
+                "name": "procedures",
+                "children": [
+                  {
+                    "name": "tooltips",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "recipes",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "stuffer",
+            "children": [
+              {
+                "name": "recipes",
+                "children": []
+              },
+              {
+                "name": "procedures",
+                "children": [
+                  {
+                    "name": "tooltips",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "fuetcraft",
+    "modName": "fuetcraft",
+    "version": "1.0.0",
+    "description": "This mod includes the ability to craft different types of Fuets. Each of these provides different effects for the adventure.",
+    "author": "Fuetland",
+    "websiteURL": "https://github.com/fuetland/fuetcraft",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "modPicture": "logo-fuetcraft-landscape",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.4",
+    "credits": "fuetland@gmail.com",
+    "modElementsPackage": "fuetcraft"
+  },
+  "mcreatorVersion": 202500216617
+}

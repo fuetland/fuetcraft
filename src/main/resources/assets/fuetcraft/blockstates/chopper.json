@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "fuetcraft:block/chopper"
+    },
+    "facing=east": {
+      "model": "fuetcraft:block/chopper",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "fuetcraft:block/chopper",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fuetcraft:block/chopper",
+      "y": 270
+    }
+  }
+}

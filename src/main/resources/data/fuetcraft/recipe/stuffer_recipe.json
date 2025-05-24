@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stuffer",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    "e e"
+  ],
+  "key": {
+    "a": "minecraft:lever",
+    "b": "minecraft:redstone_block",
+    "c": "minecraft:piston",
+    "d": "minecraft:dispenser",
+    "e": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "fuetcraft:stuffer",
+    "count": 1
+  }
+}
