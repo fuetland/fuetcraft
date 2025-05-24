@@ -2,12 +2,11 @@
 
 ## Introduction <!-- omit in toc -->
 
-**Fuetcraft** is a mod that adds different ways to enhance the survival world experience.
- Up to seven different Fuets can be crafted, each one specialized in a particular
- aspect of Minecraft: mining, exploration, combat, and more.
-
-The key feature of each Fuet is that, when eaten, it grants temporary effects that
- enhance the player's abilities.
+Fuetcraft es un mod que aporta diferentes formas de mejorar la experiencia de un
+ mundo en supervivencia. Se pueden crear hasta siete Fuets diferentes, cada uno
+ especializado en una faceta de Minecraft: minería, exploración, combate, etc.
+ La clave de cada Fuet es que al comerlo aporta efectos durante un tiempo para
+ mejorar las características del jugador.
 
 ### Index <!-- omit in toc -->
 
@@ -20,23 +19,24 @@ The key feature of each Fuet is that, when eaten, it grants temporary effects th
 
 # Main features
 
-When starting a world with this mod, the player is given a book that explains
- how to craft the two new blocks, how to create the two new items, and the effects
- they grant when eaten.
+Al iniciar un mundo con este mod, al jugador se le otorga un libro que explica 
+ como crear los dos nuevos bloques y como fabricar los dos ítems nuevos y los
+ efectos que otorgan al comerlos.
 
 ## Blocks
 
 ### ![chopper-icon](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/main/src/main/resources/assets/fuetcraft/textures/block/choppericon.png) · Chopper <!-- omit in toc -->
 
-The **Chopper** is the first block you need to craft to begin the fuet-making process.
- It's used to create the different types of chopped porkchops. Additionally, if
- you place the block near a villager, they will be assigned a new profession.
- Hopper functionality has also been added.
+Chopper es el primer bloque que hay que craftear para empezar con el proceso de
+ fabricación de los fuets. Se utiliza para crear los difrentes
+ porkchop chopped que hay. Además, si le pones el bloque cerca de un aldeano,
+ se le asignará una nueva [profesión](#villagers-profession). También se ha
+ añadido funcionalidad con las tolvas.
 
-The GUI features two input slots and one output slot. Porkchops are placed in the
- first input slot, and various ingredients go in the second to create the different
- types of Fuets. Inside the interface, there are tooltips on the slots to help
- the user understand what should be placed in each one.
+La GUI cuenta con dos slots de entrada y uno de salida. En el primer slot de entrada
+ se colocan las chuletas de cerdo, y en el segundo, diversos ingredientes para
+ crear los diferentes Fuets que hay. Dentro de la interfaz, hay tooltips en los
+ slots para ayudar al usuario que hay que colocar en cada uno.
 
 | Crafteo                                                                                                                                                                | GUI                                                                                                                                                    | In-game                                                                                                                                                        |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -44,14 +44,14 @@ The GUI features two input slots and one output slot. Porkchops are placed in th
 
 ### ![stuffer-icon](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/main/src/main/resources/assets/fuetcraft/textures/block/stuffericon.png) · Stuffer <!-- omit in toc -->
 
-Once you’ve obtained the chopped porkchops, you can use the **Stuffer** along with
- leather to craft the Fuets. Like the Chopper, this block can interact with hoppers
- and has its own villager profession.
+Una vez obtenidos los porkchop chopped, con el Stuffer y cuero, se pueden fabricar
+ los Fuets. Como él Chopper, este bloque puede interactuar con las tolvas y tiene
+ su propia [profesión](#villagers-profession) de aldeano.
 
-The GUI has two input slots and one output slot. The different types of chopped porkchops
- are placed in the first input slot, and leather is placed in the second. Inside
- the interface, there are tooltips on the slots to help the user understand what
- should be placed in each one.
+La GUI tiene dos slots de entrada y uno de salida. En el primer slot de entrada
+ se colocan los diferentes porkchop chopped que hay, y en el segundo se coloca el
+ cuero. Dentro de la interfaz, hay tooltips en los slots para ayudar al usuario
+ que hay que colocar en cada uno.
 
 | Crafteo                                                                                                                                                                | GUI                                                                                                                                                    | In-game                                                                                                                                                    |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -61,10 +61,10 @@ The GUI has two input slots and one output slot. The different types of chopped 
 
 ### ![prokchop-chopped-icon](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/main/src/main/resources/assets/fuetcraft/textures/item/porkchop-chopped.png) · Porkchop chopped <!-- omit in toc -->
 
-They are crafted using the Chopper and used in the Stuffer. They can be eaten, but
- they don’t restore much hunger. The villager with the Chopper profession offers
- some trades involving this item. Below is a table showing the different types of
- chopped porkchops and how they are produced.
+Se fabrican utilizando el Chopper y se utilizan en el Stuffer. Se pueden comer,
+ pero no alimentan mucho. El aldeano de la profesión del Chopper ofrece algunos
+ intercambios con este item. A continuación, se muestra una tabla de los diferentes
+ prokchop chopped que hay, y como se producen.
 
 #### Recipes <!-- omit in toc -->
 
@@ -76,9 +76,9 @@ They are crafted using the Chopper and used in the Stuffer. They can be eaten, b
 
 ### ![fuet-icon](https://raw.githubusercontent.com/fuetland/fuetcraft/refs/heads/main/src/main/resources/assets/fuetcraft/textures/item/fuet.png) · Fuet <!-- omit in toc -->
 
-Fuets are obtained using the Stuffer, with a processing time of five seconds, or
- through trades with the villager that has the Stuffer profession. Each Fuet (except
- the normal one) provides different effects when eaten.
+Los Fuets se obtienen en el Stuffer, con un tiempo de procesamiento de cinco
+ segundos, o en algún intercambio de la profesión del aldeano del Stuffer. Cada
+ Fuet (excepto el normal), proporciona diferentes efectos al comerlos.
 
 #### Recipes <!-- omit in toc -->
 
@@ -100,8 +100,8 @@ Fuets are obtained using the Stuffer, with a processing time of five seconds, or
 
 ## Villager's profession
 
-Trading is a core part of Minecraft, and naturally, with the addition of two new
- blocks, a new profession has been created for each one.
+Los tradeos son una parte fundamental de Minecraft y como no, aprovechando que se
+ han añadidos dos bloques, se ha creado un nuevo oficio para cada uno de ellos.
 
 ### Chopper <!-- omit in toc -->
 
@@ -142,15 +142,16 @@ Trading is a core part of Minecraft, and naturally, with the addition of two new
 
 # Easter eggs
 
-To avoid spoiling all the mod’s content in the documentation, various easter eggs
- have been included. As a hint, I will only provide these details: **3 paintings**,
-  **1 banner**, and **1 music disc**.
+Para no spoilear todo el contenido del mod en la documentación, se han dejado
+ diferentes easter eggs. Como ayuda, solo voy a proporcionar estos datos:
+ **3 paintings**, **1 banners** y **1 music discs**.
 
 # Future updates
 
-In upcoming versions, the developers have the following ideas planned:
+En las próximas versiones, los desarrolladores tenemos pensado las siguientes
+ ideas:
 
-- Create a **structure** related to the Chopper and Stuffer
-- Add **achievements**
-- Add a **drying process** before the Fuet can be eaten
-- Improve the Fuet **crafting process**
+- Crear una **estructura** relacionada con el Chopper y Stuffer
+- Añadir **logros**
+- Añadir **proceso de secado** antes de que se pueda comer el Fuet
+- Mejorar proceso de **fabricación** de los Fuets
