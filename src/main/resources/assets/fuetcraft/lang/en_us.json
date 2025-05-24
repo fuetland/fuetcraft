@@ -1,6 +1,6 @@
 {
-  "block.fuetcraft.banner.fuet_banner.cyan": "Cyan Fuet Banner",
   "item.fuetcraft.fuet_exploring": "Exploring Fuet",
+  "block.fuetcraft.banner.fuet_banner.cyan": "Cyan Fuet Banner",
   "gui.guide.book.fuet.effects": "Effects",
   "gui.guide.book.fuet.recipe": "Recipe",
   "item.fuetcraft.fuet_swimming": "Swimming Fuet",
@@ -12,7 +12,6 @@
   "item.fuetcraft.fuet_mining": "Mining Fuet",
   "block.fuetcraft.banner.fuet_banner.magenta": "Magenta Fuet Banner",
   "item.fuetcraft.thinking_in_fuets_disc": "Music Disc",
-  "item.fuetcraft.joyful_iberian_dance": "Music Disc",
   "gui.guide.book.fuet.mining.effect.2": "- Night Vision III for 5 minutes",
   "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
   "gui.guide.book.fuet.mining.effect.1": "- Haste I for 5 minutes",
@@ -60,7 +59,6 @@
   "gui.guide.book.fuet.swimming.effect.1": "- Conduit Power II for 1 minute 30 seconds",
   "block.fuetcraft.banner.fuet_banner.purple": "Purple Fuet Banner",
   "gui.guide.book.fuet.title": "Fuets",
-  "item.fuetcraft.joyful_iberian_dance.desc": "Joyful Iberian Dance",
   "gui.guide.book.fuet.swimming.effect.2": "- Dolphins Grace II for 1 minute 30 seconds",
   "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
   "painting.fuetcraft.painting_of_a_fuet.author": "Fuetcraft",

@@ -38,18 +38,10 @@ public class OnCreeperDieBySkeletorProcedure {
 		double randnum = 0;
 		if (entity instanceof Creeper && sourceentity instanceof Skeleton) {
 			randnum = Mth.nextInt(RandomSource.create(), 1, 15);
-			if (randnum == 5) {
-				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(FuetcraftModItems.JOYFUL_IBERIAN_DANCE.get()));
-					entityToSpawn.setPickUpDelay(10);
-					_level.addFreshEntity(entityToSpawn);
-				}
-			} else if (randnum == 2) {
-				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(FuetcraftModItems.THINKING_IN_FUETS_DISC.get()));
-					entityToSpawn.setPickUpDelay(10);
-					_level.addFreshEntity(entityToSpawn);
-				}
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(FuetcraftModItems.THINKING_IN_FUETS_DISC.get()));
+				entityToSpawn.setPickUpDelay(10);
+				_level.addFreshEntity(entityToSpawn);
 			}
 		}
 	}

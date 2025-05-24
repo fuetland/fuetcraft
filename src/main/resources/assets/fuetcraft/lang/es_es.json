@@ -1,6 +1,6 @@
 {
-  "block.fuetcraft.banner.fuet_banner.cyan": "Fuet cian",
   "item.fuetcraft.fuet_exploring": "Exploring Fuet",
+  "block.fuetcraft.banner.fuet_banner.cyan": "Fuet cian",
   "gui.guide.book.fuet.effects": "Efectos",
   "gui.guide.book.fuet.recipe": "Receta",
   "item.fuetcraft.fuet_swimming": "Swimming Fuet",
@@ -12,7 +12,6 @@
   "item.fuetcraft.fuet_mining": "Mining Fuet",
   "block.fuetcraft.banner.fuet_banner.magenta": "Fuet magenta",
   "item.fuetcraft.thinking_in_fuets_disc": "Thinking In Fuets Disc",
-  "item.fuetcraft.joyful_iberian_dance": "Thinking In Fuets Disc",
   "gui.guide.book.fuet.mining.effect.2": "- Visión nocturna III por 5 minutos",
   "item.fuetcraft.combat_porkchop_chopped": "Chuleta de combate picada",
   "gui.guide.book.fuet.mining.effect.1": "- Prisa minera I por 5 minutos",
@@ -60,7 +59,6 @@
   "gui.guide.book.fuet.swimming.effect.1": "- Canalizador II por 1 minuto 30 segundos",
   "block.fuetcraft.banner.fuet_banner.purple": "Fuet morado",
   "gui.guide.book.fuet.title": "Fuets",
-  "item.fuetcraft.joyful_iberian_dance.desc": "Thinking if fuets",
   "gui.guide.book.fuet.swimming.effect.2": "- Gracia del delfín II por 1 minuto 30 segundos",
   "item.fuetcraft.explorer_porkchop_chopped": "Chuleta exploradora picada",
   "painting.fuetcraft.painting_of_a_fuet.author": "Fuetcraft",

@@ -2095,22 +2095,6 @@
       "path": "~/items/music-discs"
     },
     {
-      "name": "JoyfulIberianDance",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "joyful_iberian_dance",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/fuetcraft/models/item/joyful_iberian_dance.json",
-          "src/main/java/fuetcraft/item/JoyfulIberianDanceItem.java",
-          "src/main/resources/data/fuetcraft/jukebox_song/joyful_iberian_dance.json",
-          "src/main/resources/assets/fuetcraft/items/joyful_iberian_dance.json"
-        ]
-      },
-      "path": "~/items/music-discs"
-    },
-    {
       "name": "OnCreeperDieBySkeletor",
       "type": "procedure",
       "compiles": true,
@@ -2311,7 +2295,6 @@
       "~CUSTOM:PorkchopChopped"
     ],
     "ITEMS:minecraft:music_discs": [
-      "~CUSTOM:JoyfulIberianDance",
       "~CUSTOM:ThinkingInFuetsDisc"
     ]
   },
@@ -2334,8 +2317,7 @@
       "Chopper",
       "Stuffer",
       "GuideBook",
-      "ThinkingInFuetsDisc",
-      "JoyfulIberianDance"
+      "ThinkingInFuetsDisc"
     ]
   },
   "language_map": {
@@ -2353,7 +2335,6 @@
       "item.fuetcraft.fuet_mining": "Mining Fuet",
       "block.fuetcraft.banner.fuet_banner.magenta": "Magenta Fuet Banner",
       "item.fuetcraft.thinking_in_fuets_disc": "Music Disc",
-      "item.fuetcraft.joyful_iberian_dance": "Music Disc",
       "gui.guide.book.fuet.mining.effect.2": "- Night Vision III for 5 minutes",
       "item.fuetcraft.combat_porkchop_chopped": "Combat Porkchop Chopped",
       "gui.guide.book.fuet.mining.effect.1": "- Haste I for 5 minutes",
@@ -2401,7 +2382,6 @@
       "gui.guide.book.fuet.swimming.effect.1": "- Conduit Power II for 1 minute 30 seconds",
       "block.fuetcraft.banner.fuet_banner.purple": "Purple Fuet Banner",
       "gui.guide.book.fuet.title": "Fuets",
-      "item.fuetcraft.joyful_iberian_dance.desc": "Joyful Iberian Dance",
       "gui.guide.book.fuet.swimming.effect.2": "- Dolphins Grace II for 1 minute 30 seconds",
       "item.fuetcraft.explorer_porkchop_chopped": "Explorer Porkchop Chopped",
       "painting.fuetcraft.painting_of_a_fuet.author": "Fuetcraft",
@@ -2439,7 +2419,6 @@
       "item.fuetcraft.fuet_mining": "Mining Fuet",
       "block.fuetcraft.banner.fuet_banner.magenta": "Fuet magenta",
       "item.fuetcraft.thinking_in_fuets_disc": "Thinking In Fuets Disc",
-      "item.fuetcraft.joyful_iberian_dance": "Thinking In Fuets Disc",
       "gui.guide.book.fuet.mining.effect.2": "- Visión nocturna III por 5 minutos",
       "item.fuetcraft.combat_porkchop_chopped": "Chuleta de combate picada",
       "gui.guide.book.fuet.mining.effect.1": "- Prisa minera I por 5 minutos",
@@ -2487,7 +2466,6 @@
       "gui.guide.book.fuet.swimming.effect.1": "- Canalizador II por 1 minuto 30 segundos",
       "block.fuetcraft.banner.fuet_banner.purple": "Fuet morado",
       "gui.guide.book.fuet.title": "Fuets",
-      "item.fuetcraft.joyful_iberian_dance.desc": "Thinking if fuets",
       "gui.guide.book.fuet.swimming.effect.2": "- Gracia del delfín II por 1 minuto 30 segundos",
       "item.fuetcraft.explorer_porkchop_chopped": "Chuleta exploradora picada",
       "painting.fuetcraft.painting_of_a_fuet.author": "Fuetcraft",
